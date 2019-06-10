@@ -3,12 +3,16 @@ package Coffee.view.component;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.BoxLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
+
+import Coffee.view.component.detail.ResetPassword;
 
 public class HeThongPanel extends JPanel {
 	/**
@@ -51,6 +55,25 @@ public class HeThongPanel extends JPanel {
 		this.add(nhanVien);
 		this.add(matkhau);
 		this.add(ketThuc);
+		
+		matkhau.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				LoadResetPassword();
+			}
+		});
+		ketThuc.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0);
+			}
+		});
+	}
+
+	protected void LoadResetPassword() {
+		ResetPassword ui = new ResetPassword();
+		ui.setVisible(true);
 	}
 
 	private void createBT(JButton bt, String name, String img) {
