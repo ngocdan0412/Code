@@ -1,0 +1,51 @@
+package Coffee.view.component;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class TopPanel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public TopPanel() {
+		setPreferredSize(new Dimension(Integer.MAX_VALUE, 135));
+		setBackground(Color.RED);
+		tab();
+	}
+	public void tab() {
+		JPanel pnN = new JPanel();
+		pnN.setLayout(new BorderLayout());
+//		pnN.setBackground(new Color(0,0,0,0));
+		
+		JPanel tab = new JPanel();
+//		tab.setBackground(new Color(0,0,0,0));
+		JButton heThong = new JButton("Hệ Thống");
+		heThong.setBackground(Color.LIGHT_GRAY);
+		heThong.setBorderPainted(false);
+		JButton thuNgan = new JButton("Thu Ngân");
+		thuNgan.setBackground(Color.LIGHT_GRAY);
+		thuNgan.setBorderPainted(false);
+		
+		tab.add(heThong); 
+		tab.add(thuNgan);
+		
+		JLabel ft = new JLabel("FT Coffee   ");
+		ft.setFont(new Font("", Font.BOLD, 20));
+		
+		pnN.add(ft, BorderLayout.EAST);
+		pnN.add(tab, BorderLayout.WEST);
+		
+		JPanel pnC = new JPanel();
+		
+		this.setLayout(new BorderLayout());
+		this.add(pnN, BorderLayout.NORTH);
+	}
+}

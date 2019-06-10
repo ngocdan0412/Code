@@ -1,0 +1,8 @@
+package Coffee.view.component;
+
+public class MainPanel {
+	public static void main(String[] args) {
+		DefaultPanel ui = new DefaultPanel();
+		ui.setVisible(true);
+	}
+}

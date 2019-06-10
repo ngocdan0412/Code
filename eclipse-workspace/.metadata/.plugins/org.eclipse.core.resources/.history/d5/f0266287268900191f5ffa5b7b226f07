@@ -1,0 +1,11 @@
+package Coffee.view.component;
+
+import java.awt.Color;
+
+import javax.swing.JPanel;
+
+public class HeThongPanel extends JPanel{
+	public HeThongPanel() {
+		setBackground(Color.ORANGE);
+	}
+}

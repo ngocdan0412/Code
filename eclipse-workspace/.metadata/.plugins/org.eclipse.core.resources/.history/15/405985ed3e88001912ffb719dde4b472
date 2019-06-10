@@ -1,0 +1,109 @@
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+ 
+public class Test extends JFrame {
+    private JLabel labelClock;
+    private JLabel timeSystem;
+    private JLabel calendarTK;
+ 
+    @SuppressWarnings("deprecation")
+	public Test() {
+        setTitle("Đồng hồ trong Java Swing");
+        labelClock = new JLabel();
+        timeSystem = new JLabel();
+        calendarTK = new JLabel();
+        
+        labelClock.setBounds(20, 20, 80, 20);
+        timeSystem.setBounds(20, 40, 80, 20);
+        calendarTK.setBounds(20, 60, 80, 20);
+        
+        add(labelClock);
+        add(timeSystem);
+        add(calendarTK);
+        
+        setSize(400, 200);
+        setLayout(null);
+        // dóng chương trình khi đóng của sổ
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                System.exit(1);
+            }
+        });
+//        run();
+        
+        setVisible(true);
+        // thiết lập lại đồng hồ sau mỗi 1 giây
+//        try {
+//            while (true) {
+//                Calendar calendar = Calendar.getInstance();
+//                String hour = (calendar.getTime().getHours() > 9) ? 
+//                        "" + calendar.getTime().getHours() + ""
+//                        : "0" + calendar.getTime().getHours();
+//                String minute = (calendar.getTime().getMinutes() > 9) ? 
+//                        "" + calendar.getTime().getMinutes() + ""
+//                        : "0" + calendar.getTime().getMinutes();
+//                String second = (calendar.getTime().getSeconds() > 9) ? 
+//                        "" + calendar.getTime().getSeconds() + ""
+//                        : "0" + calendar.getTime().getSeconds();
+//                
+//               
+//                
+//                labelClock.setText(hour + ":" + minute + ":" + second);
+//                Thread.sleep(1000);
+//            }
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+        try {
+            while (true) {
+                Calendar cal = new GregorianCalendar();
+                int second = cal.get(Calendar.SECOND);
+                int minute = cal.get(Calendar.MINUTE);
+                int hour = cal.get(Calendar.HOUR_OF_DAY);
+                int dayOfMonth = cal.get(Calendar.DAY_OF_MONTH);
+                int month = cal.get(Calendar.MONTH);
+                int year = cal.get(Calendar.YEAR);
+
+                timeSystem.setText(hour + ":" + minute + ":" + second);
+                calendarTK.setText(dayOfMonth + "/" + (month + 1) + "/" + year);
+                Thread.sleep(1000);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public void run (){ 
+    	JLabel jLabel1 = new JLabel();
+        while(true) {
+           Calendar h = Calendar.getInstance(); 
+           int ho = h.get(Calendar.HOUR_OF_DAY); 
+           int mi = h.get(Calendar.MINUTE); 
+           int se = h.get(Calendar.SECOND); 
+
+           String tem = "  " + ho +  ":" + mi + ":" + se; 
+           jLabel1.setText(tem); 
+
+           try {
+                 Thread.sleep(1000);
+           }catch(Exception ex) {
+                 ex.printStackTrace();
+           }
+       }
+   } 
+    /**
+     * main
+     * 
+     * @param args
+     * @throws InterruptedException
+     */
+    public static void main(String[] args) {
+        new Test();
+    }
+}

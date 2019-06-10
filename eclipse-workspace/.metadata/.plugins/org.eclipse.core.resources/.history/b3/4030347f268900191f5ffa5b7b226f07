@@ -1,0 +1,9 @@
+package Coffee.view.component;
+
+import javax.swing.JPanel;
+
+public class HeThongPanel extends JPanel{
+	public HeThongPanel() {
+		
+	}
+}

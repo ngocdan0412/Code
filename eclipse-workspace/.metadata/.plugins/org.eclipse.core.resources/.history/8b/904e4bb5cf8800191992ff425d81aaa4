@@ -1,0 +1,7 @@
+package Coffee.view.component;
+
+import javax.swing.JTabbedPane;
+
+public class CenterPanel extends JTabbedPane {
+	
+}

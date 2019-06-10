@@ -1,0 +1,15 @@
+package Coffee.view.component;
+
+import java.awt.Color;
+import java.awt.Container;
+import javax.swing.AbstractButton;
+import javax.swing.JPanel;
+
+public class ThuNganPanel {
+	public ThuNganPanel() {
+		JPanel t1 = new JPanel();
+		t1.setBackground(Color.RED);
+		AbstractButton b;
+		Container con = setb.getParent();
+	}
+}

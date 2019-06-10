@@ -1,0 +1,39 @@
+package Coffee.view.component;
+
+import java.awt.BorderLayout;
+import java.awt.Button;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class BottomPanel extends JPanel {
+	/**
+	 *
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public BottomPanel() {
+		setPreferredSize(new Dimension(Integer.MAX_VALUE, 30));
+		setBackground(Color.BLUE);
+		date();
+	}
+
+	public void date() {
+		JPanel showDate = new JPanel();
+		showDate.setBackground(Color.YELLOW);
+		
+		JLabel timeSystem = new JLabel();
+		JLabel calendarTK = new JLabel();
+
+		showDate.add(timeSystem);
+		showDate.add(calendarTK);
+		
+		this.setLayout(new BorderLayout());
+		this.add(showDate, BorderLayout.EAST);
+		
+	}
+}

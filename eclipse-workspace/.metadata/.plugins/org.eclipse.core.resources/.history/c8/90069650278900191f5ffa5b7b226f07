@@ -1,0 +1,19 @@
+package Coffee.view.component;
+
+import java.awt.Color;
+
+import javax.swing.JPanel;
+
+public class HeThongPanel extends JPanel{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public HeThongPanel() {
+		setBackground(Color.ORANGE);
+	}
+	public void pnHT() {
+		
+	}
+}

@@ -1,0 +1,50 @@
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import java.awt.Button;
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+
+public class run extends JFrame {
+	public run() {
+//		super("Demo Windows");
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setSize(400, 300);
+		
+		test();
+		
+	}
+
+	public void test() {
+		JPanel pnFlow = new JPanel();
+
+		pnFlow.setLayout(new FlowLayout());
+		pnFlow.setBackground(Color.PINK);
+
+		JButton btn1 = new JButton("FlowLayout");
+		JButton btn2 = new JButton("Add các control");
+		JButton btn3 = new JButton("Trên 1 dòng");
+		JButton btn4 = new JButton("Hết chỗ chứa");
+		JButton btn5 = new JButton("Thì xuống dòng");
+
+		pnFlow.add(btn1);
+		pnFlow.add(btn2);
+		pnFlow.add(btn3);
+		pnFlow.add(btn4);
+		pnFlow.add(btn5);
+
+		Container con = getContentPane();
+		con.add(pnFlow);
+
+	}
+
+	public static void main(String[] args) {
+		JFrame giaodien = new JFrame();
+		giaodien.setVisible(true);
+
+	}
+}
