@@ -2,6 +2,7 @@ package Coffee.view.component.detail;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,9 +19,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import javax.swing.JTextPane;
 import javax.swing.SwingConstants;
 
 public class ResetPassword extends JFrame {
@@ -86,8 +85,10 @@ public class ResetPassword extends JFrame {
 
 		JPanel bt = new JPanel();
 		JButton done = new JButton("Chấp nhận");
+		done.setPreferredSize(new Dimension(100, 30));
 		done.setBackground(Color.LIGHT_GRAY);
-		JButton exit = new JButton("       Hủy       ");
+		JButton exit = new JButton("Hủy bỏ");
+		exit.setPreferredSize(new Dimension(100, 30));
 		exit.setBackground(Color.LIGHT_GRAY);
 		bt.add(done);
 		bt.add(exit);
@@ -130,17 +131,24 @@ public class ResetPassword extends JFrame {
 					try {
 						Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/coffeeft", "root",
 								"");
-						String sql = "UPDATE `users` SET `Password`=? WHERE `Username`=?";
+						String sql = "SELECT * FROM user WHERE Username=? AND Password=?";
 						PreparedStatement ps = conn.prepareStatement(sql);
-						ps.setString(1, txtEnterMK.getText());
-						ps.setString(2, txtName.getText());
-						
+						ps.setString(1, txtName.getText());
+						ps.setString(2, txtMK.getText());
+
 						ResultSet rs = ps.executeQuery();
 						if (rs.next()) {
-							JOptionPane.showMessageDialog(null, "Đổi mật khẩu thành công");
-//							JOptionPane.showMessageDialog(null, rs.getString("Username"), "", JOptionPane.NO_OPTION);
-//							JOptionPane.showMessageDialog(null, rs.getString("Password"), "", JOptionPane.NO_OPTION);
-//							dispose();
+							String sql2 = "UPDATE `user` SET `Password`=? WHERE `Username`=?";
+							PreparedStatement ps2 = conn.prepareStatement(sql2);
+							ps2.setString(1, txtEnterMK.getText());
+							ps2.setString(2, txtName.getText());
+							
+							ps2.executeUpdate();
+								JOptionPane.showMessageDialog(null, "Đổi mật khẩu thành công");
+								dispose();
+						} else {
+							JOptionPane.showMessageDialog(null, "Mật khẩu không chính xác!!", "Lỗi", JOptionPane.ERROR_MESSAGE);
+
 						}
 					} catch (Exception e1) {
 						System.out.println(e1);

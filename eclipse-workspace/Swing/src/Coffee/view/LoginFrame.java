@@ -65,59 +65,59 @@ public class LoginFrame extends JFrame {
 		test.setBounds(0, 0, 200, 200);
 		test.setBackground(new Color(0, 0, 0, 0));
 		background.add(test);
-		
+
 		// loginForm
 		JPanel pnC = new JPanel();
 		pnC.setLayout(null);
 		pnC.setBackground(new Color(0, 0, 0, 0));
-		
+
 		JLabel tieuDe = new JLabel("LOGIN");
 		tieuDe.setBounds(155, 30, 100, 50);
 		tieuDe.setFont(new Font("", Font.BOLD, 30));// ~~~~~~~~~~~~~~set font
 		tieuDe.setForeground(new Color(104, 48, 37));
 		pnC.add(tieuDe);
-		
+
 		JLabel lbTen = new JLabel("USERNAME");
 		lbTen.setBounds(80, 100, 90, 30);
 		lbTen.setFont(new Font("", Font.BOLD, 15));
 		lbTen.setForeground(new Color(104, 48, 37));
 		pnC.add(lbTen);
-		
+
 		JTextField txtTen = new JTextField(20);
 		txtTen.setText("admin");
 		txtTen.setBounds(180, 100, 150, 30);
 		txtTen.setFont(new Font("", Font.PLAIN, 15));
 		pnC.add(txtTen);
-		
+
 		JLabel lbMK = new JLabel("PASSWORD");
 		lbMK.setBounds(80, 160, 90, 30);
 		lbMK.setFont(new Font("", Font.BOLD, 15));
 		lbMK.setForeground(new Color(104, 48, 37));
 		pnC.add(lbMK);
-		
+
 		JPasswordField txtMK = new JPasswordField(20);
 		txtMK.setBounds(180, 160, 150, 30);
 		txtMK.setFont(new Font("", Font.PLAIN, 15));
 		pnC.add(txtMK);
-		
+
 		JCheckBox showPassword = new JCheckBox("Show Password");
 		showPassword.setBounds(180, 190, 150, 20);
 		// showPassword.setBackground(new Color(0, 0, 0, 0));
 		pnC.add(showPassword);
-		
+
 		JButton buttonLogin = new JButton("LOGIN");
 		buttonLogin.setBounds(100, 230, 90, 30);
 		buttonLogin.setBackground(Color.LIGHT_GRAY);
 		pnC.add(buttonLogin);
-		
+
 		JButton buttonExit = new JButton("EXIT");
 		buttonExit.setBounds(215, 230, 90, 30);
 		buttonExit.setBackground(Color.LIGHT_GRAY);
 		pnC.add(buttonExit);
-		
+
 		pnC.setBounds(250, 125, 400, 350);
 		background.add(pnC);
-		
+
 		background.setBounds(0, 0, 900, 600);
 		Container con = getContentPane();
 		con.add(background);
@@ -135,18 +135,19 @@ public class LoginFrame extends JFrame {
 						// Class.forName("com.mysql.cj.jdbc.Driver");
 						Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/coffeeft", "root",
 								"");
-						String sql = "SELECT * FROM users WHERE Username=? AND Password=?";
+						String sql = "SELECT * FROM user WHERE Username=? AND Password=?";
 						PreparedStatement ps = conn.prepareStatement(sql);
 						ps.setString(1, txtTen.getText());
 						ps.setString(2, txtMK.getText());
 
 						ResultSet rs = ps.executeQuery();
 						if (rs.next()) {
-							JOptionPane.showMessageDialog(null, "Đăng nhập thành công!!");
+//							JOptionPane.showMessageDialog(null, "Đăng nhập thành công!!");
 							dispose();// ~~~~~~~~~~~thoát trang
 							LoadDefaultPanel();
 						} else {
-							JOptionPane.showMessageDialog(null, "Tên đăng nhập hoặc mật khẩu không chính xác!!");
+							JOptionPane.showMessageDialog(null, "Tên đăng nhập hoặc mật khẩu không chính xác!!", "Lỗi",
+									JOptionPane.ERROR_MESSAGE);
 						}
 					} catch (Exception e2) {
 						System.out.println(e2);

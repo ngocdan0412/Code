@@ -2,16 +2,24 @@ package Coffee.view.component;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 
-public class DefaultPanel extends JFrame {
+import Coffee.view.component.detail.ResetPassword;
+
+public class DefaultPanel extends JFrame implements ActionListener{
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
+	private TopPanel topPanel;
+	private CenterPanel centerPanel;
+	private BottomPanel bottomPanel;
+	
 	public DefaultPanel() {
 		super("DỰ ÁN FT COFFEE");
 		setSize(1200, 750);
@@ -19,25 +27,16 @@ public class DefaultPanel extends JFrame {
 		setLocationRelativeTo(null);
 		ImageIcon img = new ImageIcon("src\\Coffee\\img\\cafe4.png");
 		setIconImage(img.getImage());
-		pnNorth();
+		pnN();
 	}
 
-	public void pnNorth() {
-		TopPanel topPanel = new TopPanel();
-		CenterPanel centerPanel = new CenterPanel();
+	public void pnN() {
+		topPanel = new TopPanel();
+		topPanel.getHeThongPanel().getMatKhau().addActionListener(hd);
+		
+		centerPanel = new CenterPanel();
 
-//		JTabbedPane tabbedPane = new JTabbedPane();
-//		tabbedPane.setMaximumSize(new Dimension(Integer.MAX_VALUE, 800));
-//		JPanel panel1 = new JPanel();
-//		tabbedPane.addTab("Tab 1", null, panel1, "Show tab 1");
-//		JPanel panel2 = new JPanel();
-//		tabbedPane.addTab("Tab 2", null, panel2, "Show tab 2");
-//		JPanel panel3 = new JPanel();
-//		tabbedPane.addTab("Tab 3", null, panel3, "Show tab 3");
-//		JPanel panel4 = new JPanel();
-//		tabbedPane.addTab("Tab 4", null, panel4, "Show tab 4");
-
-		BottomPanel bottomPanel = new BottomPanel();
+		bottomPanel = new BottomPanel();
 
 		Container con = getContentPane();
 		con.add(topPanel, BorderLayout.NORTH);
@@ -45,11 +44,32 @@ public class DefaultPanel extends JFrame {
 		con.add(bottomPanel, BorderLayout.SOUTH);
 	}
 
+	public ActionListener hd = new ActionListener() {
+		
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			Object action = e.getSource();
+			if(action == topPanel.getHeThongPanel().getMatKhau()) {
+				LoadResetPassword();
+				System.out.println("done");
+			}
+		}
+	};
+	protected void LoadResetPassword() {
+		ResetPassword ui = new ResetPassword();
+		ui.setVisible(true);
+	}
 	/**
 	 * Test Run!!!
 	 */
 	public static void main(String[] args) {
 		DefaultPanel ui = new DefaultPanel();
 		ui.setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 }

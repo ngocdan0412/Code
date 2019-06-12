@@ -1,9 +1,0 @@
-package Coffee.view.component;
-
-import com.sun.prism.paint.Color;
-
-public class ThuNganPanel {
-	public ThuNganPanel() {
-		setBackground(Color.RED);
-	}
-}

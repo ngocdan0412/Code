@@ -1,7 +1,0 @@
-package Coffee.view.component;
-
-public class ThuNganPanel {
-	public ThuNganPanel() {
-		
-	}
-}

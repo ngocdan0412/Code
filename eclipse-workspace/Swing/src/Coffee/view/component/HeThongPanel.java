@@ -1,6 +1,5 @@
 package Coffee.view.component;
 
-import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
@@ -12,7 +11,6 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-import Coffee.view.component.detail.ResetPassword;
 
 public class HeThongPanel extends JPanel {
 	/**
@@ -20,8 +18,14 @@ public class HeThongPanel extends JPanel {
 	 */
 	private static final long serialVersionUID = 1L;
 
+	private JButton matKhau;
+	
+	public JButton getMatKhau() {
+		return matKhau;
+	}
+	
 	public HeThongPanel() {
-		setBackground(Color.ORANGE);
+		setBackground(null);
 		pnHT();
 	}
 
@@ -41,8 +45,8 @@ public class HeThongPanel extends JPanel {
 		JButton nhanVien = new JButton();
 		createBT(nhanVien, "Nhân viên", "src\\Coffee\\img\\HT5.png");
 		
-		JButton matkhau = new JButton();
-		createBT(matkhau, "Mật khẩu", "src\\Coffee\\img\\HT6.png");
+		matKhau = new JButton();
+		createBT(matKhau, "Mật khẩu", "src\\Coffee\\img\\HT6.png");
 		
 		JButton ketThuc = new JButton();
 		createBT(ketThuc, "Kết thúc", "src\\Coffee\\img\\HT7.png");
@@ -53,16 +57,9 @@ public class HeThongPanel extends JPanel {
 		this.add(sanPham);
 		this.add(khachHang);
 		this.add(nhanVien);
-		this.add(matkhau);
+		this.add(matKhau);
 		this.add(ketThuc);
 		
-		matkhau.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				LoadResetPassword();
-			}
-		});
 		ketThuc.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -71,21 +68,15 @@ public class HeThongPanel extends JPanel {
 		});
 	}
 
-	protected void LoadResetPassword() {
-		ResetPassword ui = new ResetPassword();
-		ui.setVisible(true);
-	}
-
 	private void createBT(JButton bt, String name, String img) {
 		ImageIcon anh = new ImageIcon(img);
 		Image image = anh.getImage();
 		Image newimg = image.getScaledInstance(50, 50,  Image.SCALE_SMOOTH);
-		anh = new ImageIcon(newimg); 
+		anh = new ImageIcon(newimg);
 		bt.setIcon(anh);
 		bt.setText(name);
 		bt.setFont(new Font("", Font.BOLD, 15));
 		bt.setHorizontalTextPosition(SwingConstants.CENTER);
 		bt.setVerticalTextPosition(SwingConstants.BOTTOM);
-//		bt.setBackground(Color.LIGHT_GRAY);
 	}
 }

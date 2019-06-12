@@ -6,44 +6,44 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="215" key="selection"/>
+		<item value="run" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="DemoJTabbedPane"/>
+			<item value="ketThuc"/>
+			<item value="matkhau"/>
+			<item value="nhanVien"/>
+			<item value="khachHang"/>
+			<item value="sanPham"/>
+			<item value="tuyChon"/>
+			<item value="danhMuc"/>
+			<item value="HT"/>
 			<item value="194"/>
 			<item value="240"/>
 			<item value="Main"/>
 			<item value="setVerticalTextPosition"/>
 			<item value="a"/>
 			<item value="MyJFrame"/>
-			<item value="arg1"/>
-			<item value="taskButton"/>
-			<item value="tab1"/>
-			<item value="pnN"/>
-			<item value="ClockExample"/>
-			<item value="tab"/>
-			<item value="TabbedPaneDemo"/>
-			<item value="forgotPassword"/>
-			<item value="800"/>
 		</list>
 		<list key="replacehistory">
+			<item value="run"/>
+			<item value="thuChi"/>
+			<item value="doanhThu"/>
+			<item value="hoaDon"/>
+			<item value="datBan"/>
+			<item value="soDo"/>
+			<item value="mayIn"/>
+			<item value="mauIn"/>
+			<item value="TN"/>
 			<item value="215"/>
 			<item value="194"/>
-			<item value="run"/>
 			<item value="bt"/>
 			<item value="pnN"/>
 			<item value="tab"/>
 			<item value="Test"/>
-			<item value="signUp"/>
-			<item value="900"/>
-			<item value="buttonExit"/>
-			<item value="buttonLogin"/>
-			<item value="tieuDe"/>
-			<item value="login"/>
-			<item value="card2"/>
-			<item value="pnC"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

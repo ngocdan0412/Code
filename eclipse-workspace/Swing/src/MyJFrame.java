@@ -40,9 +40,9 @@ public class MyJFrame extends JFrame {
 		// b2();
 		// b3();
 		// b4();
-		 b5();
+//		 b5();
 		// b6();
-//		b7();
+		b7();
 		// initUI();
 	}
 
