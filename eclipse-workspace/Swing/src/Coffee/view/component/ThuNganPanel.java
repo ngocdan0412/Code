@@ -3,6 +3,8 @@ package Coffee.view.component;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.BoxLayout;
 import javax.swing.ImageIcon;
@@ -16,37 +18,47 @@ public class ThuNganPanel extends JPanel{
 	 */
 	private static final long serialVersionUID = 1L;
 
+	private JButton mauIn;
+	private JButton mayIn;
+	private JButton soDo;
+	private JButton datBan;
+	private JButton hoaDon;
+	private JButton doanhThu;
+	private JButton thuChi;
+	private JButton phieuThu;
+	private JButton phieuChi;
+	
 	public ThuNganPanel() {
-		setBackground(null);
+		setBackground(new Color(202, 229, 232));
 		pnHT();
 	}
 	
 	public void pnHT() {
-		JButton mauIn = new JButton();
+		mauIn = new JButton();
 		createBT(mauIn, "Mẫu in", "src\\Coffee\\img\\TN1.png");
 		
-		JButton mayIn = new JButton();
+		mayIn = new JButton();
 		createBT(mayIn, "Máy in", "src\\Coffee\\img\\TN2.png");
 		
-		JButton soDo = new JButton();
+		soDo = new JButton();
 		createBT(soDo, "Sơ đồ", "src\\Coffee\\img\\TN3.png");
 		
-		JButton datBan = new JButton();
+		datBan = new JButton();
 		createBT(datBan, "Đặt bàn", "src\\Coffee\\img\\TN4.png");
 		
-		JButton hoaDon = new JButton();
+		hoaDon = new JButton();
 		createBT(hoaDon, "Hóa đơn", "src\\Coffee\\img\\TN5.png");
 		
-		JButton doanhThu = new JButton();
+		doanhThu = new JButton();
 		createBT(doanhThu, "Doanh thu", "src\\Coffee\\img\\TN6.png");
 		
-		JButton thuChi = new JButton();
+		thuChi = new JButton();
 		createBT(thuChi, "Thu chi", "src\\Coffee\\img\\TN7.png");
 		
-		JButton phieuThu = new JButton();
+		phieuThu = new JButton();
 		createBT(phieuThu, "Phiếu thu", "src\\Coffee\\img\\TN8.png");
 		
-		JButton phieuChi = new JButton();
+		phieuChi = new JButton();
 		createBT(phieuChi, "Phiếu chi", "src\\Coffee\\img\\TN9.png");
 
 		this.setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
@@ -70,7 +82,34 @@ public class ThuNganPanel extends JPanel{
 		bt.setIcon(anh);
 		bt.setText(name);
 		bt.setFont(new Font("", Font.BOLD, 15));
+		bt.setContentAreaFilled(false);
 		bt.setHorizontalTextPosition(SwingConstants.CENTER);
 		bt.setVerticalTextPosition(SwingConstants.BOTTOM);
+		
+		bt.addMouseListener(new MouseListener() {
+			
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+			}
+			
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+			}
+			
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				bt.setContentAreaFilled(false);
+			}
+			
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				bt.setContentAreaFilled(true);
+				bt.setBackground(new Color(110, 195, 201));
+			}
+			
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+			}
+		});
 	}
 }

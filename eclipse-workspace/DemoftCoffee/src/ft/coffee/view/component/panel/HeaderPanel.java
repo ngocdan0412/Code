@@ -1,8 +1,8 @@
 package ft.coffee.view.component.panel;
 
 import java.awt.CardLayout;
-import java.awt.Component;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -29,13 +29,32 @@ public class HeaderPanel extends JPanel implements ActionListener {
 
 	public HeaderPanel() {
 		this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
-		this.setMaximumSize(new Dimension(Integer.MAX_VALUE, 130));
+		this.setPreferredSize(new Dimension(Integer.MAX_VALUE, 115));
 
 		// phan tab
 		initTabButtonView();
 
 		// phan menu item
 		initToolItemView();
+	}
+
+	public ToolHeThongPanel getCardHeThong() {
+		return cardHeThong;
+	}
+
+	private void initTabButtonView() {
+		JPanel tabButtonPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+		tabButtonPanel.setPreferredSize(new Dimension(Integer.MAX_VALUE, 31));
+		btnHeThong = new JButton("Hệ Thống");
+		btnThuNgan = new JButton("Thu Ngân");
+
+		btnHeThong.addActionListener(this);
+		btnThuNgan.addActionListener(this);
+
+		tabButtonPanel.add(btnHeThong);
+		tabButtonPanel.add(btnThuNgan);
+
+		this.add(tabButtonPanel);
 	}
 
 	private void initToolItemView() {
@@ -53,22 +72,6 @@ public class HeaderPanel extends JPanel implements ActionListener {
 		this.add(toolContentPanel);
 	}
 
-	private void initTabButtonView() {
-		JPanel tabButtonPanel = new JPanel();
-		btnHeThong = new JButton("Hệ Thống");
-		btnThuNgan = new JButton("Thu Ngân");
-
-		btnHeThong.addActionListener(this);
-		btnThuNgan.addActionListener(this);
-
-		tabButtonPanel.add(btnHeThong);
-		tabButtonPanel.add(btnThuNgan);
-		tabButtonPanel.setMaximumSize(new Dimension(190, 10));
-		tabButtonPanel.setAlignmentX(Component.LEFT_ALIGNMENT);
-
-		this.add(tabButtonPanel);
-	}
-
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		Object action = e.getSource();
@@ -82,4 +85,5 @@ public class HeaderPanel extends JPanel implements ActionListener {
 	public void showCardWithName(String cardName) {
 		mCardLayout.show(toolContentPanel, cardName);
 	}
+
 }

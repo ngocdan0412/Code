@@ -1,0 +1,39 @@
+package Coffee.view.component;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTabbedPane;
+
+public class CenterPanel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public CenterPanel() {
+		setMaximumSize(new Dimension(Integer.MAX_VALUE, 800));
+		tableTab();
+	}
+
+	public void tableTab() {
+		JTabbedPane tabbedPane = new JTabbedPane();
+		
+		JPanel panel1 = new JPanel();
+		tabbedPane.addTab("Tab 1", null, panel1, "Show tab 1");
+		JPanel panel2 = new JPanel();
+		tabbedPane.addTab("Tab 2", null, panel2, "Show tab 2");
+		JPanel panel3 = new JPanel();
+		tabbedPane.addTab("Tab 3", null, panel3, "Show tab 3");
+		JPanel panel4 = new JPanel();
+		tabbedPane.addTab("Tab 4", null, panel4, "Show tab 4");
+
+		this.setLayout(new BorderLayout());
+		this.add(tabbedPane);
+	}
+}

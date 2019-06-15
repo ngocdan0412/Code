@@ -1,0 +1,12 @@
+package Coffee.view.component.detail;
+
+import javax.swing.JPanel;
+
+public class EstablishButton extends JPanel{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+}

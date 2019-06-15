@@ -1,75 +1,117 @@
 package Coffee.view.component;
 
 import java.awt.BorderLayout;
-import java.awt.Container;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.Color;
+import java.awt.Dimension;
 
-import javax.swing.ImageIcon;
-import javax.swing.JFrame;
+import javax.swing.BorderFactory;
+import javax.swing.BoxLayout;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.border.Border;
+import javax.swing.border.EtchedBorder;
+import javax.swing.border.TitledBorder;
 
-import Coffee.view.component.detail.ResetPassword;
-
-public class DefaultPanel extends JFrame implements ActionListener{
+public class DefaultPanel extends JPanel {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private TopPanel topPanel;
-	private CenterPanel centerPanel;
-	private BottomPanel bottomPanel;
+	private JLabel bangGia;
+	private JComboBox<String> cbBangGia;
+	private JLabel thuNgan;
+	private JComboBox<String> cbThuNgan;
+	private JLabel nhanVien;
+	private JComboBox<String> cbNhanVien;
 	
+	private ButtonGroup language;
+	private JRadioButton tiengViet;
+	private JRadioButton tiengNN;
+	private JCheckBox xemTHD;
+
 	public DefaultPanel() {
-		super("DỰ ÁN FT COFFEE");
-		setSize(1200, 750);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setLocationRelativeTo(null);
-		ImageIcon img = new ImageIcon("src\\Coffee\\img\\cafe4.png");
-		setIconImage(img.getImage());
-		pnN();
+		setBackground(new Color(202, 229, 232));
+		setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
+		tab();
 	}
 
-	public void pnN() {
-		topPanel = new TopPanel();
-		topPanel.getHeThongPanel().getMatKhau().addActionListener(hd);
+	private void tab() {
+
+		JPanel bang1 = new JPanel();
+//		bang1.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
+		setPanel(bang1);
+
+		bangGia = new JLabel("Bảng giá:");
+		cbBangGia = new JComboBox<String>();
+		cbBangGia.addItem("Mặc định");
+		cbBangGia.addItem("Phòng lạnh");
+		setComboBox(cbBangGia);
+
+		thuNgan = new JLabel("Thu ngân:");
+		cbThuNgan = new JComboBox<String>();
+		cbThuNgan.addItem("Tất cả");
+		setComboBox(cbThuNgan);
+
+		nhanVien = new JLabel("Nhân viên:");
+		cbNhanVien = new JComboBox<String>();
+		setComboBox(cbNhanVien);
+
+		bang1.add(bangGia);
+		bang1.add(cbBangGia);
+		bang1.add(thuNgan);
+		bang1.add(cbThuNgan);
+		bang1.add(nhanVien);
+		bang1.add(cbNhanVien);
 		
-		centerPanel = new CenterPanel();
+		this.add(bang1);
 
-		bottomPanel = new BottomPanel();
-
-		Container con = getContentPane();
-		con.add(topPanel, BorderLayout.NORTH);
-		con.add(centerPanel, BorderLayout.CENTER);
-		con.add(bottomPanel, BorderLayout.SOUTH);
-	}
-
-	public ActionListener hd = new ActionListener() {
+		JPanel baoCao = new JPanel();
+		setPanel(baoCao);
+		setBorder(baoCao, " Báo cáo ");
 		
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			Object action = e.getSource();
-			if(action == topPanel.getHeThongPanel().getMatKhau()) {
-				LoadResetPassword();
-				System.out.println("done");
-			}
-		}
-	};
-	protected void LoadResetPassword() {
-		ResetPassword ui = new ResetPassword();
-		ui.setVisible(true);
-	}
-	/**
-	 * Test Run!!!
-	 */
-	public static void main(String[] args) {
-		DefaultPanel ui = new DefaultPanel();
-		ui.setVisible(true);
+		this.add(baoCao);
+
+		JPanel inHoaDon = new JPanel();
+		setPanel(inHoaDon);
+		setBorder(inHoaDon, " In hóa đơn ");
+
+		language = new ButtonGroup();
+		tiengViet = new JRadioButton("Tiếng Việt", true);
+		tiengViet.setBackground(null);
+		tiengNN = new JRadioButton("Tiếng nước ngoài", false);
+		tiengNN.setBackground(null);
+		language.add(tiengViet);
+		language.add(tiengNN);
+		
+		xemTHD = new JCheckBox("Xem trước hóa đơn", true);
+		xemTHD.setBackground(null);
+		
+		inHoaDon.add(tiengViet);
+		inHoaDon.add(tiengNN);
+		inHoaDon.add(xemTHD);
+		
+		this.add(inHoaDon);
 	}
 
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
+	private void setPanel(JPanel pn) {
+		pn.setBackground(null);
+		pn.setMaximumSize(new Dimension(350, 100));
+		pn.setMinimumSize(new Dimension(350, 100));
+	}
+
+	private void setBorder(JPanel pn, String name) {
+		Border bd = BorderFactory.createEtchedBorder(EtchedBorder.LOWERED);
+		TitledBorder tb = BorderFactory.createTitledBorder(bd, name);
+		pn.setBorder(tb);
+	}
+
+	private void setComboBox(JComboBox<String> cbb) {
+		cbb.setPreferredSize(new Dimension(260, 25));
 	}
 }

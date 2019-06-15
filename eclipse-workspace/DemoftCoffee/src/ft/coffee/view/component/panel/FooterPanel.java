@@ -10,7 +10,7 @@ public class FooterPanel extends JPanel {
 	private static final long serialVersionUID = 1L;
 
 	public FooterPanel() {
-		setMaximumSize(new Dimension(Integer.MAX_VALUE, 25));
+		this.setPreferredSize(new Dimension(Integer.MAX_VALUE, 25));
 		setBackground(Color.YELLOW);
 	}
 }

@@ -1,0 +1,7 @@
+package Coffee.view.tabpanel;
+
+import javax.swing.JPanel;
+
+public class TabThuNgan extends JPanel{
+
+}

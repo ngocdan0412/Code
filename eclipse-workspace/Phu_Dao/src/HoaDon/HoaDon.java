@@ -33,12 +33,12 @@ public class HoaDon {
 				stt++;
 			}else if(stt == 1) {
 				System.out.println("Nhập số lượng: ");
-				thucDon.setSoLuong(Integer.parseInt(sc.nextLine()));
+//				thucDon.setSoLuong(Integer.parseInt(sc.nextLine()));
 				stt++;
 			}else {
 				System.out.println("Nhập đơn giá: ");
-				thucDon.setGiaTien(Integer.parseInt(sc.nextLine()));
-				list.add(thucDon);
+//				thucDon.setGiaTien(Integer.parseInt(sc.nextLine()));
+//				list.add(thucDon);
 				System.out.println("Đã thêm!!");
 				stt = 0;
 			}

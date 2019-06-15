@@ -7,5 +7,6 @@ public class MainClass {
 	public static void main(String[] args) {
 		LoginFrame frame = new LoginFrame(new StaffBoImpl());
 		frame.setVisible(true);
+		frame.checkExistUser();
 	}
 }

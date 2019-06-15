@@ -1,23 +1,25 @@
 package ft.coffee.view;
 
+import java.awt.BorderLayout;
 import java.awt.Container;
-import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-import javax.swing.BoxLayout;
 import javax.swing.JFrame;
-import javax.swing.JTabbedPane;
 
+import ft.coffee.view.component.jtabbedpane.TabContentPanel;
 import ft.coffee.view.component.panel.FooterPanel;
 import ft.coffee.view.component.panel.HeaderPanel;
+import ft.coffee.view.component.panel.ThuNganContentPanel;
+import ft.coffee.view.component.panel.ToolHeThongPanel;
 
 public class MainFrame extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 
 	private HeaderPanel header;
-	private JTabbedPane contentPanel;
+	private TabContentPanel contentPanel;
 	private FooterPanel footer;
-	
 
 	public MainFrame() {
 		super("quan ly ca phe");
@@ -31,20 +33,40 @@ public class MainFrame extends JFrame {
 	private void initScreen() {
 		// Border border = BorderFactory.createLineBorder(Color.RED, 1);
 		header = new HeaderPanel();
-		header.showCardWithName(HeaderPanel.CARD_HE_THONG);
-		contentPanel = new JTabbedPane();
-		contentPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, 1000));
+		header.getCardHeThong().getBtnDanhMuc().addActionListener(headerListener);
+		header.getCardHeThong().getBtnSanPham().addActionListener(headerListener);
+		header.getCardHeThong().getBtnMatKhau().addActionListener(headerListener);
+
+		contentPanel = new TabContentPanel();
+		contentPanel.add("Thu ngân", new ThuNganContentPanel());
+
 		footer = new FooterPanel();
 
 		Container container = getContentPane();
-		container.setLayout(new BoxLayout(container, BoxLayout.Y_AXIS));
-		container.add(header);
-		container.add(contentPanel);
-		container.add(footer);
+		container.add(header, BorderLayout.NORTH);
+		container.add(contentPanel, BorderLayout.CENTER);
+		container.add(footer, BorderLayout.SOUTH);
+
 	}
-	
-//	public static void main(String[] args) {
-//		MainFrame ui = new MainFrame();
-//		ui.setVisible(true);
-//	}
+
+	private ActionListener headerListener = new ActionListener() {
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			Object action = e.getSource();
+			if (action == header.getCardHeThong().getBtnDanhMuc()) {
+				System.out.println("button danh muc");
+			} else if (action == header.getCardHeThong().getBtnSanPham()) {
+				contentPanel.add("Sản phẩm", new ToolHeThongPanel());
+			} else if (action == header.getCardHeThong().getBtnMatKhau()) {
+				ChangePasswordFrame changePasswordFrame = new ChangePasswordFrame(MainFrame.this);
+				changePasswordFrame.setVisible(true);
+				setEnabled(false);
+			}
+		}
+	};
+
+	public static void main(String[] args) {
+		MainFrame ui = new MainFrame();
+		ui.setVisible(true);
+	}
 }

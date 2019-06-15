@@ -54,7 +54,6 @@ public class LoginFrame extends JFrame implements ActionListener, KeyListener {
 		// init item in screen
 		initScreen();
 
-		checkExistUser();
 	}
 
 	private void initScreen() {
@@ -111,15 +110,12 @@ public class LoginFrame extends JFrame implements ActionListener, KeyListener {
 
 	}
 
-	public void isConnectDatabase() {
-		try {
-			ConnectUtil.getConnect();
-		} catch (SQLException e) {
-			JOptionPane.showMessageDialog(this, e.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
+	public void checkExistUser() {
+		if (!ConnectUtil.isConnectDatabase()) {
+			JOptionPane.showMessageDialog(this, "connect database fail", "ERROR", JOptionPane.ERROR_MESSAGE);
+			return;
 		}
-	}
 
-	private void checkExistUser() {
 		try {
 			if (!staffBo.isExistStaff("admin")) {
 				staffBo.addNewAdminAccount();

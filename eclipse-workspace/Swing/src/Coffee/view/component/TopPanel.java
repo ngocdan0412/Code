@@ -8,22 +8,24 @@ import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.border.Border;
-import javax.swing.border.TitledBorder;
 
-public class TopPanel extends JPanel {
+public class TopPanel extends JPanel implements ActionListener{
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
+	private JPanel pnC;
+	private JButton heThong;
+	private JButton thuNgan;
+	private JLabel ft;
+	private CardLayout cdLayout;
 	private HeThongPanel heThongPanel;
 	private ThuNganPanel thuNganPanel;
+	private DefaultPanel defaultPanel;
 	
 	public HeThongPanel getHeThongPanel() {
 		return heThongPanel;
@@ -34,78 +36,68 @@ public class TopPanel extends JPanel {
 	
 	public TopPanel() {
 		setPreferredSize(new Dimension(Integer.MAX_VALUE, 135));
-		setBackground(Color.RED); 
+		setBackground(null); 
 		tab();
 	}
 
-	public void tab() {
+	private void tab() {
 		JPanel pnN = new JPanel();
 		pnN.setLayout(new BorderLayout());
 
 		JPanel tab = new JPanel();
-		JButton heThong = new JButton("Hệ Thống");
-		heThong.setBackground(Color.LIGHT_GRAY);
-		heThong.setBorderPainted(false);
-		heThong.setFont(new Font("", Font.BOLD, 15));
+		heThong = new JButton("Hệ Thống");
+		setButton(heThong);
 
-		JButton thuNgan = new JButton("Thu Ngân");
-		thuNgan.setBackground(Color.LIGHT_GRAY);
-		thuNgan.setBorderPainted(false);
-		thuNgan.setFont(new Font("", Font.BOLD, 15));
+		thuNgan = new JButton("Thu Ngân");
+		setButton(thuNgan);
 
 		tab.add(heThong);
 		tab.add(thuNgan);
 
-		JLabel ft = new JLabel("FT Coffee   ");
+		ft = new JLabel("FT Coffee   ");
 		ft.setFont(new Font("", Font.BOLD, 20));
 
 		pnN.add(ft, BorderLayout.EAST);
 		pnN.add(tab, BorderLayout.WEST);
 
-		JPanel pnC = new JPanel();
-		pnC.setLayout(new CardLayout());
-
-		JPanel tabGoc = new JPanel();
-		tabGoc.setLayout(new BoxLayout(tabGoc, BoxLayout.X_AXIS));
-
-		JPanel bangGia = new JPanel();
-		Border bd = BorderFactory.createLineBorder(Color.BLUE, 2);
-		TitledBorder tb = BorderFactory.createTitledBorder(bd, "demo");
-		// bangGia.setSize(400, 100);
-		bangGia.setBorder(tb);
-		// bangGia.setPreferredSize(new Dimension(10, 10));
-		JPanel baoCao = new JPanel();
-		baoCao.setBorder(tb);
-		JPanel inHoaDon = new JPanel();
-		inHoaDon.setBorder(tb);
-		tabGoc.add(bangGia);
-		tabGoc.add(baoCao);
-		tabGoc.add(inHoaDon);
-
+		pnC = new JPanel();
+		cdLayout = new CardLayout();
+		pnC.setLayout(cdLayout);
+		
+		defaultPanel = new DefaultPanel();
 		heThongPanel = new HeThongPanel();
 		thuNganPanel = new ThuNganPanel();
 
-		pnC.add(tabGoc);
+		pnC.add(defaultPanel);
 		pnC.add(heThongPanel, "heThong");
 		pnC.add(thuNganPanel, "thuNgan");
 
 		this.setLayout(new BorderLayout());
 		this.add(pnN, BorderLayout.NORTH);
 		this.add(pnC, BorderLayout.CENTER);
+		
+		heThong.addActionListener(this);
+		thuNgan.addActionListener(this);
 
-		heThong.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				CardLayout cl = (CardLayout) pnC.getLayout();
-				cl.show(pnC, "heThong");
-			}
-		});
-		thuNgan.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				CardLayout cl = (CardLayout) pnC.getLayout();
-				cl.show(pnC, "thuNgan");
-			}
-		});
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		Object action = e.getSource();
+		if(action == heThong) {
+			cdLayout.show(pnC, "heThong");
+			thuNgan.setBackground(Color.LIGHT_GRAY);
+			heThong.setBackground(new Color(202, 229, 232));
+		}else if(action == thuNgan) {
+			cdLayout.show(pnC, "thuNgan");
+			heThong.setBackground(Color.LIGHT_GRAY);
+			thuNgan.setBackground(new Color(202, 229, 232));
+		}
+	}
+	
+	private void setButton(JButton bt) {
+		bt.setBackground(Color.LIGHT_GRAY);
+		bt.setBorderPainted(false);
+		bt.setFont(new Font("", Font.BOLD, 15));
 	}
 }

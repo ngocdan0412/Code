@@ -28,10 +28,23 @@ public class ResetPassword extends JFrame {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public ResetPassword() {
+	private JLabel lbName;
+	private JTextField txtName;
+	private JLabel lbMK;
+	private JPasswordField txtMK;
+	private JLabel lbNewMK;
+	private JPasswordField txtNewMK;
+	private JLabel lbEnterMK;
+	private JPasswordField txtEnterMK;
+	private JButton done;
+	private JButton exit;
+	private JFrame frame;
+	
+	public ResetPassword(JFrame frame) {
 		setUndecorated(true);
 		setSize(400, 230);
 		setLocationRelativeTo(null);
+		this.frame = frame;
 		resetPass();
 	}
 
@@ -45,38 +58,38 @@ public class ResetPassword extends JFrame {
 		JPanel pnC = new JPanel();
 		pnC.setLayout(null);
 		
-		JLabel lbName = new JLabel("Tên tài khoản");
+		lbName = new JLabel("Tên tài khoản");
 		lbName.setFont(new Font("", Font.PLAIN, 15));
 		lbName.setBounds(82, 10, 120, 30);
-		JTextField txtName = new JTextField("admin");
+		txtName = new JTextField("admin");
 		txtName.setEditable(false);
 		txtName.setFont(new Font("", Font.BOLD, 15));
 		txtName.setBounds(180, 10, 180, 30);
 		pnC.add(lbName);
 		pnC.add(txtName);
 		
-		JLabel lbMK = new JLabel("Nhập mật khẩu cũ");
+		lbMK = new JLabel("Nhập mật khẩu cũ");
 		lbMK.setFont(new Font("", Font.PLAIN, 15));
 		lbMK.setBounds(50, 45, 120, 30);
-		JPasswordField txtMK = new JPasswordField(15);
+		txtMK = new JPasswordField(15);
 		txtMK.setFont(new Font("", Font.PLAIN, 15));
 		txtMK.setBounds(180, 45, 180, 30);
 		pnC.add(lbMK);
 		pnC.add(txtMK);
 
-		JLabel lbNewMK = new JLabel("Nhập mật khẩu mới");
+		lbNewMK = new JLabel("Nhập mật khẩu mới");
 		lbNewMK.setFont(new Font("", Font.PLAIN, 15));
 		lbNewMK.setBounds(40, 80, 130, 30);
-		JPasswordField txtNewMK = new JPasswordField(15);
+		txtNewMK = new JPasswordField(15);
 		txtNewMK.setFont(new Font("", Font.PLAIN, 15));
 		txtNewMK.setBounds(180, 80, 180, 30);
 		pnC.add(lbNewMK);
 		pnC.add(txtNewMK);
 
-		JLabel lbEnterMK = new JLabel("Nhập lại mật khẩu");
+		lbEnterMK = new JLabel("Nhập lại mật khẩu");
 		lbEnterMK.setFont(new Font("", Font.PLAIN, 15));
 		lbEnterMK.setBounds(52, 115, 120, 30);
-		JPasswordField txtEnterMK = new JPasswordField(15);
+		txtEnterMK = new JPasswordField(15);
 		txtEnterMK.setFont(new Font("", Font.PLAIN, 15));
 		txtEnterMK.setBounds(180, 115, 180, 30);
 		pnC.add(lbEnterMK);
@@ -84,10 +97,10 @@ public class ResetPassword extends JFrame {
 		this.add(pnC, BorderLayout.CENTER);
 
 		JPanel bt = new JPanel();
-		JButton done = new JButton("Chấp nhận");
+		done = new JButton("Chấp nhận");
 		done.setPreferredSize(new Dimension(100, 30));
 		done.setBackground(Color.LIGHT_GRAY);
-		JButton exit = new JButton("Hủy bỏ");
+		exit = new JButton("Hủy bỏ");
 		exit.setPreferredSize(new Dimension(100, 30));
 		exit.setBackground(Color.LIGHT_GRAY);
 		bt.add(done);
@@ -106,6 +119,7 @@ public class ResetPassword extends JFrame {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				frame.setEnabled(true);
 				dispose();
 			}
 		});
@@ -115,15 +129,14 @@ public class ResetPassword extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				if (txtMK.getText().equals("")) {
-					JOptionPane.showMessageDialog(null, "Vui lòng nhập mật khẩu", "Lỗi", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Vui lòng nhập mật khẩu");
 				} else if (txtNewMK.getText().equals("")) {
-					JOptionPane.showMessageDialog(null, "Vui lòng nhập mật khẩu mới", "Lỗi", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Vui lòng nhập mật khẩu mới");
 				} else if (txtNewMK.getText().equals(txtMK.getText())) {
 					JOptionPane.showMessageDialog(null, "Mật khẩu đã từng được sử dụng", "Lỗi",
 							JOptionPane.ERROR_MESSAGE);
 				} else if (txtEnterMK.getText().equals("")) {
-					JOptionPane.showMessageDialog(null, "Vui lòng nhập lại mật khẩu mới", "Lỗi",
-							JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Vui lòng nhập lại mật khẩu mới");
 				} else if (!txtNewMK.getText().equals(txtEnterMK.getText())) {
 					JOptionPane.showMessageDialog(null, "Mật khẩu nhập lại không trùng", "Lỗi",
 							JOptionPane.ERROR_MESSAGE);
@@ -145,10 +158,13 @@ public class ResetPassword extends JFrame {
 							
 							ps2.executeUpdate();
 								JOptionPane.showMessageDialog(null, "Đổi mật khẩu thành công");
+								frame.setEnabled(true);
 								dispose();
 						} else {
 							JOptionPane.showMessageDialog(null, "Mật khẩu không chính xác!!", "Lỗi", JOptionPane.ERROR_MESSAGE);
-
+							txtMK.setText("");
+							txtNewMK.setText("");
+							txtEnterMK.setText("");
 						}
 					} catch (Exception e1) {
 						System.out.println(e1);
@@ -156,10 +172,5 @@ public class ResetPassword extends JFrame {
 				}
 			}
 		});
-	}
-
-	public static void main(String[] args) {
-		ResetPassword ui = new ResetPassword();
-		ui.setVisible(true);
 	}
 }

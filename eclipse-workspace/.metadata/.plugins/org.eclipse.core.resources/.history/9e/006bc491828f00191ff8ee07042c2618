@@ -1,0 +1,23 @@
+package Test;
+
+import java.awt.Color;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class run extends JFrame {
+	public run() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	private void chay() {
+		JButton addBtn = new JButton("+");
+//	    addBtn.setBounds(x_pos, y_pos, 30, 25);
+	    addBtn.setBorder(new RoundedBorder(10)); //10 is the radius
+	    addBtn.setForeground(Color.BLUE);
+	}
+	
+	public static void main(String[] args) {
+
+	}
+}

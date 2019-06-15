@@ -14,11 +14,14 @@ public class StaffDaoImpl implements StaffDao {
 	public Staff getStaff(String username) throws SQLException {
 		String sql = "select * from staff where userName = ?";
 		Staff staff = null;
+
 		Connection connection = ConnectUtil.getConnect();
+		PreparedStatement statement = null;
+		ResultSet resultset = null;
 		try {
-			PreparedStatement statement = connection.prepareStatement(sql);
+			statement = connection.prepareStatement(sql);
 			statement.setString(1, username);
-			ResultSet resultset = statement.executeQuery();
+			resultset = statement.executeQuery();
 			if (resultset.next()) {
 				staff = new Staff();
 				staff.setUserName(resultset.getString("userName"));
@@ -26,7 +29,9 @@ public class StaffDaoImpl implements StaffDao {
 		} catch (SQLException e) {
 			throw new SQLException(e.getMessage());
 		} finally {
-			ConnectUtil.disconnect(connection);
+			ConnectUtil.closeResultSet(resultset);
+			ConnectUtil.closeStatement(statement);
+			ConnectUtil.closeConnect(connection);
 		}
 		return staff;
 	}
@@ -38,14 +43,17 @@ public class StaffDaoImpl implements StaffDao {
 		String sqlAddStaff = "insert into staff(userName, password, staffCode, role) value(?, ?, CONCAT('NV', @id), ?);";
 		String sqlUnlockTableStaff = "unlock tables;";
 		Connection connection = ConnectUtil.getConnect();
+		PreparedStatement statement = null;
 		try {
 			connection.setAutoCommit(false);
 
-			PreparedStatement statement = connection.prepareStatement(sqlLockTableStaff);
+			statement = connection.prepareStatement(sqlLockTableStaff);
 			statement.execute();
+			ConnectUtil.closeStatement(statement);
 
 			statement = connection.prepareStatement(sqlGetTotalRecord);
 			statement.execute();
+			ConnectUtil.closeStatement(statement);
 
 			statement = connection.prepareStatement(sqlAddStaff);
 			statement.setString(1, staff.getUserName());
@@ -55,6 +63,7 @@ public class StaffDaoImpl implements StaffDao {
 
 			statement = connection.prepareStatement(sqlUnlockTableStaff);
 			statement.execute();
+			ConnectUtil.closeStatement(statement);
 
 			connection.commit();
 			if (changeCount != 0) {
@@ -64,7 +73,7 @@ public class StaffDaoImpl implements StaffDao {
 			connection.rollback();
 			throw new SQLException(e.getMessage());
 		} finally {
-			ConnectUtil.disconnect(connection);
+			ConnectUtil.closeConnect(connection);
 		}
 		return false;
 	}
@@ -74,11 +83,13 @@ public class StaffDaoImpl implements StaffDao {
 		String sql = "select * from staff where userName = ? and password = ?";
 		Staff staff = null;
 		Connection connection = ConnectUtil.getConnect();
+		PreparedStatement statement = null;
+		ResultSet resultset = null;
 		try {
-			PreparedStatement statement = connection.prepareStatement(sql);
+			statement = connection.prepareStatement(sql);
 			statement.setString(1, username);
 			statement.setString(2, password);
-			ResultSet resultset = statement.executeQuery();
+			resultset = statement.executeQuery();
 			if (resultset.next()) {
 				staff = new Staff();
 				staff.setUserName(resultset.getString("userName"));
@@ -87,7 +98,9 @@ public class StaffDaoImpl implements StaffDao {
 		} catch (SQLException e) {
 			throw new SQLException(e.getMessage());
 		} finally {
-			ConnectUtil.disconnect(connection);
+			ConnectUtil.closeResultSet(resultset);
+			ConnectUtil.closeStatement(statement);
+			ConnectUtil.closeConnect(connection);
 		}
 		return staff;
 	}
