@@ -6,12 +6,13 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="run2" key="selection"/>
+		<item value="TabContent" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="TabContentPanel"/>
 			<item value="run"/>
 			<item value="MapTools"/>
 			<item value="SwingControlDemo"/>
@@ -26,9 +27,9 @@
 			<item value="ketThuc"/>
 			<item value="matkhau"/>
 			<item value="nhanVien"/>
-			<item value="khachHang"/>
 		</list>
 		<list key="replacehistory">
+			<item value="TabContent"/>
 			<item value="run2"/>
 			<item value="run"/>
 			<item value="Test"/>
@@ -43,7 +44,6 @@
 			<item value="soDo"/>
 			<item value="mayIn"/>
 			<item value="mauIn"/>
-			<item value="TN"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
