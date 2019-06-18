@@ -1,0 +1,130 @@
+package Coffee.view.component;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Insets;
+
+import javax.swing.BorderFactory;
+import javax.swing.BoxLayout;
+import javax.swing.ButtonGroup;
+import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.border.Border;
+import javax.swing.border.EtchedBorder;
+import javax.swing.border.TitledBorder;
+
+public class DefaultPanel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private JLabel bangGia;
+	private JComboBox<String> cbBangGia;
+	private JLabel thuNgan;
+	private JComboBox<String> cbThuNgan;
+	private JLabel nhanVien;
+	private JComboBox<String> cbNhanVien;
+	
+	private ButtonGroup language;
+	private JRadioButton tiengViet;
+	private JRadioButton tiengNN;
+	private JCheckBox xemTHD;
+
+	public DefaultPanel() {
+		setBackground(new Color(202, 229, 232));
+		setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
+		tab();
+	}
+
+	private void tab() {
+
+		JPanel bang1 = new JPanel();
+		bang1.setLayout(new BoxLayout(bang1, BoxLayout.Y_AXIS));
+		bang1.setBackground(Color.BLUE);
+//		bang1.setMargin(new Insets(0, 0, 0, 0));
+		setPanel(bang1);
+
+		JPanel pnBG = new JPanel();
+		bangGia = new JLabel("Bảng giá:");
+		cbBangGia = new JComboBox<String>();
+		cbBangGia.addItem("Mặc định");
+		cbBangGia.addItem("Phòng lạnh");
+		setComboBox(cbBangGia);
+		pnBG.add(bangGia);
+		pnBG.add(cbBangGia);
+
+		JPanel pnTN = new JPanel();
+		thuNgan = new JLabel("Thu ngân:");
+		cbThuNgan = new JComboBox<String>();
+		cbThuNgan.addItem("Tất cả");
+		setComboBox(cbThuNgan);
+		pnTN.add(thuNgan);
+		pnTN.add(cbThuNgan);
+
+		JPanel pnNV = new JPanel();
+		nhanVien = new JLabel("Nhân viên:");
+		cbNhanVien = new JComboBox<String>();
+		cbNhanVien.addItem("");
+		setComboBox(cbNhanVien);
+		pnNV.add(nhanVien);
+		pnNV.add(cbNhanVien);
+
+		bang1.add(pnBG);
+		bang1.add(pnTN);
+		bang1.add(pnNV);
+		
+		this.add(bang1);
+
+		JPanel baoCao = new JPanel();
+		setPanel(baoCao);
+		setBorder(baoCao, " Báo cáo ");
+		
+		this.add(baoCao);
+
+		JPanel inHoaDon = new JPanel();
+		setLayout(new FlowLayout(FlowLayout.LEFT, 0, 0));
+		setPanel(inHoaDon);
+		setBorder(inHoaDon, " In hóa đơn ");
+
+		JPanel changeLanguage = new JPanel();
+		language = new ButtonGroup();
+		tiengViet = new JRadioButton("Tiếng Việt", true);
+		tiengViet.setBackground(null);
+		tiengNN = new JRadioButton("Tiếng nước ngoài", false);
+		tiengNN.setBackground(null);
+		language.add(tiengViet);
+		language.add(tiengNN);
+		changeLanguage.add(tiengViet);
+		changeLanguage.add(tiengNN);
+		
+		xemTHD = new JCheckBox("Xem trước hóa đơn", true);
+		xemTHD.setBackground(null);
+
+		inHoaDon.add(changeLanguage);
+		inHoaDon.add(xemTHD);
+		
+		this.add(inHoaDon);
+	}
+
+	private void setPanel(JPanel pn) {
+		pn.setBackground(null);
+		pn.setMaximumSize(new Dimension(350, 100));
+		pn.setMinimumSize(new Dimension(350, 100));
+	}
+
+	private void setBorder(JPanel pn, String name) {
+		Border bd = BorderFactory.createEtchedBorder(EtchedBorder.LOWERED);
+		TitledBorder tb = BorderFactory.createTitledBorder(bd, name);
+		pn.setBorder(tb);
+	}
+
+	private void setComboBox(JComboBox<String> cbb) {
+		cbb.setPreferredSize(new Dimension(260, 25));
+		cbb.setBackground(null);
+	}
+}

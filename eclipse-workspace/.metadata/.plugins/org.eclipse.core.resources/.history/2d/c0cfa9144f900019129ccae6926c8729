@@ -1,0 +1,71 @@
+package Test;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+import javax.swing.JButton;
+import javax.swing.JComponent;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+import org.jdatepicker.JDateComponentFactory;
+import org.jdatepicker.JDatePicker;
+import org.jdatepicker.impl.JDatePanelImpl;
+import org.jdatepicker.impl.JDatePickerImpl;
+import org.jdatepicker.impl.UtilDateModel;
+
+public class Run extends JFrame {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public Run() {
+		super("Demo Lịch");
+		setSize(400, 300);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLocationRelativeTo(null);
+		date();
+	}
+	private void date() {
+		JPanel pnC = new JPanel();
+		JTextField showDate = new JTextField();
+		showDate.setPreferredSize(new Dimension(150, 26));
+		showDate.setEditable(false);
+		JButton show = new JButton("...");
+		pnC.add(showDate);
+		pnC.add(show);
+		
+		this.add(pnC);
+		
+		JPanel jPanel = new JPanel();
+
+	    JDatePicker picker = new JDateComponentFactory().createJDatePicker();
+	    picker.setTextEditable(true);
+	    picker.setShowYearButtons(true);
+	    jPanel.add((JComponent) picker);
+	    
+	    Calendar cal = new GregorianCalendar();
+	    picker.getModel().setYear(cal.get(Calendar.YEAR));
+	    picker.getModel().setMonth(cal.get(Calendar.MONTH));
+	    picker.getModel().setDay(cal.get(Calendar.DAY_OF_MONTH));
+	    
+	    picker.getModel().setSelected(true);
+
+	    JPanel datePanel = new JPanel();
+//	    datePanel.setLayout(new BorderLayout());
+	    datePanel.add(jPanel);
+	    
+//	    this.getContentPane().add(datePanel);
+		
+
+	}
+	public static void main(String[] args) {
+		Run ui = new Run();
+		ui.setVisible(true);
+	}
+}

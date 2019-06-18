@@ -1,4 +1,4 @@
-!SESSION 2019-06-15 22:50:13.670 -----------------------------------------------
+!SESSION 2019-06-18 08:45:48.871 -----------------------------------------------
 eclipse.buildId=4.7.3.M20180330-0640
 java.version=1.8.0_211
 java.vendor=Oracle Corporation
@@ -7,9 +7,9 @@ Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
 This is a continuation of log file D:\Code\eclipse-workspace\.metadata\.bak_0.log
-Created Time: 2019-06-15 22:58:03.887
+Created Time: 2019-06-18 08:49:17.334
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:03.889
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:49:17.340
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -23,16 +23,20 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:691)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolder(IgnoreOperation.java:207)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolderMap(IgnoreOperation.java:158)
-	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:104)
-	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:03.892
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:49:17.357
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -46,16 +50,20 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:691)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolder(IgnoreOperation.java:207)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolderMap(IgnoreOperation.java:158)
-	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:104)
-	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:03.896
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:49:17.360
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -69,16 +77,20 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:691)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolder(IgnoreOperation.java:207)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolderMap(IgnoreOperation.java:158)
-	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:104)
-	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:03.900
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:49:17.363
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -92,16 +104,20 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:691)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolder(IgnoreOperation.java:207)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolderMap(IgnoreOperation.java:158)
-	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:104)
-	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:03.904
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:49:17.383
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -115,41 +131,20 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:691)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolder(IgnoreOperation.java:207)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolderMap(IgnoreOperation.java:158)
-	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:104)
-	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:03.906
-!MESSAGE Not closed bracket?
-!STACK 0
-org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
-	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
-	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createMatchers(PathMatcher.java:96)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.<init>(PathMatcher.java:81)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:125)
-	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
-	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:691)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolder(IgnoreOperation.java:207)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolderMap(IgnoreOperation.java:158)
-	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:104)
-	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:03.908
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:49:17.389
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -163,200 +158,45 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:691)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
 	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolder(IgnoreOperation.java:207)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolderMap(IgnoreOperation.java:158)
-	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:104)
-	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:03.911
-!MESSAGE Not closed bracket?
+!ENTRY org.eclipse.jface.text 2 0 2019-06-18 08:50:29.585
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2019-06-18 08:50:29.587
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 11 2019-06-18 08:50:30.282
+!MESSAGE The model index service was accessed either before it started or after it finished running.
 !STACK 0
-org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
-	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
-	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
-	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
-	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:691)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolder(IgnoreOperation.java:207)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolderMap(IgnoreOperation.java:158)
-	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:104)
-	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:126)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelIndex.suggest(EclipseModelIndex.java:211)
+	at org.eclipse.recommenders.models.SimpleModelProvider.acquireModel(SimpleModelProvider.java:70)
+	at org.eclipse.recommenders.models.PoolingModelProvider.access$0(PoolingModelProvider.java:1)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:96)
+	at org.eclipse.recommenders.models.PoolingModelProvider$ModelPoolFactoryMediator.makeObject(PoolingModelProvider.java:1)
+	at org.apache.commons.pool.impl.GenericKeyedObjectPool.borrowObject(GenericKeyedObjectPool.java:1220)
+	at org.eclipse.recommenders.models.PoolingModelProvider.acquireModel(PoolingModelProvider.java:67)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:65)
+	at org.eclipse.recommenders.internal.calls.rcp.RcpCallModelProvider.acquireModel(RcpCallModelProvider.java:1)
+	at org.eclipse.recommenders.internal.models.rcp.PrefetchModelArchiveJob.run(PrefetchModelArchiveJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:03.914
-!MESSAGE Not closed bracket?
-!STACK 0
-org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
-	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
-	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
-	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
-	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:691)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolder(IgnoreOperation.java:207)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolderMap(IgnoreOperation.java:158)
-	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:104)
-	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:03.916
-!MESSAGE Not closed bracket?
-!STACK 0
-org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
-	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
-	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
-	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
-	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:691)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolder(IgnoreOperation.java:207)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolderMap(IgnoreOperation.java:158)
-	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:104)
-	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:03.919
-!MESSAGE Not closed bracket?
-!STACK 0
-org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
-	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
-	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
-	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
-	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:691)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolder(IgnoreOperation.java:207)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolderMap(IgnoreOperation.java:158)
-	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:104)
-	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:03.922
-!MESSAGE Not closed bracket?
-!STACK 0
-org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
-	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
-	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
-	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
-	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:691)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolder(IgnoreOperation.java:207)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolderMap(IgnoreOperation.java:158)
-	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:104)
-	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:03.937
-!MESSAGE Not closed bracket?
-!STACK 0
-org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
-	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
-	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
-	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
-	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:691)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolder(IgnoreOperation.java:207)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolderMap(IgnoreOperation.java:158)
-	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:104)
-	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:03.941
-!MESSAGE Not closed bracket?
-!STACK 0
-org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
-	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
-	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
-	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
-	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:691)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolder(IgnoreOperation.java:207)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolderMap(IgnoreOperation.java:158)
-	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:104)
-	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:03.944
-!MESSAGE Not closed bracket?
-!STACK 0
-org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
-	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
-	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
-	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
-	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
-	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:691)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
-	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolder(IgnoreOperation.java:207)
-	at org.eclipse.egit.core.op.IgnoreOperation.pruneFolderMap(IgnoreOperation.java:158)
-	at org.eclipse.egit.core.op.IgnoreOperation.execute(IgnoreOperation.java:104)
-	at org.eclipse.egit.core.internal.job.JobUtil$1.run(JobUtil.java:53)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
-
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.670
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.649
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -379,12 +219,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.675
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.666
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -405,12 +246,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.678
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.680
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -431,12 +273,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.683
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.685
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -457,12 +300,841 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.686
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.724
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createMatchers(PathMatcher.java:96)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.<init>(PathMatcher.java:81)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:125)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.727
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.730
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.758
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.805
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.813
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.821
+!MESSAGE Exception caught while parsing ignore rule '�F  L�D8�����@ f.�     UAWAVAUATWVSH��8H��$�   �5"� ��tH�e�[^_A\A]A^A_]���    �n  H�H��H��   H����'.
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Exception caught while parsing ignore rule '�F  L�D8�����@ f.�     UAWAVAUATWVSH��8H��$�   �5"� ��tH�e�[^_A\A]A^A_]���    �n  H�H��H��   H����'.
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:440)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+Caused by: java.util.regex.PatternSyntaxException: Illegal/unsupported escape sequence near index 73
+�F  L�D8�����@ f\.�     UAWAVAUATWVSH��8H��\$�   �5"� ��tH�e�[^_A\A]A\^A_\]���    �n  H�H��H��   H����
+                                                                         ^
+	at java.util.regex.Pattern.error(Unknown Source)
+	at java.util.regex.Pattern.escape(Unknown Source)
+	at java.util.regex.Pattern.range(Unknown Source)
+	at java.util.regex.Pattern.clazz(Unknown Source)
+	at java.util.regex.Pattern.sequence(Unknown Source)
+	at java.util.regex.Pattern.expr(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at java.util.regex.Pattern.<init>(Unknown Source)
+	at java.util.regex.Pattern.compile(Unknown Source)
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:437)
+	... 21 more
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.824
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.827
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.830
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.833
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.835
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.838
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.841
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.847
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.849
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.852
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.855
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.859
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.863
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.865
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createMatchers(PathMatcher.java:96)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.<init>(PathMatcher.java:81)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:125)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.868
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.871
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.873
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.875
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.877
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.879
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.882
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.885
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:50:46.888
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.002
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -490,7 +1162,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.699
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.005
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -516,7 +1188,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.705
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.006
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -542,7 +1214,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.788
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.009
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -568,7 +1240,35 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.854
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.012
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createMatchers(PathMatcher.java:96)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.<init>(PathMatcher.java:81)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:125)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.014
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -594,7 +1294,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.894
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.016
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -620,7 +1320,85 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.907
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.019
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.021
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.024
+!MESSAGE Not closed bracket?
+!STACK 0
+org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
+	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:435)
+	at org.eclipse.jgit.ignore.internal.WildCardMatcher.<init>(WildCardMatcher.java:64)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createNameMatcher0(PathMatcher.java:167)
+	at org.eclipse.jgit.ignore.internal.PathMatcher.createPathMatcher(PathMatcher.java:126)
+	at org.eclipse.jgit.ignore.FastIgnoreRule.<init>(FastIgnoreRule.java:128)
+	at org.eclipse.jgit.ignore.IgnoreNode.parse(IgnoreNode.java:113)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.loadRulesFromFile(WorkingTreeIterator.java:1295)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator$RootIgnoreNode.load(WorkingTreeIterator.java:1280)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.getIgnoreNode(WorkingTreeIterator.java:698)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:666)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:646)
+	at org.eclipse.jgit.treewalk.WorkingTreeIterator.isEntryIgnored(WorkingTreeIterator.java:633)
+	at org.eclipse.jgit.treewalk.filter.IndexDiffFilter.include(IndexDiffFilter.java:158)
+	at org.eclipse.jgit.treewalk.filter.TreeFilter.matchFilter(TreeFilter.java:226)
+	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
+	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
+	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.027
 !MESSAGE Exception caught while parsing ignore rule '�F  L�D8�����@ f.�     UAWAVAUATWVSH��8H��$�   �5"� ��tH�e�[^_A\A]A^A_]���    �n  H�H��H��   H����'.
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Exception caught while parsing ignore rule '�F  L�D8�����@ f.�     UAWAVAUATWVSH��8H��$�   �5"� ��tH�e�[^_A\A]A^A_]���    �n  H�H��H��   H����'.
@@ -660,7 +1438,7 @@ Caused by: java.util.regex.PatternSyntaxException: Illegal/unsupported escape se
 	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:437)
 	... 20 more
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.919
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.031
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -686,7 +1464,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.933
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.034
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -712,7 +1490,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.936
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.037
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -738,7 +1516,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.948
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.040
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -764,7 +1542,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.953
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.044
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -790,7 +1568,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.956
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.047
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -816,7 +1594,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.960
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.050
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -842,7 +1620,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.963
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.053
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -868,7 +1646,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.966
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.056
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -894,7 +1672,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.970
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.061
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -920,7 +1698,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.973
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.064
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -946,7 +1724,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.976
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.067
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -972,7 +1750,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.979
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.071
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -998,7 +1776,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.982
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.073
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1026,7 +1804,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.984
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.077
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1052,7 +1830,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.987
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.079
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1078,7 +1856,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.989
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.082
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1104,7 +1882,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.991
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.084
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1130,7 +1908,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.994
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.087
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1156,7 +1934,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.996
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.089
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1182,7 +1960,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:05.999
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.091
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1208,7 +1986,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:06.001
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.093
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1234,7 +2012,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:06.003
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 08:54:26.096
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1260,7 +2038,7 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.880
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.580
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1283,12 +2061,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.882
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.583
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1309,12 +2088,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.884
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.588
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1335,12 +2115,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.886
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.591
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1361,12 +2142,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.891
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.594
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1389,12 +2171,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.893
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.597
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1415,12 +2198,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.895
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.599
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1441,12 +2225,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.898
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.603
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1467,12 +2252,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.900
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.606
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1493,12 +2279,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.902
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.611
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1519,12 +2306,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.905
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.614
 !MESSAGE Exception caught while parsing ignore rule '�F  L�D8�����@ f.�     UAWAVAUATWVSH��8H��$�   �5"� ��tH�e�[^_A\A]A^A_]���    �n  H�H��H��   H����'.
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Exception caught while parsing ignore rule '�F  L�D8�����@ f.�     UAWAVAUATWVSH��8H��$�   �5"� ��tH�e�[^_A\A]A^A_]���    �n  H�H��H��   H����'.
@@ -1545,9 +2333,10 @@ org.eclipse.jgit.errors.InvalidPatternException: Exception caught while parsing 
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 Caused by: java.util.regex.PatternSyntaxException: Illegal/unsupported escape sequence near index 73
 �F  L�D8�����@ f\.�     UAWAVAUATWVSH��8H��\$�   �5"� ��tH�e�[^_A\A]A\^A_\]���    �n  H�H��H��   H����
@@ -1562,9 +2351,9 @@ Caused by: java.util.regex.PatternSyntaxException: Illegal/unsupported escape se
 	at java.util.regex.Pattern.<init>(Unknown Source)
 	at java.util.regex.Pattern.compile(Unknown Source)
 	at org.eclipse.jgit.ignore.internal.Strings.convertGlob(Strings.java:437)
-	... 20 more
+	... 21 more
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.906
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.619
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1585,12 +2374,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.909
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.623
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1611,12 +2401,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.911
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.628
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1637,12 +2428,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.912
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.636
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1663,12 +2455,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.914
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.638
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1689,12 +2482,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.916
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.641
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1715,12 +2509,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.918
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.643
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1741,12 +2536,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.920
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.646
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1767,12 +2563,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.922
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.648
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1793,12 +2590,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.924
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.652
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1819,12 +2617,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.926
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.655
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1845,12 +2644,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.930
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.657
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1871,12 +2671,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.932
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.660
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1897,12 +2698,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.934
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.662
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1925,12 +2727,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.936
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.664
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1951,12 +2754,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.939
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.666
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -1977,12 +2781,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.941
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.669
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -2003,12 +2808,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.943
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.671
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -2029,12 +2835,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.946
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.673
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -2055,12 +2862,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.948
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.675
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -2081,12 +2889,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.951
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.678
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -2107,12 +2916,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.953
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.679
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -2133,12 +2943,13 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
 
-!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-15 22:58:12.955
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2019-06-18 09:03:50.681
 !MESSAGE Not closed bracket?
 !STACK 0
 org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
@@ -2159,7 +2970,8 @@ org.eclipse.jgit.errors.InvalidPatternException: Not closed bracket?
 	at org.eclipse.jgit.treewalk.filter.AndTreeFilter$List.matchFilter(AndTreeFilter.java:189)
 	at org.eclipse.jgit.treewalk.TreeWalk.next(TreeWalk.java:829)
 	at org.eclipse.jgit.lib.IndexDiff.diff(IndexDiff.java:440)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataFull(IndexDiffCacheEntry.java:675)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$8(IndexDiffCacheEntry.java:663)
-	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$4.run(IndexDiffCacheEntry.java:413)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.calcIndexDiffDataIncremental(IndexDiffCacheEntry.java:617)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry.access$13(IndexDiffCacheEntry.java:596)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffCacheEntry$5.updateIndexDiff(IndexDiffCacheEntry.java:542)
+	at org.eclipse.egit.core.internal.indexdiff.IndexDiffUpdateJob.run(IndexDiffUpdateJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
