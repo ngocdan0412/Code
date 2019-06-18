@@ -1,0 +1,12 @@
+package Test;
+
+import javax.swing.JFrame;
+
+public class Run extends JFrame {
+	public Run() {
+		// TODO Auto-generated constructor stub
+	}
+	private void date() {
+		
+	}
+}

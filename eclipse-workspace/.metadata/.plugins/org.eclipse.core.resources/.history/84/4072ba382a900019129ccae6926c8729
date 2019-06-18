@@ -1,0 +1,17 @@
+package Test;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class Run extends JFrame {
+	public Run() {
+		// TODO Auto-generated constructor stub
+	}
+	private void date() {
+		JPanel pnC = new JPanel();
+		JTextField showDate = new JTextField();
+		JButton show = new JButton("...");
+	}
+}

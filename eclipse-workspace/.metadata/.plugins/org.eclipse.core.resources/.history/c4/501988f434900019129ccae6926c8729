@@ -1,0 +1,36 @@
+package Coffee.view.component;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+
+import javax.swing.JPanel;
+import javax.swing.JTabbedPane;
+
+import Coffee.view.tabpanel.TabThuNgan;
+
+public class CenterPanel extends JPanel {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private JTabbedPane tabbedPane;
+	
+	public JTabbedPane tabbedPane() {
+		return tabbedPane;
+	}
+	
+	public CenterPanel() {
+		setMaximumSize(new Dimension(Integer.MAX_VALUE, 800));
+		tableTab();
+	}
+
+	public void tableTab() {
+		tabbedPane = new JTabbedPane();
+
+		tabbedPane.addTab("Thu ngân", null, new TabThuNgan(), "Show Thu Ngân");
+
+		this.setLayout(new BorderLayout());
+		this.add(tabbedPane);
+	}
+}

@@ -1,0 +1,9 @@
+package Coffee.view.tabpanel;
+
+import javax.swing.JPanel;
+
+public class TabSanPham extends JPanel {
+	public TabSanPham() {
+		// TODO Auto-generated constructor stub
+	}
+}
