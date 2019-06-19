@@ -4,6 +4,8 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.BorderFactory;
 import javax.swing.BoxLayout;
@@ -11,12 +13,14 @@ import javax.swing.ButtonGroup;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.border.Border;
 import javax.swing.border.EtchedBorder;
 import javax.swing.border.TitledBorder;
 
+import Coffee.view.LoginFrame;
 import Coffee.view.component.detail.showDate;
 
 public class DefaultPanel extends JPanel {
@@ -156,6 +160,14 @@ public class DefaultPanel extends JPanel {
 		inHoaDon.add(xemTHD);
 
 		this.add(inHoaDon);
+		
+		cbKH.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				JOptionPane.showMessageDialog(null, "Được rồi nha!!");
+			}
+		});
 	}
 
 	private void setPanel(JPanel pn, int stt) {

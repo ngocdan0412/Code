@@ -21,6 +21,7 @@ public class ShowLich2 extends JFrame {
 
 	public ShowLich2() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setResizable(false);// ~~~ không cho phóng lớn
 		setLocationRelativeTo(null);
 		setSize(300, 300);
 		GUI();

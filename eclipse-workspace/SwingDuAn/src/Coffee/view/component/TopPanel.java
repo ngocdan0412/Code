@@ -12,6 +12,7 @@ import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+
 public class TopPanel extends JPanel implements ActionListener{
 	/**
 	 * 
@@ -32,6 +33,13 @@ public class TopPanel extends JPanel implements ActionListener{
 	}
 	public ThuNganPanel getThuNganPanel() {
 		return thuNganPanel;
+	}
+	
+	public CardLayout getCdLayout() {
+		return cdLayout;
+	}
+	public JPanel getPNC() {
+		return pnC;
 	}
 	
 	public TopPanel() {
@@ -68,7 +76,7 @@ public class TopPanel extends JPanel implements ActionListener{
 		heThongPanel = new HeThongPanel();
 		thuNganPanel = new ThuNganPanel();
 
-		pnC.add(defaultPanel);
+		pnC.add(defaultPanel, "defaultPanel");
 		pnC.add(heThongPanel, "heThong");
 		pnC.add(thuNganPanel, "thuNgan");
 
@@ -78,7 +86,6 @@ public class TopPanel extends JPanel implements ActionListener{
 		
 		heThong.addActionListener(this);
 		thuNgan.addActionListener(this);
-
 	}
 	
 	@Override

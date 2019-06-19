@@ -40,7 +40,7 @@ public class LoginFrame extends JFrame {
 	
 	
 	public LoginFrame() {
-		setUndecorated(true);// ~~~~~~~~~~~~~~~~~~~Ẩn thanh tiêu đề
+		setUndecorated(true);// ~~~ Ẩn thanh tiêu đề
 		setSize(900, 600);
 		setLocationRelativeTo(null);
 		ImageIcon img = new ImageIcon("src\\Coffee\\img\\cafe4.png");
@@ -80,7 +80,7 @@ public class LoginFrame extends JFrame {
 
 		JLabel tieuDe = new JLabel("LOGIN");
 		tieuDe.setBounds(155, 30, 100, 50);
-		tieuDe.setFont(new Font("", Font.BOLD, 30));// ~~~~~~~~~~~~~~set font
+		tieuDe.setFont(new Font("", Font.BOLD, 30));// ~~~ set font
 		tieuDe.setForeground(new Color(104, 48, 37));
 		pnC.add(tieuDe);
 
@@ -138,7 +138,6 @@ public class LoginFrame extends JFrame {
 					JOptionPane.showMessageDialog(null, "Vui lòng nhập mật khẩu!!");
 				} else {
 					try {
-						// Class.forName("com.mysql.cj.jdbc.Driver");
 						Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/coffeeft", "root",
 								"");
 						String sql = "SELECT * FROM user WHERE Username=? AND Password=?";
@@ -151,7 +150,7 @@ public class LoginFrame extends JFrame {
 							resetPassword = new ResetPassword(null);
 							resetPassword.setUsername(txtTen.getText());
 							System.out.println(txtTen.getText());
-							dispose();// ~~~~~~~~~~~thoát trang
+							dispose();// ~~~ thoát trang
 							LoadMainFrame();
 						} else {
 							JOptionPane.showMessageDialog(null, "Tên đăng nhập hoặc mật khẩu không chính xác!!", "Lỗi",
