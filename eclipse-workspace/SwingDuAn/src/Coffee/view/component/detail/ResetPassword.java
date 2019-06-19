@@ -41,6 +41,12 @@ public class ResetPassword extends JFrame {
 	private JButton done;
 	private JButton exit;
 	private JFrame frame;
+	private String username;
+	
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
 
 	public ResetPassword(JFrame frame) {
 		setUndecorated(true);
@@ -50,10 +56,10 @@ public class ResetPassword extends JFrame {
 		resetPass();
 	}
 
-	protected String LoadLogin() {
-		LoginFrame ui = new LoginFrame();
-		return ui.getUsername();
-	}
+//	protected String LoadLogin() {
+//		LoginFrame ui = new LoginFrame();
+//		return ui.getUsername();
+//	}
 
 	public void resetPass() {
 		JLabel tieuDe = new JLabel("ĐỔI MẬT KHẨU", SwingConstants.CENTER);
@@ -65,11 +71,10 @@ public class ResetPassword extends JFrame {
 		JPanel pnC = new JPanel();
 		pnC.setLayout(null);
 
-//		lbName = new JLabel("Tên tài khoản");
-		lbName = new JLabel(LoadLogin());
+		lbName = new JLabel("Tên tài khoản");
 		lbName.setFont(new Font("", Font.PLAIN, 15));
 		lbName.setBounds(82, 10, 120, 30);
-		txtName = new JTextField(LoadLogin());
+		txtName = new JTextField(username);
 		txtName.setEditable(false);
 		txtName.setFont(new Font("", Font.BOLD, 15));
 		txtName.setBounds(180, 10, 180, 30);
@@ -128,7 +133,7 @@ public class ResetPassword extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				frame.setEnabled(true);
-				System.out.println(LoadLogin());
+				System.out.println(username);
 				dispose();
 			}
 		});

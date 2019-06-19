@@ -1,0 +1,13 @@
+package Coffee.view.component.detail;
+
+import javax.swing.JPanel;
+
+public class showDate extends JPanel{
+	public showDate() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	private void initScreen() {
+		
+	}
+}

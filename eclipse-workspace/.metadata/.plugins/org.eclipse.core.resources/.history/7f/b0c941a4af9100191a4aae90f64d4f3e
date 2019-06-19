@@ -1,0 +1,28 @@
+package Test;
+
+import java.awt.BorderLayout;
+import java.awt.Container;
+
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.border.Border;
+
+public class run {
+
+  public static void main(String[] a) {
+    JFrame frame = new JFrame("Empty Borders");
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    Border emptyBorder = BorderFactory.createEmptyBorder(20, 20, 0, 0);
+    JButton emptyButton = new JButton("With Empty");
+    emptyButton.setBorder(emptyBorder);
+    JButton nonemptyButton = new JButton("Without Empty");
+    Container contentPane = frame.getContentPane();
+    contentPane.add(emptyButton, BorderLayout.NORTH);
+    contentPane.add(nonemptyButton, BorderLayout.SOUTH);
+    frame.pack();
+    frame.setSize(300, 500);
+    frame.setVisible(true);
+  }
+
+}

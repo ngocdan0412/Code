@@ -1,0 +1,6 @@
+#Tue Jun 18 23:32:17 ICT 2019
+__DEFAULT__=false
+org.eclipse.sdk.Eclipse.master=true
+org.eclipse.sdk.Google.master=true
+org.eclipse.help.ui.localSearch.master=true
+expression=toppanel

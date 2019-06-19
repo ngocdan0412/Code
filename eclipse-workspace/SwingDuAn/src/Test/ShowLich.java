@@ -9,6 +9,8 @@ import javax.swing.JPanel;
 
 import org.jdatepicker.JDateComponentFactory;
 import org.jdatepicker.JDatePicker;
+import org.jdatepicker.impl.JDatePanelImpl;
+import org.jdatepicker.impl.JDatePickerImpl;
 
 public class ShowLich extends JFrame {
 	/**
@@ -37,13 +39,7 @@ public class ShowLich extends JFrame {
 	    picker.getModel().setDay(cal.get(Calendar.DAY_OF_MONTH));
 	    
 	    picker.getModel().setSelected(true);
-	    
 	    this.add(jPanel);
-	    
-//	    JPanel pn = new JPanel();
-//	    JButton bt = new JButton("▼");
-//	    pn.add(bt);
-//	    this.add(pn);
 		
 
 	}
