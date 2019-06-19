@@ -45,7 +45,7 @@ public class LoginFrame extends JFrame {
 		setLocationRelativeTo(null);
 		ImageIcon img = new ImageIcon("src\\Coffee\\img\\cafe4.png");
 		setIconImage(img.getImage());
-		login();
+		initScreen();
 	}
 
 	private void LoadMainFrame() {
@@ -53,7 +53,7 @@ public class LoginFrame extends JFrame {
 		ui.setVisible(true);
 	}
 
-	public void login() {
+	private void initScreen() {
 		ImageIcon background_img = new ImageIcon("src\\Coffee\\img\\bgcf.jpg");
 		Image img = background_img.getImage();
 		Image temp_img = img.getScaledInstance(900, 600, Image.SCALE_SMOOTH);

@@ -37,10 +37,10 @@ public class TopPanel extends JPanel implements ActionListener{
 	public TopPanel() {
 		setPreferredSize(new Dimension(Integer.MAX_VALUE, 135));
 		setBackground(null); 
-		tab();
+		initScreen();
 	}
 
-	private void tab() {
+	private void initScreen() {
 		JPanel pnN = new JPanel();
 		pnN.setLayout(new BorderLayout());
 

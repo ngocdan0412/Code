@@ -49,10 +49,10 @@ public class DefaultPanel extends JPanel {
 	public DefaultPanel() {
 		setBackground(new Color(202, 229, 232));
 		setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
-		tab();
+		initScreen();
 	}
 
-	private void tab() {
+	private void initScreen() {
 
 		JPanel bang1 = new JPanel();
 		bang1.setBorder(BorderFactory.createEmptyBorder(0, 0, 0, -10));

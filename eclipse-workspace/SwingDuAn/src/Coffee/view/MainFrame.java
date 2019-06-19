@@ -12,7 +12,6 @@ import Coffee.view.component.BottomPanel;
 import Coffee.view.component.CenterPanel;
 import Coffee.view.component.TopPanel;
 import Coffee.view.component.detail.ResetPassword;
-import Coffee.view.component.detail.TabContent;
 import Coffee.view.tabpanel.TabKhachHang;
 import Coffee.view.tabpanel.TabNhanVien;
 import Coffee.view.tabpanel.TabSanPham;
@@ -25,8 +24,7 @@ public class MainFrame extends JFrame{
 	private static final long serialVersionUID = 1L;
 
 	private TopPanel topPanel;
-//	private CenterPanel centerPanel;
-	private TabContent tabContent;
+	private CenterPanel centerPanel;
 	private BottomPanel bottomPanel;
 	public MainFrame() {
 		super("DỰ ÁN FT COFFEE");
@@ -35,30 +33,28 @@ public class MainFrame extends JFrame{
 		setLocationRelativeTo(null);
 		ImageIcon img = new ImageIcon("src\\Coffee\\img\\cafe4.png");
 		setIconImage(img.getImage());
-		pnN();
+		initScreen();
 	}
 
-	private void pnN() {
+	private void initScreen() {
 		topPanel = new TopPanel();
 		topPanel.getHeThongPanel().getMatKhau().addActionListener(hd);
 		topPanel.getHeThongPanel().getSanPham().addActionListener(hd);
 		topPanel.getHeThongPanel().getKhachHang().addActionListener(hd);
 		topPanel.getHeThongPanel().getNhanVien().addActionListener(hd);
 
-//		centerPanel = new CenterPanel();
-		tabContent = new TabContent();
-		tabContent.add("Thu Ngân", new TabThuNgan());
+		centerPanel = new CenterPanel();
+		centerPanel.add("Thu Ngân", new TabThuNgan());
 
 		bottomPanel = new BottomPanel();
 
 		Container con = getContentPane();
 		con.add(topPanel, BorderLayout.NORTH);
-//		con.add(centerPanel, BorderLayout.CENTER);
-		con.add(tabContent, BorderLayout.CENTER);
+		con.add(centerPanel, BorderLayout.CENTER);
 		con.add(bottomPanel, BorderLayout.SOUTH);
 	}
 
-	public ActionListener hd = new ActionListener() {
+	private ActionListener hd = new ActionListener() {
 		
 		@Override
 		public void actionPerformed(ActionEvent e) {
@@ -67,14 +63,11 @@ public class MainFrame extends JFrame{
 				LoadResetPassword();
 				setEnabled(false);
 			}else if(action == topPanel.getHeThongPanel().getSanPham()) {
-//				centerPanel.getTabbedPane().addTab("Sản Phẩm", new TabSanPham());
-				tabContent.addTab("Sản Phẩm", new TabSanPham());
+				centerPanel.addTab("Sản Phẩm", new TabSanPham());
 			}else if(action == topPanel.getHeThongPanel().getKhachHang()) {
-//				centerPanel.getTabbedPane().add("Khách hàng", new TabKhachHang());
-				tabContent.addTab("Khách hàng", new TabKhachHang());
+				centerPanel.addTab("Khách hàng", new TabKhachHang());
 			}else if(action == topPanel.getHeThongPanel().getNhanVien()) {
-//				centerPanel.getTabbedPane().add("Nhân Viên", new TabNhanVien());
-				tabContent.add("Nhân Viên", new TabNhanVien());
+				centerPanel.add("Nhân Viên", new TabNhanVien());
 			}
 		}
 	};

@@ -10,7 +10,8 @@ import javax.swing.JFrame;
 import ft.coffee.view.component.jtabbedpane.TabContentPanel;
 import ft.coffee.view.component.panel.FooterPanel;
 import ft.coffee.view.component.panel.HeaderPanel;
-import ft.coffee.view.component.panel.ThuNganContentPanel;
+import ft.coffee.view.component.panel.SanPhamTabContentPanel;
+import ft.coffee.view.component.panel.ThuNganTabContentPanel;
 import ft.coffee.view.component.panel.ToolHeThongPanel;
 
 public class MainFrame extends JFrame {
@@ -38,7 +39,7 @@ public class MainFrame extends JFrame {
 		header.getCardHeThong().getBtnMatKhau().addActionListener(headerListener);
 
 		contentPanel = new TabContentPanel();
-		contentPanel.add("Thu ngân", new ThuNganContentPanel());
+		contentPanel.add("Thu ngân", new ThuNganTabContentPanel());
 
 		footer = new FooterPanel();
 

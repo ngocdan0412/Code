@@ -30,10 +30,10 @@ public class ThuNganPanel extends JPanel{
 	
 	public ThuNganPanel() {
 		setBackground(new Color(202, 229, 232));
-		pnHT();
+		initScreen();
 	}
 	
-	public void pnHT() {
+	private void initScreen() {
 		mauIn = new JButton();
 		createBT(mauIn, "Mẫu in", "src\\Coffee\\img\\TN1.png");
 		

@@ -44,10 +44,10 @@ public class HeThongPanel extends JPanel {
 	
 	public HeThongPanel() {
 		setBackground(new Color(202, 229, 232));
-		pnHT();
+		initScreen();
 	}
 
-	public void pnHT() {
+	private void initScreen() {
 		danhMuc = new JButton();
 		createBT(danhMuc, "Danh mục", "src\\Coffee\\img\\HT1.png");
 		

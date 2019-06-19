@@ -53,7 +53,7 @@ public class ResetPassword extends JFrame {
 		setSize(400, 230);
 		setLocationRelativeTo(null);
 		this.frame = frame;
-		resetPass();
+		initScreen();
 	}
 
 //	protected String LoadLogin() {
@@ -61,7 +61,7 @@ public class ResetPassword extends JFrame {
 //		return ui.getUsername();
 //	}
 
-	public void resetPass() {
+	private void initScreen() {
 		JLabel tieuDe = new JLabel("ĐỔI MẬT KHẨU", SwingConstants.CENTER);
 		tieuDe.setFont(new Font("", Font.BOLD, 25));
 

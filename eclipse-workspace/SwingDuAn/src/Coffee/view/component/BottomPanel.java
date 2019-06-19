@@ -19,10 +19,10 @@ public class BottomPanel extends JPanel {
 	public BottomPanel() {
 		setPreferredSize(new Dimension(Integer.MAX_VALUE, 30));
 		setBackground(Color.BLUE);
-		date();
+		initScreen();
 	}
 
-	public void date() {
+	private void initScreen() {
 		JPanel showDate = new JPanel();
 		showDate.setBackground(Color.YELLOW);
 		
