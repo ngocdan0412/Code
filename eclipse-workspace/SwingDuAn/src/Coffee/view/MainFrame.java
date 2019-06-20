@@ -12,6 +12,7 @@ import Coffee.view.component.BottomPanel;
 import Coffee.view.component.CenterPanel;
 import Coffee.view.component.TopPanel;
 import Coffee.view.component.detail.ResetPassword;
+import Coffee.view.component.detail.DanhMuc;
 import Coffee.view.tabpanel.TabKhachHang;
 import Coffee.view.tabpanel.TabNhanVien;
 import Coffee.view.tabpanel.TabSanPham;
@@ -23,9 +24,11 @@ public class MainFrame extends JFrame{
 	 */
 	private static final long serialVersionUID = 1L;
 
+//	private ActionButton actionButton;
 	private TopPanel topPanel;
 	private CenterPanel centerPanel;
 	private BottomPanel bottomPanel;
+	
 	public MainFrame() {
 		super("DỰ ÁN FT COFFEE");
 		setSize(1200, 750);
@@ -37,11 +40,15 @@ public class MainFrame extends JFrame{
 	}
 
 	private void initScreen() {
+//		actionButton = new ActionButton(MainFrame.this, topPanel, centerPanel, bottomPanel);
+		
 		topPanel = new TopPanel();
-		topPanel.getHeThongPanel().getMatKhau().addActionListener(hd);
+		topPanel.getHeThongPanel().getDanhMuc().addActionListener(hd);
+		topPanel.getHeThongPanel().getTuyChon().addActionListener(hd);
 		topPanel.getHeThongPanel().getSanPham().addActionListener(hd);
 		topPanel.getHeThongPanel().getKhachHang().addActionListener(hd);
 		topPanel.getHeThongPanel().getNhanVien().addActionListener(hd);
+		topPanel.getHeThongPanel().getMatKhau().addActionListener(hd);
 
 		centerPanel = new CenterPanel();
 		centerPanel.add("Thu Ngân", new TabThuNgan());
@@ -59,15 +66,18 @@ public class MainFrame extends JFrame{
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			Object action = e.getSource();
-			if(action == topPanel.getHeThongPanel().getMatKhau()) {
-				LoadResetPassword();
-				setEnabled(false);
+			if(action == topPanel.getHeThongPanel().getDanhMuc()) {
+				DanhMuc ui = new DanhMuc();
+				ui.setVisible(true);
 			}else if(action == topPanel.getHeThongPanel().getSanPham()) {
 				centerPanel.addTab("Sản Phẩm", new TabSanPham());
 			}else if(action == topPanel.getHeThongPanel().getKhachHang()) {
 				centerPanel.addTab("Khách hàng", new TabKhachHang());
 			}else if(action == topPanel.getHeThongPanel().getNhanVien()) {
 				centerPanel.add("Nhân Viên", new TabNhanVien());
+			}else if(action == topPanel.getHeThongPanel().getMatKhau()) {
+				LoadResetPassword();
+				setEnabled(false);
 			}
 		}
 	};

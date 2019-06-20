@@ -29,6 +29,12 @@ public class HeThongPanel extends JPanel {
 	private JButton matKhau;
 	private JButton ketThuc;
 	
+	public JButton getDanhMuc() {
+		return danhMuc;
+	}
+	public JButton getTuyChon() {
+		return tuyChon;
+	}
 	public JButton getSanPham() {
 		return sanPham;
 	}

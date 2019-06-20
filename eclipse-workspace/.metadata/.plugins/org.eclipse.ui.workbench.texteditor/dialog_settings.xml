@@ -6,12 +6,13 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="setUsername" key="selection"/>
+		<item value="hd" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="actionButton.getHd()"/>
 			<item value="setUsername"/>
 			<item value="TabContentPanel"/>
 			<item value="run"/>
@@ -26,9 +27,9 @@
 			<item value="TabbedPaneExample"/>
 			<item value="DemoJTabbedPane"/>
 			<item value="ketThuc"/>
-			<item value="matkhau"/>
 		</list>
 		<list key="replacehistory">
+			<item value="hd"/>
 			<item value="TabContent"/>
 			<item value="run2"/>
 			<item value="run"/>
@@ -43,7 +44,6 @@
 			<item value="datBan"/>
 			<item value="soDo"/>
 			<item value="mayIn"/>
-			<item value="mauIn"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
