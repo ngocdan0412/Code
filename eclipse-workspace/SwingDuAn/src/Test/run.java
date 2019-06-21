@@ -3,76 +3,74 @@ package Test;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
- 
+
 public class run {
-    
-   private JFrame mainFrame;
-   private JLabel headerLabel;
-   private JLabel statusLabel;
-   private JPanel controlPanel;
 
-   public run(){
-      prepareGUI();
-   }
+	private JFrame mainFrame;
+	private JLabel headerLabel;
+	private JLabel statusLabel;
+	private JPanel controlPanel;
 
-   public static void main(String[] args){
-      run  swingControlDemo = new run();      
-      swingControlDemo.showComboboxDemo();
-   }
+	public run() {
+		prepareGUI();
+	}
 
-   private void prepareGUI(){
-      mainFrame = new JFrame("Vi du Java Swing");
-      mainFrame.setSize(400,400);
-      mainFrame.setLayout(new GridLayout(3, 1));
-      mainFrame.addWindowListener(new WindowAdapter() {
-         public void windowClosing(WindowEvent windowEvent){
-            System.exit(0);
-         }        
-      });    
-      headerLabel = new JLabel("", JLabel.CENTER);        
-      statusLabel = new JLabel("",JLabel.CENTER);    
+	public static void main(String[] args) {
+		run swingControlDemo = new run();
+		swingControlDemo.showComboboxDemo();
+	}
 
-      statusLabel.setSize(350,100);
+	private void prepareGUI() {
+		mainFrame = new JFrame("Vi du Java Swing");
+		mainFrame.setSize(400, 400);
+		mainFrame.setLayout(new GridLayout(3, 1));
+		mainFrame.addWindowListener(new WindowAdapter() {
+			public void windowClosing(WindowEvent windowEvent) {
+				System.exit(0);
+			}
+		});
+		headerLabel = new JLabel("", JLabel.CENTER);
+		statusLabel = new JLabel("", JLabel.CENTER);
 
-      controlPanel = new JPanel();
-      controlPanel.setLayout(new FlowLayout());
+		statusLabel.setSize(350, 100);
 
-      mainFrame.add(headerLabel);
-      mainFrame.add(controlPanel);
-      mainFrame.add(statusLabel);
-      mainFrame.setVisible(true);  
-   }
+		controlPanel = new JPanel();
+		controlPanel.setLayout(new FlowLayout());
 
-   private void showComboboxDemo(){                                    
-      headerLabel.setText("Control in action: JComboBox"); 
+		mainFrame.add(headerLabel);
+		mainFrame.add(controlPanel);
+		mainFrame.add(statusLabel);
+		mainFrame.setVisible(true);
+	}
 
-      final DefaultComboBoxModel<String> fruitsName = new DefaultComboBoxModel<String>();
+	private void showComboboxDemo() {
+		headerLabel.setText("Control in action: JComboBox");
 
-      fruitsName.addElement("Apple");
-      fruitsName.addElement("Grapes");
-      fruitsName.addElement("Mango");
-      fruitsName.addElement("Peer");
+		final DefaultComboBoxModel<String> fruitsName = new DefaultComboBoxModel<String>();
 
-      final JComboBox<String> fruitCombo = new JComboBox<String>(fruitsName);    
-      fruitCombo.setSelectedIndex(0);
+		fruitsName.addElement("Apple");
+		fruitsName.addElement("Grapes");
+		fruitsName.addElement("Mango");
+		fruitsName.addElement("Peer");
 
-      JScrollPane fruitListScrollPane = new JScrollPane(fruitCombo);    
+		final JComboBox<String> fruitCombo = new JComboBox<String>(fruitsName);
+		fruitCombo.setSelectedIndex(0);
 
-      JButton showButton = new JButton("Show");
+		JScrollPane fruitListScrollPane = new JScrollPane(fruitCombo);
 
-      showButton.addActionListener(new ActionListener() {
-         public void actionPerformed(ActionEvent e) { 
-            String data = "";
-            if (fruitCombo.getSelectedIndex() != -1) {               
-               data = "Fruits Selected: " 
-                  + fruitCombo.getItemAt
-                    (fruitCombo.getSelectedIndex());             
-            }              
-            statusLabel.setText(data);
-         }
-      }); 
-      controlPanel.add(fruitListScrollPane);          
-      controlPanel.add(showButton);    
-      mainFrame.setVisible(true);             
-   }
+		JButton showButton = new JButton("Show");
+
+		showButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String data = "";
+				if (fruitCombo.getSelectedIndex() != -1) {
+					data = "Fruits Selected: " + fruitCombo.getItemAt(fruitCombo.getSelectedIndex());
+				}
+				statusLabel.setText(data);
+			}
+		});
+		controlPanel.add(fruitListScrollPane);
+		controlPanel.add(showButton);
+		mainFrame.setVisible(true);
+	}
 }

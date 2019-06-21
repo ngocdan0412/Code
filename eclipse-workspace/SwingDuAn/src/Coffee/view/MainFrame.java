@@ -24,7 +24,6 @@ public class MainFrame extends JFrame{
 	 */
 	private static final long serialVersionUID = 1L;
 
-//	private ActionButton actionButton;
 	private TopPanel topPanel;
 	private CenterPanel centerPanel;
 	private BottomPanel bottomPanel;
@@ -40,7 +39,6 @@ public class MainFrame extends JFrame{
 	}
 
 	private void initScreen() {
-//		actionButton = new ActionButton(MainFrame.this, topPanel, centerPanel, bottomPanel);
 		
 		topPanel = new TopPanel();
 		topPanel.getHeThongPanel().getDanhMuc().addActionListener(hd);

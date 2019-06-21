@@ -6,12 +6,18 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="hd" key="selection"/>
+		<item value="pnBangGia" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="pnC"/>
+			<item value="pnTabTN"/>
+			<item value="thuNganTable"/>
+			<item value="thuNganTableModel"/>
+			<item value="q"/>
+			<item value="pnS"/>
 			<item value="actionButton.getHd()"/>
 			<item value="setUsername"/>
 			<item value="TabContentPanel"/>
@@ -21,14 +27,15 @@
 			<item value="tabGoc"/>
 			<item value="DefaultPanel"/>
 			<item value="t"/>
-			<item value="test"/>
-			<item value="DemoSimpleBorders"/>
-			<item value="DemoCustomJTabbedPane"/>
-			<item value="TabbedPaneExample"/>
-			<item value="DemoJTabbedPane"/>
-			<item value="ketThuc"/>
 		</list>
 		<list key="replacehistory">
+			<item value="pnBangGia"/>
+			<item value="pnTabBG"/>
+			<item value="bangGiaTable"/>
+			<item value="bangGiaTableModel"/>
+			<item value="cardBangGia"/>
+			<item value="pnC"/>
+			<item value="pnN"/>
 			<item value="hd"/>
 			<item value="TabContent"/>
 			<item value="run2"/>
@@ -37,13 +44,6 @@
 			<item value="this"/>
 			<item value="MainFrame"/>
 			<item value="lbLogo"/>
-			<item value="pnLogo"/>
-			<item value="thuChi"/>
-			<item value="doanhThu"/>
-			<item value="hoaDon"/>
-			<item value="datBan"/>
-			<item value="soDo"/>
-			<item value="mayIn"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
