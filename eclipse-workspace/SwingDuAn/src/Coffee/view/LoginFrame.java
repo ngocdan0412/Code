@@ -36,9 +36,7 @@ public class LoginFrame extends JFrame {
 	private JTextField txtTen;
 	private ResetPassword resetPassword;
 	private int dem = 0;
-	
-	
-	
+
 	public LoginFrame() {
 		setUndecorated(true);// ~~~ Ẩn thanh tiêu đề
 		setSize(900, 600);

@@ -74,7 +74,7 @@ public class ResetPassword extends JFrame {
 		lbName = new JLabel("Tên tài khoản");
 		lbName.setFont(new Font("", Font.PLAIN, 15));
 		lbName.setBounds(82, 10, 120, 30);
-		txtName = new JTextField(username);
+		txtName = new JTextField("admin");
 		txtName.setEditable(false);
 		txtName.setFont(new Font("", Font.BOLD, 15));
 		txtName.setBounds(180, 10, 180, 30);
@@ -133,7 +133,7 @@ public class ResetPassword extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				frame.setEnabled(true);
-				System.out.println(username);
+//				System.out.println(username);
 				dispose();
 			}
 		});

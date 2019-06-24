@@ -79,6 +79,7 @@ public class MainFrame extends JFrame{
 			}
 		}
 	};
+	
 	protected void LoadResetPassword() {
 		ResetPassword ui = new ResetPassword(MainFrame.this);
 		ui.setVisible(true);
