@@ -34,7 +34,6 @@
 <fullyQualifiedTypeName name="ft.coffee.view.MainFrame"/>
 <fullyQualifiedTypeName name="javax.swing.table.DefaultTableModel"/>
 <fullyQualifiedTypeName name="common.grouptable.JCustomTable"/>
-<fullyQualifiedTypeName name="javax.swing.JScrollPane"/>
 <fullyQualifiedTypeName name="javax.swing.event.AncestorListener"/>
 <fullyQualifiedTypeName name="Coffee.view.LoginFrame"/>
 <fullyQualifiedTypeName name="Coffee.view.tabpanel.TabThuNgan"/>
@@ -52,12 +51,13 @@
 <fullyQualifiedTypeName name="Test.MyJComboBox"/>
 <fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="javax.swing.JComboBox"/>
-<fullyQualifiedTypeName name="javax.swing.BorderFactory"/>
-<fullyQualifiedTypeName name="javax.swing.JPanel"/>
 <fullyQualifiedTypeName name="java.awt.CardLayout"/>
 <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="javax.swing.JScrollPane"/>
 <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
+<fullyQualifiedTypeName name="javax.swing.BorderFactory"/>
 <fullyQualifiedTypeName name="java.awt.Dimension"/>
 <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+<fullyQualifiedTypeName name="javax.swing.JPanel"/>
 </qualifiedTypeNameHistroy>

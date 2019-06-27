@@ -43,7 +43,6 @@ public class TabThuNgan extends JPanel {
 
 	private void initScreen() {
 		JPanel menuThuNgan = new JPanel();
-//		menuThuNgan.setLayout(new FlowLayout(FlowLayout.LEFT, 0, 0));
 		btnDuLieu = new JButton();
 		setButtonMenu(menuThuNgan, btnDuLieu, "Dữ Liệu");
 		btnCapNhat = new JButton();
@@ -58,10 +57,7 @@ public class TabThuNgan extends JPanel {
 		setButtonMenu(menuThuNgan, btnThanhToan, "Thanh toán");
 		btnXacNhan = new JButton();
 		setButtonMenu(menuThuNgan, btnXacNhan, "Xác nhận");
-		
-//		pnTabTN = new JScrollPane();
-//		pnTabTN.add(menuThuNgan);
-		
+
 		this.add(menuThuNgan, BorderLayout.NORTH);
 		
 		thuNganTableModel = new DefaultTableModel();
@@ -98,7 +94,6 @@ public class TabThuNgan extends JPanel {
 		thuNganTable.addColumnGroup(khachHangColumnGroup);
 		
 		pnTabTN = new JScrollPane(thuNganTable);
-//		pnTabTN.add(thuNganTable);
 		
 		this.add(pnTabTN, BorderLayout.CENTER);
 	}
