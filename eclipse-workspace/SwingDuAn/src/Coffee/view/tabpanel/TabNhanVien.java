@@ -4,6 +4,8 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
@@ -15,10 +17,10 @@ import javax.swing.JScrollPane;
 import javax.swing.border.EtchedBorder;
 import javax.swing.table.DefaultTableModel;
 
-import common.grouptable.ColumnGroup;
+import Coffee.view.tabpanel.dialog.themBoPhan;
 import common.grouptable.JCustomTable;
 
-public class TabNhanVien extends JPanel {
+public class TabNhanVien extends JPanel{
 	/**
 	 * 
 	 */
@@ -49,6 +51,7 @@ public class TabNhanVien extends JPanel {
 		btnDongBo = new JButton();
 		setButtonMenu(menuNhanVien, btnDongBo, "Đồng bộ");
 		btnThemBP = new JButton();
+		btnThemBP.addActionListener(hd);
 		setButtonMenu(menuNhanVien, btnThemBP, "Thêm BP");
 		btnSuaBP = new JButton();
 		setButtonMenu(menuNhanVien, btnSuaBP, "Sửa BP");
@@ -68,6 +71,9 @@ public class TabNhanVien extends JPanel {
 
 		pnTabNVLeft = new JScrollPane(pnBoPhan);
 		pnTabNVLeft.setPreferredSize(new Dimension(280, 830));
+		
+		
+		
 
 		JPanel tt = new JPanel();
 //		tt.setPreferredSize(new Dimension(Integer.MAX_VALUE, Integer.MAX_VALUE));
@@ -92,6 +98,22 @@ public class TabNhanVien extends JPanel {
 
 		nhanVienTable = new JCustomTable(nhanVienTableModel);
 		nhanVienTable.setBackground(Color.RED);
+		
+		nhanVienTable.setAutoResizeMode(JCustomTable.AUTO_RESIZE_OFF);
+
+		nhanVienTable.getColumnModel().getColumn(0).setPreferredWidth(30);
+		nhanVienTable.getColumnModel().getColumn(1).setPreferredWidth(100);
+		nhanVienTable.getColumnModel().getColumn(2).setPreferredWidth(140);
+		nhanVienTable.getColumnModel().getColumn(3).setPreferredWidth(90);
+		nhanVienTable.getColumnModel().getColumn(4).setPreferredWidth(90);
+		nhanVienTable.getColumnModel().getColumn(5).setPreferredWidth(120);
+		nhanVienTable.getColumnModel().getColumn(6).setPreferredWidth(120);
+		nhanVienTable.getColumnModel().getColumn(7).setPreferredWidth(150);
+		nhanVienTable.getColumnModel().getColumn(8).setPreferredWidth(150);
+		nhanVienTable.getColumnModel().getColumn(9).setPreferredWidth(120);
+		nhanVienTable.getColumnModel().getColumn(10).setPreferredWidth(120);
+		nhanVienTable.getColumnModel().getColumn(11).setPreferredWidth(120);
+		nhanVienTable.getColumnModel().getColumn(12).setPreferredWidth(120);
 
 		pnTabNVRight = new JScrollPane(nhanVienTable);
 		
@@ -117,31 +139,38 @@ public class TabNhanVien extends JPanel {
 		}
 
 		bt.addMouseListener(new MouseListener() {
-
 			@Override
 			public void mouseReleased(MouseEvent e) {
 			}
-
 			@Override
 			public void mousePressed(MouseEvent e) {
 			}
-
 			@Override
 			public void mouseExited(MouseEvent e) {
 				bt.setBorderPainted(false);
 				bt.setContentAreaFilled(false);
 			}
-
 			@Override
 			public void mouseEntered(MouseEvent e) {
 				bt.setBorderPainted(true);
 				bt.setContentAreaFilled(true);
 				bt.setBackground(new Color(110, 195, 201));
 			}
-
 			@Override
 			public void mouseClicked(MouseEvent e) {
 			}
 		});
 	}
+	
+	private ActionListener hd = new ActionListener() {
+		
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			Object action = e.getSource();
+			if(action == btnThemBP) {
+				themBoPhan ui = new themBoPhan();
+				ui.setVisible(true);
+			}
+		}
+	};
 }

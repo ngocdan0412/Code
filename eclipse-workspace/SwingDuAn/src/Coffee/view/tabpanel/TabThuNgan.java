@@ -76,6 +76,21 @@ public class TabThuNgan extends JPanel {
 		
 		thuNganTable = new JCustomTable(thuNganTableModel);
 		
+		thuNganTable.setAutoResizeMode(JCustomTable.AUTO_RESIZE_OFF);
+
+		thuNganTable.getColumnModel().getColumn(0).setPreferredWidth(30);
+		thuNganTable.getColumnModel().getColumn(1).setPreferredWidth(70);
+		thuNganTable.getColumnModel().getColumn(2).setPreferredWidth(100);
+		thuNganTable.getColumnModel().getColumn(3).setPreferredWidth(70);
+		thuNganTable.getColumnModel().getColumn(4).setPreferredWidth(90);
+		thuNganTable.getColumnModel().getColumn(5).setPreferredWidth(120);
+		thuNganTable.getColumnModel().getColumn(6).setPreferredWidth(120);
+		thuNganTable.getColumnModel().getColumn(7).setPreferredWidth(90);
+		thuNganTable.getColumnModel().getColumn(8).setPreferredWidth(90);
+		thuNganTable.getColumnModel().getColumn(9).setPreferredWidth(130);
+		thuNganTable.getColumnModel().getColumn(10).setPreferredWidth(130);
+		thuNganTable.getColumnModel().getColumn(11).setPreferredWidth(134);
+		
 		ColumnGroup chungTuColumnGroup = new ColumnGroup("Chứng Từ");
 		chungTuColumnGroup.add(thuNganTable.getColumn(1));
 		chungTuColumnGroup.add(thuNganTable.getColumn(2));
@@ -91,6 +106,7 @@ public class TabThuNgan extends JPanel {
 		khachHangColumnGroup.add(thuNganTable.getColumn(6));
 		khachHangColumnGroup.add(thuNganTable.getColumn(7));
 		khachHangColumnGroup.add(thuNganTable.getColumn(8));
+		khachHangColumnGroup.add(thuNganTable.getColumn(9));
 		thuNganTable.addColumnGroup(khachHangColumnGroup);
 		
 		pnTabTN = new JScrollPane(thuNganTable);
@@ -114,28 +130,23 @@ public class TabThuNgan extends JPanel {
 		
 		
 		bt.addMouseListener(new MouseListener() {
-			
 			@Override
 			public void mouseReleased(MouseEvent e) {
 			}
-			
 			@Override
 			public void mousePressed(MouseEvent e) {
 			}
-			
 			@Override
 			public void mouseExited(MouseEvent e) {
 				bt.setBorderPainted(false);
 				bt.setContentAreaFilled(false);
 			}
-			
 			@Override
 			public void mouseEntered(MouseEvent e) {
 				bt.setBorderPainted(true);
 				bt.setContentAreaFilled(true);
 				bt.setBackground(new Color(110, 195, 201));
 			}
-			
 			@Override
 			public void mouseClicked(MouseEvent e) {
 			}

@@ -6,12 +6,18 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="DefaultMutableTreeNode" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="DefaultMutableTreeNode"/>
+			<item value="DynamicTree"/>
+			<item value="DynamicTreeDemo"/>
+			<item value="nhanVienTable"/>
+			<item value="60"/>
+			<item value="70"/>
 			<item value="//"/>
 			<item value="menuThuNgan"/>
 			<item value="pnC"/>
@@ -21,14 +27,11 @@
 			<item value="q"/>
 			<item value="pnS"/>
 			<item value="actionButton.getHd()"/>
-			<item value="setUsername"/>
-			<item value="TabContentPanel"/>
-			<item value="run"/>
-			<item value="MapTools"/>
-			<item value="SwingControlDemo"/>
-			<item value="tabGoc"/>
 		</list>
 		<list key="replacehistory">
+			<item value="thuNganTable"/>
+			<item value="120"/>
+			<item value="60"/>
 			<item value=""/>
 			<item value="menuNhanVien"/>
 			<item value="pnBangGia"/>
@@ -41,9 +44,6 @@
 			<item value="hd"/>
 			<item value="TabContent"/>
 			<item value="run2"/>
-			<item value="run"/>
-			<item value="Test"/>
-			<item value="this"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

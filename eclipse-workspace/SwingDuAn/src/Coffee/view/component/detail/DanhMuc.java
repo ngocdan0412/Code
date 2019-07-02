@@ -94,6 +94,12 @@ public class DanhMuc extends JDialog {
 		bangGiaTableModel.addColumn("Sao chép");
 
 		bangGiaTable = new JCustomTable(bangGiaTableModel);
+		bangGiaTable.setAutoResizeMode(JCustomTable.AUTO_RESIZE_OFF);
+		bangGiaTable.getColumnModel().getColumn(0).setPreferredWidth(50);
+		bangGiaTable.getColumnModel().getColumn(1).setPreferredWidth(130);
+		bangGiaTable.getColumnModel().getColumn(2).setPreferredWidth(80);
+		bangGiaTable.getColumnModel().getColumn(3).setPreferredWidth(80);
+		
 		pnTabBG = new JScrollPane(bangGiaTable);
 		pnTabBG.setPreferredSize(new Dimension(690, 273));
 		cardBangGia.add(pnTabBG);
@@ -122,6 +128,10 @@ public class DanhMuc extends JDialog {
 		khuVucTableModel.addColumn("Tên của hàng");
 
 		khuVucTable = new JCustomTable(khuVucTableModel);
+		khuVucTable.setAutoResizeMode(JCustomTable.AUTO_RESIZE_OFF);
+		khuVucTable.getColumnModel().getColumn(0).setPreferredWidth(50);
+		khuVucTable.getColumnModel().getColumn(1).setPreferredWidth(130);
+		
 		pnTabKV = new JScrollPane(khuVucTable);
 		pnTabKV.setPreferredSize(new Dimension(690, 273));
 		cardKhuVuc.add(pnTabKV);
@@ -148,6 +158,10 @@ public class DanhMuc extends JDialog {
 		donViTinhTableModel.addColumn("Mặc định");
 
 		donViTinhTable = new JCustomTable(donViTinhTableModel);
+		donViTinhTable.setAutoResizeMode(JCustomTable.AUTO_RESIZE_OFF);
+		donViTinhTable.getColumnModel().getColumn(0).setPreferredWidth(100);
+		donViTinhTable.getColumnModel().getColumn(1).setPreferredWidth(60);
+		
 		pnTabDVT = new JScrollPane(donViTinhTable);
 		pnTabDVT.setPreferredSize(new Dimension(690, 273));
 		cardDonViTinh.add(pnTabDVT);
@@ -190,7 +204,6 @@ public class DanhMuc extends JDialog {
 			pn.add(kt);
 		} else {
 			bt.addActionListener(new ActionListener() {
-
 				@Override
 				public void actionPerformed(ActionEvent e) {
 					dispose();
@@ -203,24 +216,20 @@ public class DanhMuc extends JDialog {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 			}
-
 			@Override
 			public void mousePressed(MouseEvent e) {
 			}
-
 			@Override
 			public void mouseExited(MouseEvent e) {
 				bt.setBorderPainted(false);
 				bt.setContentAreaFilled(false);
 			}
-
 			@Override
 			public void mouseEntered(MouseEvent e) {
 				bt.setBorderPainted(true);
 				bt.setContentAreaFilled(true);
 				bt.setBackground(new Color(110, 195, 201));
 			}
-
 			@Override
 			public void mouseClicked(MouseEvent e) {
 			}
