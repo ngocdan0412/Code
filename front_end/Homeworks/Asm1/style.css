@@ -1,0 +1,41 @@
+body{
+	padding: 9.2% 30%;
+	background-image: linear-gradient(to top right, #FF0048, #8A00FF);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.div{
+	padding: 9% 15%;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: 0px 4px 15px black;
+	/* text-align: center; */
+	font-family: arial;
+}
+.div form h1{
+	color: #b500ae;
+	margin-bottom: 30px;
+	text-align: center;
+}
+hr{
+	margin: 30px 0;
+}
+input[type="text"], input[type="password"]{
+	padding: 16px 10px;
+	width: 94%;
+	border: 2px solid #b500ae;
+	border-radius: 15px;
+}
+input[type="checkbox"]{
+	margin-bottom: 25px;
+	/* text-align: left !important; */
+}
+input[type="submit"]{
+	color: white;
+	border: none;
+	border-radius: 10px;
+	padding: 10px 55px;
+	margin-left: 136px;
+	background-image: linear-gradient(to top right, #FF0048, #8A00FF);
+	/* font-weight: bold; */
+}

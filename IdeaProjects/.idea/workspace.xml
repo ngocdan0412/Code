@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5ac5e719-8fd6-4ca0-90f5-c27bfe70712f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/custom_jtable.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/jdatepicker_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_16.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.mylyn/.tasks.xml.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.mylyn/.tasks.xml.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.mylyn/tasks.xml.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.mylyn/tasks.xml.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/BaiTap/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/BaiTap/.markers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/BaiTap/org.eclipse.jdt.core/state.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/BaiTap/org.eclipse.jdt.core/state.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/DemoftCoffee/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/DemoftCoffee/.markers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/Phu_Dao/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/Phu_Dao/.markers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/Phu_Dao/org.eclipse.jdt.core/state.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/Phu_Dao/org.eclipse.jdt.core/state.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/SwingDuAn/.indexes/e4/b2/history.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/SwingDuAn/.indexes/e4/ec/a5/3/af/history.index" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/SwingDuAn/.indexes/e4/ec/a5/3/af/history.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/SwingDuAn/.indexes/e4/ec/a5/71/history.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/SwingDuAn/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/SwingDuAn/.markers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/Thi/org.eclipse.jdt.core/state.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/Thi/org.eclipse.jdt.core/state.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/demo_java/.markers" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/demo_java/.markers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/demo_java/org.eclipse.jdt.core/state.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/demo_java/org.eclipse.jdt.core/state.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.browser.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.epp.mpc.ui/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.epp.mpc.ui/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/124558605.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/1257869491.index" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/1257869491.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/1296103107.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/1303184529.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/1382076729.index" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/1382076729.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/1448769772.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/1713172528.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/177638979.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/2027762900.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/2111512668.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/2202167482.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/2205290751.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/2605561000.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/2624726496.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/2661530648.index" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/2661530648.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/2686296187.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/2828169528.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/2936958977.index" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/2936958977.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/3032694404.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/3104340509.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/3208240601.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/3257495402.index" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/3257495402.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/3359567183.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/3421819425.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/3478333782.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/3573362200.index" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/3573362200.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/3579902010.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/3745837425.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/439349637.index" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/439349637.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/559761530.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/715107097.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/788038073.index" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/788038073.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.launching/.install.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.launching/.install.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.wst.common.snippets/user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/.plugins/org.eclipse.wst.common.snippets/user.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/.metadata/version.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/.metadata/version.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/DemoftCoffee/bin/ft/coffee/view/MainFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/DemoftCoffee/bin/ft/coffee/view/MainFrame$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/DemoftCoffee/bin/ft/coffee/view/MainFrame2$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/DemoftCoffee/bin/ft/coffee/view/MainFrame2$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/SwingDuAn/src/Coffee/view/component/detail/DateLabelFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/SwingDuAn/src/Coffee/view/component/detail/DateLabelFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/SwingDuAn/src/Coffee/view/component/detail/showDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/SwingDuAn/src/Coffee/view/component/detail/showDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../eclipse-workspace/SwingDuAn/src/Test/AddJTree/DynamicTreeDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../eclipse-workspace/SwingDuAn/src/Test/AddJTree/DynamicTreeDemo.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Coffee/MainClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Coffee/view/LoginFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="71" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Coffee/view/LoginTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="23" column="79" lean-forward="true" selection-end-line="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Coffee/view/LoginTest.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="85" />
+    <option name="y" value="25" />
+    <option name="width" value="1750" />
+    <option name="height" value="1030" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="IdeaProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IdeaProjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IdeaProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IdeaProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IdeaProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IdeaProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Coffee" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IdeaProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IdeaProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Coffee" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/custom-jtable.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.LoginTest">
+    <configuration name="LoginTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Coffee.view.LoginTest" />
+      <module name="IdeaProjects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Coffee.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Coffee.MainClass" />
+      <module name="IdeaProjects" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Coffee.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LoginTest" />
+        <item itemvalue="Application.MainClass" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ac5e719-8fd6-4ca0-90f5-c27bfe70712f" name="Default Changelist" comment="" />
+      <created>1563247721747</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563247721747</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15838926" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.1997319" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3297587" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3297587" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3297587" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3230563" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test.java" />
+    <entry file="file://$PROJECT_DIR$/src/Coffee/view/component/detail/showDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Coffee/MainClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Coffee/view/LoginFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="71" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Coffee/view/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="23" column="79" lean-forward="true" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>IdeaProjects</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>mysql-connector-java-8.0.16</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

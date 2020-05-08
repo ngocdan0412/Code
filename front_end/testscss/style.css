@@ -1,0 +1,26 @@
+/* line 2, style.scss */
+.div1 {
+  width: 600px;
+  height: 400px;
+  background: green; }
+  /* line 6, style.scss */
+  .div1 .div2 {
+    width: 100px;
+    height: 200px;
+    background: blue; }
+    /* line 11, style.scss */
+    .div1 .div2 .div3 {
+      width: 70px;
+      height: 70px;
+      background: #555; }
+  /* line 18, style.scss */
+  .div1 h2 {
+    font-weight: bold; }
+  /* line 21, style.scss */
+  .div1-1 {
+    background: yellow; }
+  /* line 25, style.scss */
+  .div1:hover .div2 {
+    background: black; }
+
+/*# sourceMappingURL=style.css.map */

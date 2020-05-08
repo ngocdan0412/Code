@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Đồng hồ bấm giờ</title>
+    <style>
+        #start {
+            display: block;
+        }
+        
+        #pause {
+            display: none;
+        }
+        
+        #continueTime {
+            display: none;
+        }
+        
+        #end {
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <div class="clock">
+            <h1>0:0:0</h1>
+        </div>
+        <button id="start">START</button>
+        <button id="pause">PAUSE</button>
+        <button id="continueTime">CONTINUE</button>
+        <button id="end">END</button>
+    </div>
+    <script type="text/javascript" src="../../library/jquery-3.4.1.js"></script>
+    <script>
+        var h = 0;
+        var m = 0;
+        var s = 0;
+        var run;
+
+        $('#start').click(function() {
+            run = setInterval(function() {
+                if (s == 60) {
+                    m++;
+                    s = 0;
+                }
+                if (m == 60) {
+                    h++;
+                    m = 0;
+                }
+                s++;
+                $('.clock').html("<h1>" + h + ":" + m + ":" + s + "</h1>");
+            }, 10);
+            $('#pause').css({
+                'display': 'block'
+            });
+            $('#start').css({
+                'display': 'none'
+            });
+        });
+
+        $('#pause').click(function() {
+            clearInterval(run);
+            $('#continueTime').css({
+                'display': 'block'
+            });
+            $('#end').css({
+                'display': 'block'
+            });
+            $('#pause').css({
+                'display': 'none'
+            });
+        });
+
+        $('#continueTime').click(function() {
+            run = setInterval(function() {
+                if (s == 60) {
+                    m++;
+                    s = 0;
+                }
+                if (m == 60) {
+                    h++;
+                    m = 0;
+                }
+                s++;
+                $('.clock').html("<h1>" + h + ":" + m + ":" + s + "</h1>");
+            }, 10);
+            $('#pause').css({
+                'display': 'block'
+            });
+            $('#continueTime').css({
+                'display': 'none'
+            });
+            $('#end').css({
+                'display': 'none'
+            });
+        });
+
+        $('#end').click(function() {
+            h = 0;
+            m = 0;
+            s = 0;
+            $('.clock').html("<h1>" + h + ":" + m + ":" + s + "</h1>");
+            $('#start').css({
+                'display': 'block'
+            });
+            $('#continueTime').css({
+                'display': 'none'
+            });
+            $('#end').css({
+                'display': 'none'
+            });
+        });
+
+    </script>
+</body>
+
+</html>

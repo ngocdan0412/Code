@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+
+<body>
+   <header>
+      <div class="logo">
+         <a href="#"><h1>project</h1></a>
+      </div>
+       <div class="menu">
+           <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Gallery</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">Contact</a></li>
+           </ul>
+       </div>
+       <div id="search">
+           <i class="fas fa-search"></i>
+       </div>
+   </header>
+    <div class="div">
+        <div class="slide">
+            <div id="slideShow">
+                <div class="img1 elm">
+                    <div class="content" onmouseenter="finishInterval()" onmouseleave="beginInterval()">
+                        <h1>Hello</h1>
+                        <h1>I'm Jinx</h1>
+                        <h2>"Cháy nổ tưng bừng là người bạn thân nhất của một cô gái!"</h2>
+                    </div>
+                </div>
+                <div class="img2 elm">
+                    <div class="content" onmouseenter="finishInterval()" onmouseleave="beginInterval()">
+                        <h1>Hello</h1>
+                        <h1>I'm Warwick</h1>
+                        <h2>"Máu đổ xuống... gọi quái thú tới!"</h2>
+                    </div>
+                </div>
+                <div class="img3 elm">
+                    <div class="content" onmouseenter="finishInterval()" onmouseleave="beginInterval()">
+                        <h1>Hello</h1>
+                        <h1>I'm Pyke</h1>
+                        <h2>"Dưới đáy biển còn đầy chỗ đấy..."</h2>
+                    </div>
+                </div>
+                <div class="img4 elm">
+                    <div class="content" onmouseenter="finishInterval()" onmouseleave="beginInterval()">
+                        <h1>Hello</h1>
+                        <h1>I'm Akali</h1>
+                        <h2>"Nếu trông ngươi nguy hiểm thì tốt nhất ngươi nên nguy hiểm thật."</h2>
+                    </div>
+                </div>
+                <div class="img5 elm">
+                    <div class="content" onmouseenter="finishInterval()" onmouseleave="beginInterval()">
+                        <h1>Hello</h1>
+                        <h1>I'm Irelia</h1>
+                        <h2>"Có lúc tôi chỉ nhảy vì bản thân. Giờ, tôi nhảy vì Vùng Đất Đầu Tiên."</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow">
+                <div id="prev"><i class="fas fa-arrow-left"></i></div>
+                <div id="next"><i class="fas fa-arrow-right"></i></div>
+            </div>
+            <div class="listDot">
+                <div class="dot" onclick="showDot(0)"><i class="fas fa-circle"></i></div>
+                <div class="dot" onclick="showDot(1)"><i class="fas fa-circle"></i></div>
+                <div class="dot" onclick="showDot(2)"><i class="fas fa-circle"></i></div>
+                <div class="dot" onclick="showDot(3)"><i class="fas fa-circle"></i></div>
+                <div class="dot" onclick="showDot(4)"><i class="fas fa-circle"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="div2">
+        <div class="div2-tt">
+            <ul>
+                <li id="all">All</li>
+                <li id="jinx">Jinx</li>
+                <li id="war">Warwick</li>
+                <li id="pyke">Pyke</li>
+                <li id="aka">Akali</li>
+            </ul>
+        </div>
+        <div class="div2-img">
+            <img class="akali lol" src="img/akali2.jpg">
+            <img class="jinx lol" src="img/jinx4.jpg">
+            <img class="war lol" src="img/warwick1.jpg">
+            <img class="pyke lol" src="img/pyke3.jpg">
+            <img class="war lol" src="img/warwick3.jpg">
+            <img class="pyke lol" src="img/pyke1.jpg">
+            <img class="jinx lol" src="img/jinx3.jpg">
+            <img class="war lol" src="img/warwick2.jpg">
+            <img class="pyke lol" src="img/pyke2.jpg">
+            <img class="jinx lol" src="img/jinx2.jpg">
+            <img class="akali lol" src="img/akali1.jpg">
+            <img class="jinx lol" src="img/jinx5.png">
+            <img class="akali lol" src="img/akali3.jpg">
+            <img class="jinx lol" src="img/jinx1.jpg">
+        </div>
+        <div class="btn">
+            <button>
+                <h4>View More</h4>
+            </button>
+        </div>
+    </div>
+    <script src="jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="fontawesome/js/all.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

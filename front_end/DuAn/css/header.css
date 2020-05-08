@@ -1,0 +1,540 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.otf);
+}
+@font-face {
+  font-family: SVN-Museo Sans;
+  src: url(../fonts/SVN-Museo-Sans-Regular.ttf);
+}
+/* line 9, header.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+/* line 12, header.scss */
+body .btn-polygon {
+  text-decoration: none;
+  color: #333;
+  border: none;
+  background-color: #f2ae1d;
+  padding: 5px 25px;
+  clip-path: polygon(0 0, 100% 0, 96% 96%, 5% 100%);
+  font-family: SVN-Museo Sans;
+  font-weight: bold;
+}
+/* line 22, header.scss */
+body .btn-polygon:hover {
+  color: #333;
+}
+/* line 25, header.scss */
+body .tt {
+  position: relative;
+}
+/* line 28, header.scss */
+body .tt::after {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  top: 0;
+  left: -10px;
+  z-index: -1;
+  background-color: #f2ae1d;
+  clip-path: polygon(0 0, 100% 0, 97% 95%, 5% 100%);
+}
+/* line 39, header.scss */
+body .tt::before {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 100%;
+  top: 10px;
+  left: 0;
+  z-index: -2;
+  background-color: #333;
+  clip-path: polygon(0 0, 100% 0, 97% 95%, 5% 100%);
+}
+/* line 50, header.scss */
+body .title {
+  font-family: Montserrat;
+}
+/* line 52, header.scss */
+body .title h1 {
+  color: #333;
+  position: relative;
+}
+/* line 55, header.scss */
+body .title h1 hr {
+  position: absolute;
+  top: 30%;
+  right: -10px;
+  width: 85%;
+  z-index: -3;
+  border: 3px solid #f2ae1d;
+}
+/* line 65, header.scss */
+body header {
+  background-color: #333;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+}
+/* line 70, header.scss */
+body header .logo {
+  position: relative;
+}
+/* line 72, header.scss */
+body header .logo .logo-1 {
+  position: absolute;
+  z-index: 9;
+  width: 65%;
+  height: 170%;
+  background-color: #f2ae1d;
+  clip-path: polygon(0 0, 100% 0, 100% 59%, 50% 100%, 0 59%);
+  text-align: center;
+}
+/* line 81, header.scss */
+body header .logo .logo-1 a img {
+  margin-top: 5%;
+  width: 80%;
+}
+/* line 88, header.scss */
+body header .menu {
+  text-align: end;
+}
+/* line 90, header.scss */
+body header .menu ul {
+  margin-bottom: 0rem;
+}
+/* line 92, header.scss */
+body header .menu ul li.menu-hover {
+  position: relative;
+  display: inline-block;
+  list-style: none;
+  letter-spacing: 2px;
+  margin: 0 30px;
+  padding: 24px 0;
+}
+/* line 99, header.scss */
+body header .menu ul li.menu-hover #icon-search {
+  display: block;
+  width: 5px;
+  color: white;
+}
+/* line 104, header.scss */
+body header .menu ul li.menu-hover #icon-close {
+  display: none;
+  width: 5px;
+  color: white;
+}
+/* line 109, header.scss */
+body header .menu ul li.menu-hover a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 13px;
+}
+/* line 116, header.scss */
+body header .menu ul li.menu-hover ul {
+  position: absolute;
+  width: 200px;
+  top: 120px;
+  left: -20px;
+  background-color: white;
+  border-radius: 2px 2px 10px 10px;
+  padding: 0;
+  box-shadow: 1px -1px 8px 1px #999;
+  opacity: 0;
+  transition: 0.5s;
+}
+/* line 127, header.scss */
+body header .menu ul li.menu-hover ul li {
+  width: 100%;
+  padding: 5px 0;
+  display: block;
+  text-align: center;
+  border-top: 1px solid #999;
+  margin: 0;
+}
+/* line 144, header.scss */
+body header .search {
+  background-color: #444;
+  display: none;
+}
+/* line 147, header.scss */
+body header .search .search-1 {
+  margin-left: 68%;
+  padding: 12px 0;
+}
+/* line 150, header.scss */
+body header .search .search-1 input[type='text'] {
+  border: none;
+  background-color: #444;
+  font-family: Montserrat;
+}
+/* line 158, header.scss */
+body .followUs {
+  position: fixed;
+  z-index: 9999;
+}
+/* line 161, header.scss */
+body .followUs .follow {
+  position: absolute;
+  margin-top: 244px;
+  margin-left: 0;
+  text-align: center;
+}
+/* line 166, header.scss */
+body .followUs .follow .icon-follow {
+  background-color: black;
+  padding: 10px 5px;
+  display: block;
+}
+/* line 170, header.scss */
+body .followUs .follow .icon-follow a {
+  color: #f2ae1d;
+  font-size: 25px;
+}
+/* line 176, header.scss */
+body .followUs #arrow-follow {
+  position: absolute;
+  margin-top: 415px;
+  margin-left: 0;
+  text-align: center;
+  background-color: black;
+  color: #777;
+  font-size: 25px;
+  padding: 0 13px;
+}
+/* line 185, header.scss */
+body .followUs #arrow-follow #show-follow {
+  display: none;
+}
+/* line 188, header.scss */
+body .followUs #arrow-follow #hide-follow {
+  display: block;
+}
+/* line 193, header.scss */
+body .slide {
+  background-color: white;
+  height: 100vh;
+}
+/* line 196, header.scss */
+body .slide .slide-1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/nen-slide.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+}
+/* line 205, header.scss */
+body .slide .slide-1 .item {
+  width: 100%;
+  height: 100vh;
+}
+/* line 208, header.scss */
+body .slide .slide-1 .item .content-l {
+  position: absolute;
+  width: 500px;
+  height: 350px;
+  transform: translate(-50%, -50%);
+  left: 23%;
+  top: 50%;
+  background-color: #333;
+  clip-path: polygon(0 0, 100% 0, 96% 96%, 5% 100%);
+  font-family: Montserrat;
+  padding: 50px;
+}
+/* line 219, header.scss */
+body .slide .slide-1 .item .content-l h6 {
+  color: #f2ae1d;
+}
+/* line 222, header.scss */
+body .slide .slide-1 .item .content-l h1 {
+  color: white;
+}
+/* line 226, header.scss */
+body .slide .slide-1 .item a {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 65%;
+  left: 37%;
+}
+/* line 232, header.scss */
+body .slide .slide-1 .item .img-1 {
+  position: absolute;
+  width: 700px;
+  height: 550px;
+  transform: translate(-50%, -50%);
+  left: 66%;
+  top: 55%;
+}
+/* line 239, header.scss */
+body .slide .slide-1 .item .img-1 .anh1-slide1 {
+  position: absolute;
+  width: 250px;
+  height: 370px;
+  top: 20%;
+  left: 3%;
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+  transform: rotate(-10deg);
+  background-image: url(../img/slide1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 251, header.scss */
+body .slide .slide-1 .item .img-1 .anh2-slide1 {
+  position: absolute;
+  width: 250px;
+  height: 370px;
+  top: 26%;
+  left: 72%;
+  clip-path: polygon(0 0, 100% 5%, 100% 98%, 0 100%);
+  transform: rotate(10deg);
+  background-image: url(../img/slide3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 263, header.scss */
+body .slide .slide-1 .item .img-1 .anh3-slide1 {
+  position: absolute;
+  width: 270px;
+  height: 400px;
+  top: 4%;
+  left: 37%;
+  clip-path: polygon(0 0, 100% 3%, 100% 95%, 0 100%);
+  background-image: url(../img/slide2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 276, header.scss */
+body .slide .slide-1 .owl-dots {
+  position: absolute;
+  bottom: 20%;
+  right: -5%;
+  transform: rotate(90deg);
+}
+/* line 281, header.scss */
+body .slide .slide-1 .owl-dots .owl-dot {
+  background-color: #333;
+  width: 15px;
+  height: 15px;
+  margin: 0 20px;
+  border-radius: 50%;
+}
+/* line 288, header.scss */
+body .slide .slide-1 .owl-dots .active {
+  background-color: #f2ae1d;
+  box-shadow: 0 0 15px 1px #fff;
+}
+/* line 295, header.scss */
+body .gioiThieu {
+  width: 100%;
+  height: 70vh;
+  margin-top: 50px;
+}
+/* line 299, header.scss */
+body .gioiThieu .row {
+  height: 100%;
+  font-family: Montserrat;
+}
+/* line 302, header.scss */
+body .gioiThieu .row .col-5 {
+  height: 70%;
+  color: #333;
+}
+/* line 305, header.scss */
+body .gioiThieu .row .col-5 h5 {
+  letter-spacing: 5px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+/* line 309, header.scss */
+body .gioiThieu .row .col-5 h5 span {
+  font-weight: bold;
+  font-size: 30px;
+}
+/* line 314, header.scss */
+body .gioiThieu .row .col-5 a {
+  font-size: 20px;
+}
+/* line 318, header.scss */
+body .gioiThieu .row .content {
+  position: relative;
+}
+/* line 321, header.scss */
+body .gioiThieu .row .content::after {
+  content: '';
+  position: absolute;
+  width: 65%;
+  height: 60%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #f2ae1d;
+  clip-path: polygon(0 0, 100% 0, 98% 95%, 5% 100%);
+}
+/* line 332, header.scss */
+body .gioiThieu .row .img-gioiThieu {
+  height: 100%;
+  background-image: url(../img/cau-rong.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 95% 97%, 5% 100%);
+}
+/* line 342, header.scss */
+body .danhMuc .content-danhMuc {
+  margin: 40px 0 0 0;
+}
+/* line 344, header.scss */
+body .danhMuc .content-danhMuc .card-danhMuc {
+  position: relative;
+  width: 100%;
+  height: 55vh;
+}
+/* line 348, header.scss */
+body .danhMuc .content-danhMuc .card-danhMuc .img-danhMuc {
+  width: 100%;
+  height: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* line 354, header.scss */
+body .danhMuc .content-danhMuc .card-danhMuc a {
+  position: absolute;
+  background-color: #f2ae1d;
+  transform: translate(-50%, -50%);
+  top: 80%;
+  padding: 5px 15px 5px 10px;
+  font-family: Montserrat;
+  color: #333;
+  font-size: 20px;
+  clip-path: polygon(0 5%, 100% 0, 95% 100%, 2% 95%);
+  transition: .2s;
+}
+/* line 366, header.scss */
+body .danhMuc .content-danhMuc .card-danhMuc a:hover {
+  top: 79%;
+}
+/* line 372, header.scss */
+body .toanCanh {
+  width: 100%;
+}
+/* line 374, header.scss */
+body .toanCanh .content-toanCanh {
+  margin: 50px 0;
+}
+/* line 378, header.scss */
+body .baiVietMoi {
+  width: 100%;
+}
+/* line 380, header.scss */
+body .baiVietMoi .content-baiVietMoi {
+  margin: 40px 0 350px 0;
+}
+/* line 382, header.scss */
+body .baiVietMoi .content-baiVietMoi .cardBaiViet {
+  position: relative;
+}
+/* line 384, header.scss */
+body .baiVietMoi .content-baiVietMoi .cardBaiViet .img-cardBaiViet {
+  width: 100%;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: .3s;
+}
+/* line 391, header.scss */
+body .baiVietMoi .content-baiVietMoi .cardBaiViet span {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 0;
+  padding: 5px 20px;
+  background-color: #f2ae1d;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+/* line 400, header.scss */
+body .baiVietMoi .content-baiVietMoi .cardBaiViet .text-cardBaiViet {
+  padding: 10px;
+}
+/* line 402, header.scss */
+body .baiVietMoi .content-baiVietMoi .cardBaiViet .text-cardBaiViet h6 {
+  color: #f2ae1d;
+  font-family: Montserrat;
+}
+/* line 406, header.scss */
+body .baiVietMoi .content-baiVietMoi .cardBaiViet .text-cardBaiViet h4 {
+  color: black;
+  font-weight: bold;
+  font-family: SVN-Museo Sans;
+  letter-spacing: 3px;
+}
+/* line 412, header.scss */
+body .baiVietMoi .content-baiVietMoi .cardBaiViet .text-cardBaiViet h5 {
+  color: #333;
+  font-family: Montserrat;
+  margin: 30px 0;
+}
+/* line 419, header.scss */
+body .baiVietMoi .content-baiVietMoi .cardBaiViet:hover .img-cardBaiViet {
+  transform: rotate(10deg);
+}
+/* line 424, header.scss */
+body footer {
+  background-image: url(../img/wood-charc.jpg);
+  width: 100%;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+}
+/* line 428, header.scss */
+body footer .tab-ft {
+  margin: 100px 0 50px 0;
+  color: white;
+}
+/* line 431, header.scss */
+body footer .tab-ft h4 {
+  color: #f2ae1d;
+  font-family: SVN-Museo Sans;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+/* line 437, header.scss */
+body footer .tab-ft ul {
+  font-family: Montserrat;
+  padding-left: 0;
+}
+/* line 440, header.scss */
+body footer .tab-ft ul li {
+  list-style: none;
+}
+/* line 445, header.scss */
+body footer .tab-ft span svg {
+  font-size: 30px;
+  margin: 5px 10px;
+  cursor: pointer;
+}
+/* line 451, header.scss */
+body footer .tab-ft h1 {
+  font-weight: bold;
+  font-family: Montserrat;
+}
+/* line 455, header.scss */
+body footer .tab-ft h6 {
+  font-family: Montserrat;
+}
+/* line 459, header.scss */
+body footer .ft {
+  background-color: #222;
+  padding: 30px 0;
+  color: white;
+  font-family: Montserrat;
+}
+/* line 464, header.scss */
+body footer .ft h6 {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=header.css.map */

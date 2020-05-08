@@ -1,0 +1,29 @@
+$color-red: green;
+.div1 {
+    width: 600px;
+    height: 400px;
+    background: $color-red;
+    .div2 {
+        width: 100px;
+        height: 200px;
+        background: blue;
+//        background: $color2;
+        .div3 {
+            $color2: #555 !global;
+            width: 70px;
+            height: 70px;
+            background: $color2;
+        }
+    }
+    h2 {
+        font-weight: bold;
+    }
+    &-1 {
+        background: yellow;
+    }
+    &:hover {
+        .div2 {
+            background: black;
+        }
+    }
+}

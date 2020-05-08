@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>App Shop</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //App shop
+        var Shop = {
+            data: [],
+            view: function() {
+                var listProduct = Shop.data;
+                if (listProduct.length == 0) {
+                    console.log('Không có sản phẩm!!');
+                } else {
+                    console.log('List Product:');
+                    for (var i = 0; i < listProduct.length; i++) {
+                        console.log(listProduct[i].id);
+                        console.log(listProduct[i].nameProduct);
+                        console.log(listProduct[i].numberProduct);
+                        console.log(listProduct[i].date);
+                        console.log('-----------');
+                    }
+                }
+            },
+            addProduct: function(id, nameProduct, numberProduct, date) {
+                var item = {
+                    id: id,
+                    nameProduct: nameProduct,
+                    numberProduct: numberProduct,
+                    date: date
+                }
+                Shop.data.push(item);
+                Shop.view();
+            },
+            removeProduct: function(id) {
+                if (Shop.data.length == 0) {
+                    console.log('Không có sản phẩm!!');
+                } else {
+                    for (var i = 0; i < Shop.data.length; i++) {
+                        if (Shop.data[i].id == id) {
+                            Shop.data.splice(i, 1);
+                            Shop.view();
+                        }
+                    }
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

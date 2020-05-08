@@ -1,0 +1,7 @@
+.content {
+	margin-left: 10px;
+}
+.TodoItem-complete {
+	text-decoration: line-through;
+	color: gray;
+}

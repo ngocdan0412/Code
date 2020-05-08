@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Comfortaa|Dosis|Rokkitt&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #f3f3f3;
+}
+header{
+	background-color: #333;
+	padding-bottom: 20px;
+}
+header p{
+	clear: left;
+	color: white;
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+	font-size: 45px;
+}
+.logo{
+	float: left;
+	width: 20%;
+	padding: 20px 60px;
+}
+.logo b{
+	font-size: 35px;
+	text-transform: uppercase;
+	font-family: 'Anton', sans-serif;
+	color: white;
+}
+.logo span{
+	color: red !important;
+}
+.menu{
+	float: left;
+	width: 53%;
+	padding: 20px 60px;
+	margin-left: 170px;
+}
+.menu1 ul li{
+	padding: 0 10px;
+	float: left;
+	list-style: none;
+	font-family: 'Comfortaa', cursive;
+	line-height: 40px;
+}
+a{
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+input[type="submit"]{
+	padding: 10px;
+	font-family: 'Comfortaa', cursive;
+	color: white;
+	margin-left: 15px;
+	background-color: #E30202;
+	border: 1px solid #E30202;
+}
+input[type="submit"]#menu2-1{
+	background: none;
+	border: 1px solid white;
+}
+
+.div2{
+	height: 500px;
+}
+.div2-1{
+	padding: 20px 50px;
+	font-family: 'Dosis', sans-serif;
+	background-color: white;
+}
+input[type="text"], select{
+	padding: 5px;
+	width: 200px;
+}
+input[type="date"]{
+	padding: 5px;
+}
+.div2-1-1{
+	float: left;
+	margin-left: 50px;
+}
+.div2-1-2{
+	margin-left: 500px;
+}
+#a1{
+	color: black;
+}
+#a2{
+	color: gray;
+}
+.mr-5{
+	margin-left: 2%;
+}
+.clear{
+	clear: both;
+}
+
+
+.div2-2{
+	clear: left;
+	width: 100%;
+	height: 600px;
+}
+.div-card{
+	width: 30%;
+	height: 500px;
+	float: left;
+	padding: 1%;
+}
+.card{
+	height: 100%;
+}
+.div-card img{
+	width: 100%;
+	height: 50%;
+	border-radius: 10px 10px 0 0;
+}
+.div-card-1{
+	background-color: white;
+	height: 30%;
+	margin-top: -5px;
+	padding: 0 20px;
+	font-family: 'Rokkitt', serif;
+}
+.div-card-1 h3{
+	padding-top: 10px;
+}
+.div-card-1 p{
+	color: gray;
+}
+.div-card-2{
+	background-color: white;
+	height: 20%;
+	border-radius: 0 0 10px 10px;
+}
+.card-tt{
+	width: 49.5%;
+	height: 90%;
+	float: left;
+	background-color: #D8D8D8;
+	text-transform: uppercase;
+	padding-top: 10px;
+	font-family: 'Dosis', sans-serif;
+}
+.card-tt svg{
+	float: left;
+	margin-left: 40px;
+	font-size: 50px;
+	padding-top: 8px;
+}
+.text{
+	float: left;
+	font-size: 30px;
+	margin-left: 10px;
+}
+.text p{
+	color: gray;
+}
+
+footer{
+	clear: left;
+	background-color: #333;
+}
+.ft1{
+	text-align: center;
+	padding: 20px 0;
+}
+footer a{
+	font-family: 'Dosis', sans-serif;
+	margin: 10px 10px;
+}
+hr{
+	border: 1px solid black;
+	margin: 0 50px;
+}
+.ft2{
+	padding: 30px 50px 50px 50px;
+}
+.ft2-1{
+	float: left;
+	color: white;
+	font-family: 'Dosis', sans-serif;
+}
+.ft2-2{
+	margin-left: 1065px;
+}
+.ft2-2 svg{
+	margin: 0 5px;
+	color: gray;
+}
+
+/* 
+    font-family: 'Anton', sans-serif;
+
+    font-family: 'Comfortaa', cursive;
+
+    font-family: 'Dosis', sans-serif;
+
+    font-family: 'Rokkitt', serif;
+
+ */

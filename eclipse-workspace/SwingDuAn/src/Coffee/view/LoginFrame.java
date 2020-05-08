@@ -25,11 +25,10 @@ import javax.swing.JTextField;
 
 import Coffee.view.component.detail.ResetPassword;
 
-
 public class LoginFrame extends JFrame {
 
 	/**
-	 * 
+	 *
 	 */
 	private static final long serialVersionUID = 1L;
 
@@ -39,35 +38,34 @@ public class LoginFrame extends JFrame {
 
 	public LoginFrame() {
 		setUndecorated(true);// ~~~ Ẩn thanh tiêu đề
-		setSize(900, 600);
+		setSize(700, 500);
 		setLocationRelativeTo(null);
 		ImageIcon img = new ImageIcon("src\\Coffee\\img\\cafe4.png");
 		setIconImage(img.getImage());
 		initScreen();
 	}
-
+	
 	private void LoadMainFrame() {
 		MainFrame ui = new MainFrame();
 		ui.setVisible(true);
 	}
 
-	private void initScreen() {
+	public void initScreen() {
 		ImageIcon background_img = new ImageIcon("src\\Coffee\\img\\bgcf.jpg");
 		Image img = background_img.getImage();
-		Image temp_img = img.getScaledInstance(900, 600, Image.SCALE_SMOOTH);
+		Image temp_img = img.getScaledInstance(700, 500, Image.SCALE_SMOOTH);
 		background_img = new ImageIcon(temp_img);
 		JLabel background = new JLabel("", background_img, JLabel.CENTER);
-		background.setBounds(0, 0, 900, 600);
 
 		JPanel pnLogo = new JPanel();
 		ImageIcon logo = new ImageIcon("src\\Coffee\\img\\logo.png");
 		Image img_logo = logo.getImage();
-		Image temp_logo = img_logo.getScaledInstance(200, 200, Image.SCALE_SMOOTH);
+		Image temp_logo = img_logo.getScaledInstance(150, 150, Image.SCALE_SMOOTH);
 		logo = new ImageIcon(temp_logo);
 		JLabel lbLogo = new JLabel("");
 		lbLogo.setIcon(logo);
 		pnLogo.add(lbLogo);
-		pnLogo.setBounds(0, 0, 200, 200);
+		pnLogo.setBounds(0, 0, 150, 150);
 		pnLogo.setBackground(new Color(0, 0, 0, 0));
 		background.add(pnLogo);
 
@@ -78,25 +76,25 @@ public class LoginFrame extends JFrame {
 
 		JLabel tieuDe = new JLabel("LOGIN");
 		tieuDe.setBounds(155, 30, 100, 50);
-		tieuDe.setFont(new Font("", Font.BOLD, 30));// ~~~ set font
+		tieuDe.setFont(new Font("", Font.BOLD, 25));// ~~~ set font
 		tieuDe.setForeground(new Color(104, 48, 37));
 		pnC.add(tieuDe);
 
 		JLabel lbTen = new JLabel("USERNAME");
 		lbTen.setBounds(80, 100, 90, 30);
-		lbTen.setFont(new Font("", Font.BOLD, 15));
+		lbTen.setFont(new Font("", Font.BOLD, 14));
 		lbTen.setForeground(new Color(104, 48, 37));
 		pnC.add(lbTen);
 
 		txtTen = new JTextField(20);
 		txtTen.setText("admin");
 		txtTen.setBounds(180, 100, 150, 30);
-		txtTen.setFont(new Font("", Font.PLAIN, 15));
+		txtTen.setFont(new Font("", Font.PLAIN, 14));
 		pnC.add(txtTen);
 
 		JLabel lbMK = new JLabel("PASSWORD");
 		lbMK.setBounds(80, 160, 90, 30);
-		lbMK.setFont(new Font("", Font.BOLD, 15));
+		lbMK.setFont(new Font("", Font.BOLD, 14));
 		lbMK.setForeground(new Color(104, 48, 37));
 		pnC.add(lbMK);
 
@@ -110,19 +108,18 @@ public class LoginFrame extends JFrame {
 		pnC.add(showPassword);
 
 		JButton buttonLogin = new JButton("LOGIN");
-		buttonLogin.setBounds(100, 230, 90, 30);
+		buttonLogin.setBounds(100, 230, 90, 27);
 		buttonLogin.setBackground(Color.LIGHT_GRAY);
 		pnC.add(buttonLogin);
 
 		JButton buttonExit = new JButton("EXIT");
-		buttonExit.setBounds(215, 230, 90, 30);
+		buttonExit.setBounds(215, 230, 90, 27);
 		buttonExit.setBackground(Color.LIGHT_GRAY);
 		pnC.add(buttonExit);
 
-		pnC.setBounds(250, 125, 400, 350);
+		pnC.setBounds(150, 100, 400, 350);
 		background.add(pnC);
 
-		background.setBounds(0, 0, 900, 600);
 		Container con = getContentPane();
 		con.add(background);
 
@@ -154,7 +151,7 @@ public class LoginFrame extends JFrame {
 							JOptionPane.showMessageDialog(null, "Tên đăng nhập hoặc mật khẩu không chính xác!!", "Lỗi",
 									JOptionPane.ERROR_MESSAGE);
 							dem++;
-							if(dem == 3) {
+							if (dem == 3) {
 								System.exit(0);
 							}
 						}

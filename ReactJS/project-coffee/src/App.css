@@ -1,0 +1,68 @@
+body {
+  background-color: #f4f5f8;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+}
+.header .hd-left {
+  padding: 10px;
+}
+.header .hd-left a h4 {
+  display: inline-block;
+  margin: 0 50px 0 10px;
+  color: #0b77ff;
+}
+.header .hd-left input[type='text'] {
+  border: none;
+  width: 200px;
+  border-radius: 5px 0 0 5px;
+  padding: 8px 10px;
+  background-color: #f4f5f8;
+}
+.header .hd-left button {
+  border-radius: 0 5px 5px 0;
+  border: none;
+  padding: 8px;
+  background-color: #0b77ff;
+}
+.header .hd-left button svg {
+  color: white;
+}
+.header .hd-right {
+  padding: 10px;
+}
+.header .hd-right svg {
+  color: gray;
+}
+.menu nav {
+  background-color: purple;
+  position: fixed;
+  margin-top: 52px;
+  height: 700px;
+  padding: 10px;
+}
+.menu nav ul {
+  padding-left: 0;
+  margin: 0;
+  text-align: center;
+}
+.menu nav ul hr {
+  border: .3px solid #828282;
+}
+.menu nav ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.menu nav ul li a {
+  text-decoration: none;
+  color: #e4e4e4;
+}
+.menu nav ul li a svg {
+  display: block;
+  margin: auto;
+  color: #9c9c9c;
+}

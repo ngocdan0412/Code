@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Archivo+Black&display=swap");
+body {
+  margin: 0;
+  padding: 0; }
+  body header {
+    background-color: black;
+    background-image: url(../img/hed.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    padding-bottom: 114px; }
+    body header .menu {
+      display: flex;
+      justify-content: space-around;
+      height: 90px; }
+      body header .menu .logo h1 {
+        margin-top: 18px; }
+      body header .menu ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 30px 20px 0 20px; }
+        body header .menu ul li a {
+          text-decoration: none;
+          color: white; }
+    body header .head1 {
+      margin-top: 30px;
+      text-transform: uppercase;
+      font-family: 'Archivo Black', sans-serif;
+      text-align: center; }
+      body header .head1 h1 {
+        font-size: 280px;
+        line-height: 0.9; }
+      body header .head1 span {
+        color: white; }
+  body .div1 {
+    width: 100%;
+    background-color: black; }
+    body .div1 .div1-tt {
+      text-align: center;
+      color: white; }
+      body .div1 .div1-tt h2 {
+        text-transform: uppercase;
+        font-weight: bold; }
+    body .div1 .div1-card {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 10px; }
+      body .div1 .div1-card .card {
+        width: 22%;
+        height: 400px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid black;
+        margin: 10px;
+        color: white; }
+        body .div1 .div1-card .card .text1 {
+          position: absolute;
+          left: 10px;
+          bottom: 0; }
+          body .div1 .div1-card .card .text1 h3 {
+            text-transform: uppercase;
+            font-weight: bold; }
+        body .div1 .div1-card .card .text2 .ttop {
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: red;
+          padding: 10px;
+          opacity: 0; }
+          body .div1 .div1-card .card .text2 .ttop h5 {
+            margin: 0; }
+        body .div1 .div1-card .card .text2 .tbottom {
+          position: absolute;
+          left: 10px;
+          bottom: 75px;
+          font-family: 'Archivo Black', sans-serif;
+          color: red;
+          opacity: 0; }
+      body .div1 .div1-card .card:hover {
+        border: 1px solid red; }
+      body .div1 .div1-card .card:hover .ttop,
+      body .div1 .div1-card .card:hover .tbottom {
+        opacity: 1; }
+
+/*# sourceMappingURL=style.css.map */

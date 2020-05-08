@@ -32,7 +32,6 @@
 <fullyQualifiedTypeName name="javax.swing.table.DefaultTableModel"/>
 <fullyQualifiedTypeName name="common.grouptable.JCustomTable"/>
 <fullyQualifiedTypeName name="javax.swing.event.AncestorListener"/>
-<fullyQualifiedTypeName name="Coffee.view.LoginFrame"/>
 <fullyQualifiedTypeName name="Coffee.view.tabpanel.TabThuNgan"/>
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 <fullyQualifiedTypeName name="java.awt.event.MouseListener"/>
@@ -58,6 +57,7 @@
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="Test.BoPhan"/>
 <fullyQualifiedTypeName name="Test.ThemBP"/>
-<fullyQualifiedTypeName name="javax.swing.JFrame"/>
 <fullyQualifiedTypeName name="javax.swing.JDialog"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="Coffee.view.LoginFrame"/>
 </qualifiedTypeNameHistroy>

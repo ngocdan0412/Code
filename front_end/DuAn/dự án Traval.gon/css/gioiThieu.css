@@ -1,0 +1,67 @@
+/*trang giới thiệu*/
+.gioiThieu {
+	/*border-bottom: 2px solid #f2ae1d;*/
+}
+.gioiThieu .thieu {
+	background-color: #f2ae1d;
+	box-shadow: 10px 10px;
+}
+.dk {
+	border-bottom: 2px solid #f2ae1d;
+	width: 71%;
+	/*margin-left: 14.6%;*/
+	position: absolute;
+	top: 11%;
+	left: 20%;
+}
+/*text giới thiệu*/
+.text {
+	margin-left: 15px;
+}
+.text .t1 {
+	margin-left: 15px;
+}
+.truSo {
+	color: white;
+	border-bottom: 2px solid #f2ae1d;
+}
+.truSo .ts1 {
+padding: 2px 7px 2px 7px;
+}
+.map {
+	width: 100%;
+}
+.hoTro {
+	margin-left: 15px;
+}
+/*trụ sở chi nhánh*/
+.vpChinh {
+	background-color: #f2ae1d;
+	width: 100%;
+	height: 220px;
+	position: relative;
+	clip-path: polygon(0 0, 100% 0, 97% 95%, 5% 97%);
+}
+.cl4{
+	position: relative;
+}
+.cl4 .vp {
+	color: white;
+	padding: 10px 0;
+	text-align: center;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	width: 70%;
+	left: 50%;
+	top: 0;
+	letter-spacing: 3px;
+	z-index: 1;
+}
+.vpChinh .info .fa-map-marker-alt, .fa-phone-volume {
+  font-size: 20px;
+}
+.vpChinh .info {
+	position: absolute;
+	top: 23%;
+	left: 10%;
+}

@@ -1,0 +1,79 @@
+body{
+	padding: 5.7% 30%;
+	background-image: linear-gradient(to top right, #FF0048, #8A00FF);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.div{
+	height: 555px;
+	border-radius: 10px;
+	font-family: arial;
+	background-color: white;
+}
+.div h1{
+	border-radius: 10px 10px 0 0;
+	text-align: center;
+	color: white;
+	background-color: black;
+	text-transform: uppercase;
+}
+.div form{
+	padding: 0px 45px;
+}
+.company, .subject{
+	clear: left;
+}
+.tt{
+	float: left;
+	width: 20%;
+	padding-top: 20px;
+}
+.tt2{
+	float: left; 
+	width: 80%;
+}
+.tt1-1{
+	width: 50%;
+	float: left;
+}
+.tt1-2 input{
+	width: 85%;
+	/* float: left; */
+}
+.tt1-2 select{
+	width: 97%;
+}
+.tt3{
+	float: left;
+	margin-top: 15px;
+}
+.tt3-1{
+	margin-top: 10px;
+	float: left;
+}
+.tt3-2{
+	margin-top: 10px;
+	float: left;
+	margin-left: 80px;
+}
+.tt3-3{
+	float: left;
+	margin-top: 10px;
+}
+input, select{
+	border-radius: 5px;
+	border: none;
+	background-color: #e7e7e7;
+	padding: 10px;
+	padding-right: 40px;
+	margin: 10px 0;
+}
+select{
+	padding-right: 90px;
+}
+input[type="submit"]{
+	clear: left;
+	background-color: #FF0048;
+	padding-left: 45px;
+	color: white;
+}

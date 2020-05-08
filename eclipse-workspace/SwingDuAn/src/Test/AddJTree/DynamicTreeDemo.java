@@ -76,7 +76,7 @@ public class DynamicTreeDemo extends JPanel implements ActionListener {
 
 		if (ADD_COMMAND.equals(command)) {
 			// Add button clicked
-			treePanel.addObject("New Node " + newNodeSuffix++);
+			treePanel.addObject("New Node " + newNodeSuffix++); 
 		} else if (REMOVE_COMMAND.equals(command)) {
 			// Remove button clicked
 			treePanel.removeCurrentNode();

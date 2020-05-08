@@ -1,0 +1,7 @@
+.hide {
+	opacity: .2;
+	width: 100px;
+}
+.hide.show {
+	opacity: 1;
+}

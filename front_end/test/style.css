@@ -1,0 +1,51 @@
+.test h1{
+	/* color: red; */
+}
+.test a{
+	text-decoration: none;
+}
+#mau{
+	color: blue;
+	/* text-shadow: 5px 5px green; */
+	letter-spacing: 20px;
+	/* font-family: arial; */
+	text-transform: none;
+}
+.test-a{
+	font-weight: bold;
+	font-size: 40px;
+}
+.test-b{
+	font-size: 50px;
+}
+.test-c{
+	color: yellow;
+}
+.test-d{
+	float: left;
+	/* padding: 10px; */
+	margin: 10px;
+}
+.div1{
+	width: 500px;
+	height: 500px;
+	background-image: url('img//anh1.jpg');
+	background-repeat: no-repeat;
+	border: 5px solid red;
+	background-size: cover;
+	border-radius: 2%;
+	float: left;
+}
+.div2{
+	margin-left: 30px;
+}
+body{
+	background-image: url('img//anh.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+#end{
+	clear: left;
+	/* display: inline; */
+}

@@ -1,0 +1,44 @@
+[
+	{
+		"id" : 1,
+		"name" : "da Đời-thường-xám nhẹ",
+		"price": "1,470,000 VND",
+		"img1": "../img/sp1.jpg",
+    	"img2": "../img/sp1-1.jpg"
+	},
+	{
+		"id" : 2,
+		"name" : "da Đời-mới-xám nhẹ",
+		"price": "1,470,000 VND",
+		"img1": "../img/sp2.jpg",
+    	"img2": "../img/sp2-1.jpg"
+	},
+	{
+		"id" : 3,
+		"name" : "da Đời-mới-đen tuyền",
+		"price": "1,470,000 VND",
+		"img1": "../img/sp3.jpg",
+    	"img2": "../img/sp3-1.jpg"
+	},
+	{
+		"id" : 4,
+		"name" : "vải Đời-thường-xanh lá cây",
+		"price": "720,000 VND",
+		"img1": "../img/sp4.jpg",
+    	"img2": "../img/sp4-1.jpg"
+	},
+	{
+		"id" : 5,
+		"name" : "vải Đời-thường-quá đỏ",
+		"price": "720,000 VND",
+		"img1": "../img/sp5.jpg",
+    	"img2": "../img/sp5-1.jpg"
+	},
+	{
+		"id" : 6,
+		"name" : "vải Đời-thường-xám thật sự",
+		"price": "720,000 VND",
+		"img1": "../img/sp6.jpg",
+    	"img2": "../img/sp6-1.jpg"
+	}
+]

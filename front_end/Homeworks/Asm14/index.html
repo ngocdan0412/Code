@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../library/OwlCarousel/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="../../library/aos-master/dist/aos.css" />
+</head>
+
+<body>
+    <div class="owl-carousel owl-theme sky">
+        <div class="item">
+            <img src="img/slide1.jpg">
+        </div>
+        <div class="item">
+            <img src="img/slide2.jpg">
+        </div>
+        <div class="item">
+            <img src="img/slide3.jpg">
+        </div>
+        <div class="item">
+            <img src="img/slide4.jpg">
+        </div>
+        <div class="item">
+            <img src="img/slide5.jpg">
+        </div>
+    </div>
+
+    <div style="height: 500px;"></div>
+    
+    <div data-aos="flip-up">
+        <img src="http://3.bp.blogspot.com/-WFND0OJcVkg/T57F_2gjxmI/AAAAAAAAARE/oi4Mu_gWYKg/s1600/clouds-blue-sky2.jpg">
+    </div>
+
+
+    <script type="text/javascript" src="../../library/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="../../library/OwlCarousel/dist/owl.carousel.js"></script>
+    <script src="../../library/aos-master/dist/aos.js"></script>
+    <script>
+        $('.sky').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 500,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                900: {
+                    items: 3
+                }
+            }
+        });
+        AOS.init();
+
+    </script>
+</body>
+
+</html>

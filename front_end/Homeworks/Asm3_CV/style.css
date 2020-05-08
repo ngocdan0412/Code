@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Bahianita|Darker+Grotesque|Thasadith&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+.div1{
+	position: relative;
+	height: 250px;
+	background-image: url('img//div1.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	box-shadow: 0 0 20px 5px black;
+}
+.div1-1{
+	top: 15%;
+	left: 10%;
+	position: absolute;
+	border: 2px solid white;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
+.div1-1 img{
+	margin: 10px;
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+}
+.div1-2{
+	top: 60%;
+	left: 23%;
+	font-size: 30px;
+	position: absolute;
+	font-family: 'Amatic SC', cursive;
+	color: white;
+}
+.div1-2 b{
+	padding-left: 17px;
+}
+.div1-2 h4{
+	letter-spacing: 5px;
+}
+
+.div2{
+	padding: 20px 110px;
+	height: 300px;
+}
+.div2-1{
+	height: 90%;
+	padding: 20px 35px;
+	font-size: 25px;
+	letter-spacing: 5px;
+	border-radius: 50px;
+	border: 2px dashed black;
+	font-family: 'Thasadith', sans-serif;
+}
+
+.div3{
+	padding: 20px 110px;
+	height: 345px;
+}
+.div3-1{
+	position: relative;
+	padding: 120px 135px;
+	font-size: 25px;
+	letter-spacing: 5px;
+	color: white;
+	background-image: url('img//div3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	border-radius: 50px;
+	font-family: 'Darker Grotesque', sans-serif;
+}
+.div3-1-1{
+	position: absolute;
+	top: 30px;
+	left: 50px;
+	font-size: 50px;
+}
+.div3-1-2{
+	position: absolute;
+	bottom: 30px;
+	right: 50px;
+	font-size: 50px;
+}
+
+.div4{
+	position: relative;
+	height: 200px;
+	overflow : hidden;
+}
+.div4-1{
+	position: absolute;
+	top: 30px;
+	left: -1260px;
+	border-radius: 4000px;
+	background-color: blueviolet;
+	width: 4000px;
+	height: 4000px;
+	padding: 20px;
+}
+.div4-1-1{
+	position: absolute;
+	background-color: blueviolet;
+	border: 4px dotted white;
+	width: 4000px;
+	height: 4000px;
+	border-radius: 4000px;
+	text-align: center;
+}
+.div4-1-1-1{
+	position: absolute;
+	top: 10px;
+	left: 1865px;
+	font-family: 'Bahianita', cursive;
+	font-size: 45px;
+	color: white;
+}

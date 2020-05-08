@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="Coffe_style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+
+<body>
+    <div class="div">
+        <div class="div1">
+            <table id="rowTable">
+                <tr>
+                    <th style="width: 45%;">Tên đồ uống</th>
+                    <th style="width: 25%;">Số lượng</th>
+                    <th>Giá</th>
+                </tr>
+                <tr id="totalMoney">
+                    <th colspan="3" style="padding-left: 70%;text-align: left;">Tổng: </th>
+                </tr>
+            </table>
+        </div>
+        <div class="div2">
+           <div class="search">
+               <input type="text" id="search" placeholder="Tìm kiếm sản phẩm" onkeyup="mySearch()">
+               <button><i class="fas fa-search"></i></button>
+               <div id="card"></div>
+           </div>
+            <div id="dashboard"></div>
+        </div>
+    </div>
+    <div class="menu" id="menu">
+        <button id="closed">X</button>
+        <br>
+        <b id="nameDU"></b>
+        <br>
+        <input type="number" id="sl">
+        <br>
+        <div id="btSubmit">
+            <button id="submit">Xác nhận</button>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="fontawesome/js/all.js"></script>
+</body>
+
+</html>

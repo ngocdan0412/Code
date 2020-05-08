@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animation</title>
+	<style>
+		.div1{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+
+			animation: animate1 4s infinite;
+		}
+		@keyframes animate1 {
+			0%{
+				top: 10%;
+				left: 0;
+				border-radius: 0;
+				background-color: blue;
+			}
+			20%{
+				top: 10%;
+				left: 50%;
+				border-radius: 50%;
+				background-color: red;
+			}
+			40%{
+				top: 50%;
+				left: 10%;
+				border-radius: 0;
+				background-color: purple;
+			}
+			60%{
+				top: 0;
+				left: 25%;
+				border-radius: 50%;
+				background-color: yellow;
+			}
+			80%{
+				top: 50%;
+				left: 40%;
+				border-radius: 0;
+				background-color: blue;
+			}
+			100%{
+				top: 10%;
+				left: 0;
+				border-radius: 0;
+				background-color: blue;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+</body>
+</html>

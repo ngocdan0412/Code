@@ -1,0 +1,195 @@
+/*OwlCarousel*/
+.owl-dot {
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	background-color: gray !important;
+	margin-right: 15px;
+}
+.owl-dots .active {
+	background-color: white !important;
+
+}
+.owl-dots {
+	margin-left: 47%;
+	position: absolute;
+	bottom: 3%;
+}
+.item img {
+	height: 100vh;
+	width: auto;
+}
+.textCarousel {
+	position: absolute;
+	bottom: 15%;
+	left: 5%;
+	font-size: 35px;
+	color: white;
+	/*animation: ani 2s;*/
+	
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	height: 50px;
+	letter-spacing: .1em;
+	text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828,
+	0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c,
+	0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+}
+/*Nội dung*/
+/*Địa điểm du lịch*/
+.iconShare {
+	font-size: 20px;
+	float: right;
+	margin-left: 7px;
+	/*color: #007bff;*/
+}
+.iconShare .fa-facebook-square {
+	color: #516eab;
+}
+.iconShare .fa-twitter-square {
+	color: #29c5f6;
+}
+.iconShare .fa-facebook-messenger {
+	color: #058aff;
+}
+.iconShare .fa-envelope {
+	color: #808080;
+}
+/**/
+.diaDiemDuLich {
+	border-bottom: 2px solid #f2ae1d;
+	width: 100%;
+	font-size: 25px;
+}
+.imgGioiThieu img {
+	width: 100%;
+	height: auto;
+}
+.xemVe {
+	background-color: #f2ae1d;
+	border-radius: 25px;
+	padding: 5px;
+	width: 40%;
+	text-align: center;
+	color: white;
+}
+/*địa điểm khác*/
+.hello {
+	padding: 10px 10px 10px 10px;
+	background-color: #8dd8fe;
+	color: red;
+}
+.diaDiemKhac .item img {
+	height: 150px;
+}
+.diaDiemKhac .item {
+	height: 200px;
+}
+.textOwl {
+	position: absolute;
+	top: 76%;
+	z-index: 10;
+	color: black;
+	font-size: 12px;
+}
+.avt1 {
+	background-image: url(../img/haiLinh.jpg);
+	clip-path: circle(50% at 50% 50%);
+	background-size: cover;
+	height: 90px;
+	width: 90px;
+}
+.avt2 {
+	background-image: url(../img/vinh.jpg);
+	clip-path: circle(50% at 50% 50%);
+	background-size: cover;
+	height: 90px;
+	width: 90px;
+}
+.date {
+	color: gray;
+	float: right;
+}
+/*Write a comment*/
+.form-control {
+	height: 120px;
+}
+.textNameCmt, .textEmailCmt {
+	width: 100%;	
+}
+
+
+
+
+/*Khám phá thêm*/
+.khamPha {
+	color: white;
+	border-bottom: 2px solid #f2ae1d;
+}
+.khamPha .kp1 {
+	padding: 2px 7px 2px 7px;
+	/*clip-path: polygon(0 0, 100% 0, 97% 95%, 5% 97%);*/
+}
+.khamPhaDiaDiem {
+	margin-left: 20px;
+}
+.imgCTBQT img {
+	width: 100%;
+	height: auto;
+
+}
+.langNgam img {
+	width: 40%;
+	height: auto;
+}
+.langNgam .textLangNgam {
+	margin-left: 20px;
+}
+a {
+	text-decoration: none;
+}
+.col-lg-4 .bg-light {
+ flex-grow: 1; 
+ /*top: 10px;*/
+}
+.plus {
+	color: #339af0;
+	float: right;
+	display: none;
+}
+
+/*reponsive*/
+
+@media only screen and (max-width: 1000px) {	/*khi màn hình nhỏ hơn 1000px thì chạy đoạn dưới*/
+  .khamPhaDiaDiem1 , .khamPhaDiaDiem2, .khamPhaDiaDiem3 {
+  	display: none;
+  }
+  .banQuanTam {
+  	display: none;
+  }
+  .plus {
+  	display: block;
+  }
+  .item img {
+	height: 400px;
+	width: 100%;
+}
+.textCarousel {
+	position: absolute;
+	bottom: 20%;
+	left: 5%;
+	font-size: 20px;
+	color: white;
+	/*animation: ani 2s;*/
+	
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	height: 30px;
+	letter-spacing: .1em;
+	text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828,
+	0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c,
+	0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+}
+.xemVe {
+	width: 35%;
+	font-size: 13px;
+}
+}

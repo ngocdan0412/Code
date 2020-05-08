@@ -1,0 +1,30 @@
+header, footer{
+	padding: 20px;
+	background-color: #FF6D1E;
+}
+footer{
+	clear: left;
+	clear: right;
+}
+nav ul li{
+	display: inline;
+}
+.ct{
+	height: 69px;
+	background-color: #aaa;
+	margin: 10px 0px;
+}
+.content{
+	padding: 20px 0;
+	float: left;
+	width: 69.6%;
+	background-color: #323232;
+	margin: 5px 5px;
+}
+.cate{
+	padding: 20px 0;
+	float: right;
+	width: 29%;
+	background-color: #323232;
+	margin: 5px 5px;
+}

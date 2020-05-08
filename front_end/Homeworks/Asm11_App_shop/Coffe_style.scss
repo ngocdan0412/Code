@@ -1,0 +1,97 @@
+body {
+    .div {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        .div1 {
+            width: 47%;
+            height: 500px;
+            background-color: pink;
+            table {
+                width: 100%;
+                border: 2px solid black;
+                border-collapse: collapse;
+                tr {
+                    border: 2px solid black;
+                    th {
+                        border: 2px solid black;
+                    }
+                    td {
+                        border: 2px solid black;
+                    }
+                }
+            }
+        }
+        .div2 {
+            width: 47%;
+            padding: 20px;
+            background-color: green;
+            .search {
+                position: relative;
+                margin: 0 0 3% 77%;
+                //                margin-bottom: 10px;
+                width: 21%;
+                input[type="text"] {
+                    width: 100%;
+                    //                    margin-left: 76%;
+                    padding: 5px;
+                }
+                button {
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    left: 97%;
+                    top: 50%;
+                    border: none;
+                    background: none;
+                }
+                #card {
+                    position: absolute;
+                    transform: translateX(-50%);
+                    left: 54%;
+                    top: 100%;
+                    background-color: white;
+                    width: 100%;
+                    padding: 5px;
+                    display: none;
+                    p {
+                        margin: 5px 0;
+                    }
+                }
+            }
+            #dashboard {
+                button {
+                    padding: 10px;
+                    background-color: white;
+                }
+            }
+        }
+    }
+    .menu {
+        position: absolute;
+        padding: 10px 30px;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        background-color: #999;
+        display: none;
+        #closed {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            background-color: red;
+            color: white;
+        }
+        #nameDU {
+            margin-right: 10px;
+        }
+        input[type="number"] {
+            width: 100%;
+            border: none;
+        }
+        #btSubmit {
+            #submit {
+                margin: 0 0 0 123px;
+            }
+        }
+    }
+}

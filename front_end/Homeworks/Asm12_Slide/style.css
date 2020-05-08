@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0; }
+  body header {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(1, 1, 1, 0.5); }
+    body header .logo {
+      margin-right: 500px; }
+      body header .logo a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase; }
+    body header .menu ul {
+      margin-top: 30px;
+      font-family: arial;
+      font-weight: bold; }
+      body header .menu ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px; }
+        body header .menu ul li a {
+          text-decoration: none;
+          color: white; }
+    body header #search {
+      margin-left: 100px;
+      color: white;
+      cursor: pointer; }
+      body header #search svg {
+        margin-top: 31px; }
+  body .div {
+    width: 100%;
+    height: 700px;
+    background-color: black; }
+    body .div .slide {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      body .div .slide #slideShow {
+        width: 100%;
+        height: 100%; }
+        body .div .slide #slideShow .elm {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: none;
+          animation: showSlider 5s; }
+          body .div .slide #slideShow .elm .content {
+            position: absolute;
+            width: 30%;
+            top: 40%;
+            left: 11%;
+            color: white;
+            background-color: rgba(1, 1, 1, 0.6);
+            padding: 10px 20px;
+            animation: showContent 1s; }
+            body .div .slide #slideShow .elm .content h2 {
+              color: #e5e5e5; }
+@keyframes showContent {
+  0% {
+    top: 43%; }
+  100% {
+    top: 40%; } }
+@keyframes showSlider {
+  0% {
+    opacity: 0; }
+  25% {
+    opacity: .7; }
+  75% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+        body .div .slide #slideShow .img1 {
+          background-image: url(img/slide1.jpg); }
+        body .div .slide #slideShow .img2 {
+          background-image: url(img/slide2.jpg); }
+        body .div .slide #slideShow .img3 {
+          background-image: url(img/slide3.jpg); }
+        body .div .slide #slideShow .img4 {
+          background-image: url(img/slide4.jpg); }
+        body .div .slide #slideShow .img5 {
+          background-image: url(img/slide5.jpg); }
+      body .div .slide .arrow {
+        color: white; }
+        body .div .slide .arrow #prev,
+        body .div .slide .arrow #next {
+          position: absolute;
+          transform: translateY(-50%);
+          top: 50%;
+          background-color: #999;
+          margin: 10px;
+          width: 3%;
+          height: 6.5%;
+          border-radius: 50%;
+          cursor: pointer; }
+          body .div .slide .arrow #prev svg,
+          body .div .slide .arrow #next svg {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%; }
+        body .div .slide .arrow #prev {
+          left: 5%; }
+        body .div .slide .arrow #next {
+          right: 5%; }
+      body .div .slide .listDot {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+        bottom: 2%; }
+        body .div .slide .listDot .dot {
+          margin: 0 5px;
+          display: inline;
+          cursor: pointer;
+          color: #333; }
+  body .div2 .div2-tt {
+    text-align: center; }
+    body .div2 .div2-tt ul li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      cursor: pointer; }
+  body .div2 .div2-img {
+    text-align: center; }
+    body .div2 .div2-img .lol {
+      margin-top: 0;
+      width: 20%; }
+  body .div2 .btn {
+    text-align: center;
+    margin: 30px 0; }
+    body .div2 .btn button {
+      padding: 10px 20px; }
+      body .div2 .btn button h4 {
+        margin: 0; }
+
+/*# sourceMappingURL=style.css.map */

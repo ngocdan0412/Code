@@ -1,0 +1,73 @@
+body .div {
+  position: relative;
+  display: flex;
+  justify-content: space-around; }
+  body .div .div1 {
+    width: 47%;
+    height: 500px;
+    background-color: pink; }
+    body .div .div1 table {
+      width: 100%;
+      border: 2px solid black;
+      border-collapse: collapse; }
+      body .div .div1 table tr {
+        border: 2px solid black; }
+        body .div .div1 table tr th {
+          border: 2px solid black; }
+        body .div .div1 table tr td {
+          border: 2px solid black; }
+  body .div .div2 {
+    width: 47%;
+    padding: 20px;
+    background-color: green; }
+    body .div .div2 .search {
+      position: relative;
+      margin: 0 0 3% 77%;
+      width: 21%; }
+      body .div .div2 .search input[type="text"] {
+        width: 100%;
+        padding: 5px; }
+      body .div .div2 .search button {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 97%;
+        top: 50%;
+        border: none;
+        background: none; }
+      body .div .div2 .search #card {
+        position: absolute;
+        transform: translateX(-50%);
+        left: 54%;
+        top: 100%;
+        background-color: white;
+        width: 100%;
+        padding: 5px;
+        display: none; }
+        body .div .div2 .search #card p {
+          margin: 5px 0; }
+    body .div .div2 #dashboard button {
+      padding: 10px;
+      background-color: white; }
+body .menu {
+  position: absolute;
+  padding: 10px 30px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: #999;
+  display: none; }
+  body .menu #closed {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: red;
+    color: white; }
+  body .menu #nameDU {
+    margin-right: 10px; }
+  body .menu input[type="number"] {
+    width: 100%;
+    border: none; }
+  body .menu #btSubmit #submit {
+    margin: 0 0 0 123px; }
+
+/*# sourceMappingURL=Coffe_style.css.map */

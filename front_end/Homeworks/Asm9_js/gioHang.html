@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GioHang</title>
+</head>
+
+<body>
+    <div class="div">
+        <h2>Bàn phím Logitech</h2>
+        <p>520.000vnđ</p>
+        <button id="them" onclick="edit('add', 1)">Thêm</button>
+        <button id="xoa" onclick="edit('del', 1)">Xóa</button>
+    </div>
+    <div class="div2">
+        <h2>Chuột Logitech</h2>
+        <p>210.000vnđ</p>
+        <button id="them" onclick="edit('add', 2)">Thêm</button>
+        <button id="xoa" onclick="edit('del', 2)">Xóa</button>
+    </div>
+    <div id="div2">
+        <a href="#"></a>
+    </div>
+    <script>
+        var value1 = document.getElementById('div2').innerHTML;
+        value1.innerHTML = "<a href='#'>Test</a>";
+        console.log(value1);
+        
+        var gioHang = 0;
+        var sl1 = 0;
+        var sl2 = 0;
+
+        function edit(kieu, kt) {
+            if (kieu == 'add') {
+                if (kt == 1 && (gioHang + 520000 < 7000000)) {
+                    gioHang += 520000;
+                    sl1++;
+                    console.log(gioHang);
+                    console.log('Số lượng sp1: ', sl1);
+                    console.log('Số lượng sp2: ', sl2);
+                } else if (kt == 2 && (gioHang + 210000 < 7000000)) {
+                    gioHang += 210000;
+                    sl2++;
+                    console.log(gioHang);
+                    console.log('Số lượng sp1: ', sl1);
+                    console.log('Số lượng sp2: ', sl2);
+                } else {
+                    console.log('Giỏ hàng đã đầy.!!');
+                }
+            } else {
+                if (gioHang > 0) {
+                    if (kt == 1 && sl1 > 0) {
+                        gioHang -= 520000;
+                        sl1--;
+                    } else if (kt == 2 && sl2 > 0) {
+                        gioHang -= 210000;
+                        sl2--;
+                    }
+                    console.log(gioHang);
+                    console.log('Số lượng sp1: ', sl1);
+                    console.log('Số lượng sp2: ', sl2);
+                } else {
+                    console.log('Giỏ hàng trống.!!');
+                }
+            }
+        }
+        /*1 sảm phẩm*/
+        //        var gioHang = 0;
+        //        var sl = 0;
+        //
+        //        function themGH() {
+        //            if (gioHang < 7000000) {
+        //                gioHang += 700000;
+        //                sl++;
+        //                console.log(gioHang);
+        //                console.log(sl);
+        //            } else {
+        //                console.log('Giỏ hàng đã đầy.!!');
+        //            }
+        //        }
+        //
+        //        function xoaGH() {
+        //            if (gioHang > 0 && sl >0) {
+        //                gioHang -= 700000;
+        //                sl--;
+        //                console.log(gioHang);
+        //                console.log(sl);
+        //            } else {
+        //                console.log('Giỏ hàng trống.!!');
+        //            }
+        //        }
+        //        var them = document.getElementById('them');
+        //        var xoa = document.getElementById('xoa');
+        //        them.addEventListener('click', themGH);
+        //        xoa.addEventListener('click', xoaGH);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,473 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.otf);
+}
+@font-face {
+    font-family: SVN-Museo Sans;
+    src: url(../fonts/SVN-Museo-Sans-Regular.ttf);
+}
+body .btn-polygon {
+    text-decoration: none;
+    color: #333;
+    border: none;
+    background-color: #f2ae1d;
+    padding: 5px 25px;
+    clip-path: polygon(0 0, 100% 0, 96% 96%, 5% 100%);
+    font-family: SVN-Museo Sans;
+    font-weight: bold;
+}
+body .btn-polygon:hover {
+    color: #333;
+}
+body header {
+    background-color: #333;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+/* line 70, header.scss */
+
+body header .logo {
+    position: relative;
+}
+
+/* line 72, header.scss */
+
+body header .logo .logo-1 {
+    position: absolute;
+    z-index: 9;
+    width: 65%;
+    height: 170%;
+    background-color: #f2ae1d;
+    clip-path: polygon(0 0, 100% 0, 100% 59%, 50% 100%, 0 59%);
+    text-align: center;
+}
+
+/* line 81, header.scss */
+
+body header .logo .logo-1 a img {
+    margin-top: 5%;
+    width: 80%;
+}
+
+/* line 88, header.scss */
+
+body header .menu {
+    text-align: end;
+}
+
+/* line 90, header.scss */
+
+body header .menu ul {
+    margin-bottom: 0rem;
+}
+
+/* line 92, header.scss */
+
+body header .menu ul li.menu-hover {
+    position: relative;
+    display: inline-block;
+    list-style: none;
+    letter-spacing: 2px;
+    margin: 0 30px;
+    padding: 24px 0;
+}
+
+/* line 99, header.scss */
+
+body header .menu ul li.menu-hover #icon-search {
+    display: block;
+    width: 5px;
+    color: white;
+}
+
+/* line 104, header.scss */
+
+body header .menu ul li.menu-hover #icon-close {
+    display: none;
+    width: 5px;
+    color: white;
+}
+
+/* line 109, header.scss */
+
+body header .menu ul li.menu-hover a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 13px;
+}
+
+/* line 116, header.scss */
+
+body header .menu ul li.menu-hover ul {
+    position: absolute;
+    width: 200px;
+    top: 120px;
+    left: -20px;
+    background-color: white;
+    border-radius: 2px 2px 10px 10px;
+    padding: 0;
+    box-shadow: 1px -1px 8px 1px #999;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+/* line 127, header.scss */
+
+body header .menu ul li.menu-hover ul li {
+    width: 100%;
+    padding: 5px 0;
+    display: block;
+    text-align: center;
+    border-top: 1px solid #999;
+    margin: 0;
+}
+
+/* line 144, header.scss */
+
+body header .search {
+    background-color: #444;
+    display: none;
+}
+
+/* line 147, header.scss */
+
+body header .search .search-1 {
+    margin-left: 68%;
+    padding: 12px 0;
+}
+
+/* line 150, header.scss */
+
+body header .search .search-1 input[type='text'] {
+    border: none;
+    background-color: #444;
+    font-family: Montserrat;
+}
+
+/* line 158, header.scss */
+
+body .followUs {
+    position: fixed;
+    z-index: 9999;
+}
+
+/* line 161, header.scss */
+
+body .followUs .follow {
+    position: absolute;
+    margin-top: 244px;
+    margin-left: 0;
+    text-align: center;
+}
+
+/* line 166, header.scss */
+
+body .followUs .follow .icon-follow {
+    background-color: black;
+    padding: 10px 5px;
+    display: block;
+}
+
+/* line 170, header.scss */
+
+body .followUs .follow .icon-follow a {
+    color: #f2ae1d;
+    font-size: 25px;
+}
+
+/* line 176, header.scss */
+
+body .followUs #arrow-follow {
+    position: absolute;
+    margin-top: 415px;
+    margin-left: 0;
+    text-align: center;
+    background-color: black;
+    color: #777;
+    font-size: 25px;
+    padding: 0 13px;
+}
+
+/* line 185, header.scss */
+
+body .followUs #arrow-follow #show-follow {
+    display: none;
+}
+
+/* line 188, header.scss */
+
+body .followUs #arrow-follow #hide-follow {
+    display: block;
+}
+
+/*OwlCarousel*/
+
+.owl-dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: gray !important;
+    margin-right: 15px;
+}
+.owl-dots .active {
+    background-color: white !important;
+}
+.owl-dots {
+    margin-left: 47%;
+    position: absolute;
+    bottom: 3%;
+}
+.item img {
+    height: 100vh;
+    width: auto;
+}
+.textCarousel {
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    font-size: 35px;
+    color: white;
+    font-family: Montserrat;
+}
+
+/*Nội dung*/
+
+
+/*Địa điểm du lịch*/
+
+.iconShare {
+    font-size: 20px;
+    float: right;
+    margin-left: 7px;
+    color: #333;
+    cursor: pointer;
+}
+
+/**/
+
+.diaDiemDuLich {
+    border-bottom: 2px solid #f2ae1d;
+    width: 100%;
+    font-size: 25px;
+    font-family: Montserrat;
+}
+.imgGioiThieu h5 {
+    font-family: SVN-Museo Sans;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #333;
+}
+.imgGioiThieu img {
+    width: 100%;
+    height: auto;
+}
+.textBaNa {
+    font-family: Montserrat;
+}
+.xemVe small {
+    background-color: #f2ae1d;
+    clip-path: polygon(0 0, 100% 0, 98% 100%, 1% 95%);
+    padding: 10px 20px;
+    color: #333;
+}
+.day {
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #f2ae1d;
+}
+
+/*địa điểm khác*/
+
+.hello {
+    padding: 10px 10px 10px 10px;
+    background-color: #8dd8fe;
+    color: red;
+}
+.diaDiemKhac .item img {
+    height: 150px;
+}
+.diaDiemKhac .item {
+    height: 200px;
+}
+.textOwl {
+    position: absolute;
+    top: 76%;
+    z-index: 10;
+    color: black;
+    font-size: 12px;
+}
+.avt1 {
+    background-image: url(../img/haiLinh.jpg);
+    clip-path: circle(50% at 50% 50%);
+    background-size: cover;
+    height: 90px;
+    width: 90px;
+}
+.avt2 {
+    background-image: url(../img/vinh.jpg);
+    clip-path: circle(50% at 50% 50%);
+    background-size: cover;
+    height: 90px;
+    width: 90px;
+}
+.date {
+    color: gray;
+    float: right;
+}
+
+/*Write a comment*/
+
+.form-control {
+    height: 120px;
+}
+.textNameCmt,
+.textEmailCmt {
+    width: 100%;
+}
+
+/*Khám phá thêm*/
+
+.khamPha {
+    color: white;
+    border-bottom: 2px solid #f2ae1d;
+}
+.sticky-eit {
+    z-index: 20;
+}
+.khamPha .kp1 {
+    padding: 2px 7px 2px 7px;
+    /*clip-path: polygon(0 0, 100% 0, 97% 95%, 5% 97%);*/
+}
+.khamPhaDiaDiem {
+    margin-left: 20px;
+}
+.imgCTBQT img {
+    width: 100%;
+    height: auto;
+}
+.langNgam img {
+    width: 40%;
+    height: auto;
+}
+.langNgam .textLangNgam {
+    margin-left: 20px;
+}
+a {
+    text-decoration: none;
+}
+.col-lg-4 .bg-light {
+    flex-grow: 1;
+    /*top: 10px;*/
+}
+.plus {
+    color: #339af0;
+    float: right;
+    display: none;
+}
+body footer {
+    background-image: url(../img/wood-charc.jpg);
+    width: 100%;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+}
+
+/* line 424, header.scss */
+
+body footer .tab-ft {
+    margin: 100px 0 50px 0;
+    color: white;
+}
+
+/* line 427, header.scss */
+
+body footer .tab-ft h4 {
+    color: #f2ae1d;
+    font-family: SVN-Museo Sans;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* line 433, header.scss */
+
+body footer .tab-ft ul {
+    font-family: Montserrat;
+    padding-left: 0;
+}
+
+/* line 436, header.scss */
+
+body footer .tab-ft ul li {
+    list-style: none;
+}
+
+/* line 441, header.scss */
+
+body footer .tab-ft span svg {
+    font-size: 30px;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+/* line 447, header.scss */
+
+body footer .tab-ft h1 {
+    font-weight: bold;
+    font-family: Montserrat;
+}
+
+/* line 451, header.scss */
+
+body footer .tab-ft h6 {
+    font-family: Montserrat;
+}
+
+/* line 455, header.scss */
+
+body footer .ft {
+    background-color: #222;
+    padding: 30px 0;
+    color: white;
+    font-family: Montserrat;
+}
+
+/* line 460, header.scss */
+
+body footer .ft h6 {
+    margin-bottom: 0;
+}
+
+/*reponsive*/
+
+@media only screen and (max-width: 1000px) {
+    /*khi màn hình nhỏ hơn 1000px thì chạy đoạn dưới*/
+    .khamPhaDiaDiem1,
+    .khamPhaDiaDiem2,
+    .khamPhaDiaDiem3 {
+        display: none;
+    }
+    .banQuanTam {
+        display: none;
+    }
+    .plus {
+        display: block;
+    }
+    .item img {
+        height: 400px;
+        width: 100%;
+    }
+    .textCarousel {
+        position: absolute;
+        bottom: 20%;
+        left: 5%;
+        font-size: 20px;
+        color: white;
+        font-family: Montserrat;
+    }
+    .xemVe {
+        width: 35%;
+        font-size: 13px;
+    }
+}

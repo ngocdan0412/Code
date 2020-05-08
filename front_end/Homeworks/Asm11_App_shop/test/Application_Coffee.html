@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Application Coffee</title>
+</head>
+
+<body>
+    <Script>
+        var Shop = {
+            dataUser: [],
+            dataDrink: [],
+            viewData: function() {
+                if (Shop.dataUser.length == 0) {
+                    console.log('bảng User trống');
+                } else {
+                    console.log('Bảng User:');
+                    for (var i = 0; i < Shop.dataUser.length; i++) {
+                        console.log(Shop.dataUser[i].idUser);
+                        console.log(Shop.dataUser[i].nameUser);
+                        console.log(Shop.dataUser[i].phone);
+                        console.log(Shop.dataUser[i].email);
+                        console.log('----------');
+                    }
+                }
+                if (Shop.dataDrink.length == 0) {
+                    console.log('bảng Drink trống');
+                } else {
+                    console.log('Bảng Drink:');
+                    for (var i = 0; i < Shop.dataDrink.length; i++) {
+                        console.log(Shop.dataDrink[i].idDrink);
+                        console.log(Shop.dataDrink[i].nameDrink);
+                        console.log(Shop.dataDrink[i].number);
+                        console.log(Shop.dataDrink[i].userAdd);
+                        console.log(Shop.dataDrink[i].date);
+                        console.log('----------');
+                    }
+                }
+            },
+            addUser: function(idUser, nameUser, phone, email) {
+                var item = {
+                    idUser: idUser,
+                    nameUser: nameUser,
+                    phone: phone,
+                    email: email
+                }
+                Shop.dataUser.push(item);
+                Shop.viewData();
+            },
+            updateUser: function(idUser, nameUser, phone, email) {
+                if (Shop.dataUser.length == 0) {
+                    console.log('bảng User trống');
+                } else {
+                    var kt = 0;
+                    for (var i = 0; i < Shop.dataUser.length; i++) {
+                        if (Shop.dataUser[i].idUser == idUser) {
+                            var item = {
+                                idUser: idUser,
+                                nameUser: nameUser,
+                                phone: phone,
+                                email: email
+                            }
+                            Shop.dataUser.splice(i, 1, item);
+                            kt++;
+                            Shop.viewData();
+                        }
+                    }
+                    if (kt == 0) {
+                        console.log('ID không tồn tại..!');
+                    }
+                }
+            },
+            removeUser: function(idUser) {
+                if (Shop.dataUser.length == 0) {
+                    console.log('bảng User trống');
+                } else {
+                    for (var i = 0; i < Shop.dataUser.length; i++) {
+                        if (Shop.dataUser[i].idUser == idUser) {
+                            Shop.dataUser.splice(i, 1);
+                        }
+                    }
+                    var dd = [];
+                    for (var i = 0; i < Shop.dataDrink.length; i++) {
+                        if (Shop.dataDrink[i].userAdd == idUser) {
+                            dd.push(Shop.dataDrink[i].idDrink);
+                        }
+                    }
+                    for (var i = 0; i < dd.length; i++) {
+                        Shop.removeDrink(dd[i]);
+                    }
+                    Shop.viewData();
+                }
+            },
+            addDrink: function(idDrink, nameDrink, number, userAdd, date) {
+                if (Shop.dataUser.length == 0) {
+                    console.log('bảng User trống');
+                } else {
+                    var item = {
+                        idDrink: idDrink,
+                        nameDrink: nameDrink,
+                        number: number,
+                        userAdd: userAdd,
+                        date: date
+                    }
+                    Shop.dataDrink.push(item);
+                    Shop.viewData();
+                }
+            },
+            updateDrink: function(idDrink, nameDrink, number, userAdd, date) {
+                if (Shop.dataDrink.length == 0) {
+                    console.log('bảng Drink trống');
+                } else {
+                    var kt = 0;
+                    for (var i = 0; i < Shop.dataDrink.length; i++) {
+                        if (Shop.dataDrink[i].idDrink == idDrink) {
+                            var item = {
+                                idDrink: idDrink,
+                                nameDrink: nameDrink,
+                                number: number,
+                                userAdd: userAdd,
+                                date: date
+                            }
+                            Shop.dataDrink.splice(i, 1, item);
+                            kt++;
+                            Shop.viewData();
+                        }
+                    }
+                    if (kt == 0) {
+                        console.log('ID không tồn tại..!');
+                    }
+                }
+            },
+            removeDrink: function(idDrink) {
+                if (Shop.dataDrink.length == 0) {
+                    console.log('bảng Drink trống');
+                } else {
+                    for (var i = 0; i < Shop.dataDrink.length; i++) {
+                        if (Shop.dataDrink[i].idDrink == idDrink) {
+                            Shop.dataDrink.splice(i, 1);
+                            Shop.viewData();
+                        }
+                    }
+                }
+            }
+        }
+        Shop.addUser(1, 'An', '0123456', 'ax@gmail.com');
+        Shop.addUser(2, 'Ha', '0123456', 'ax@gmail.com');
+        Shop.addDrink(1, 'coca', 30, 1, '25-05-2019');
+        Shop.addDrink(2, 'coca', 30, 2, '25-05-2019');
+        Shop.addDrink(3, 'pesi', 30, 1, '25-05-2019');
+        Shop.addDrink(4, 'ttt', 30, 1, '25-05-2019');
+
+    </Script>
+</body>
+
+</html>
