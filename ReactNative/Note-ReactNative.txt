@@ -1,0 +1,32 @@
+--powershell(Win)/--
+npm install react-native -g : install tool
+npm install -g create-react-app : update tool
+ls : list directory
+cd : change directory
+cd.. : lui 1 directory
+mkdir : make directory
+
+string: 'a'
+number: {9}
+bool: {true}
+object: {{...}}
+function: {()=>{...}}
+
+1.Android studio (windows)
+2.Create a project->Basic
+3.Creat a simulator: SDK 28
+4.Run
+
+add library: yarn add prop-types
+sau khi cai xong thi tat moi truong cua so va chay lai
+yarn android
+
+Lifecycle
+1.Construndoe
+2.renfder
+3.CompoemtDidMoundr WillUnmount
+
+css{
+ color:'red',
+ fontSize:14
+}
