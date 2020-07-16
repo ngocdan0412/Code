@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "115007160965",
+    "firebase_url": "https://reactnative-firebase-dan.firebaseio.com",
+    "project_id": "reactnative-firebase-dan",
+    "storage_bucket": "reactnative-firebase-dan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115007160965:android:3971827624e7589f865fec",
+        "android_client_info": {
+          "package_name": "com.homework"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115007160965-dk1lmhbu8ejs1vdfrpc3ckvupeoii671.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUtmaRjrqs5BVF9WSqoiiHPPy0JRUg0yo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "115007160965-dk1lmhbu8ejs1vdfrpc3ckvupeoii671.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

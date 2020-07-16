@@ -1,7 +1,14 @@
 import React, {Component} from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {
+  Text,
+  View,
+  StyleSheet,
+  TextInput,
+  TouchableOpacity,
+} from 'react-native';
 
 import FA5Icon from 'react-native-vector-icons/FontAwesome5';
+import axios from 'axios';
 
 const styles = StyleSheet.create({
   container: {
@@ -71,6 +78,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderTopRightRadius: 5,
     borderBottomRightRadius: 5,
+    color: '#fff',
   },
   login: {
     flex: 1,
@@ -120,6 +128,31 @@ const styles = StyleSheet.create({
 });
 
 export default class Bt1 extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      loading: false,
+      email: '',
+      password: '',
+    };
+  }
+
+  login = () => {
+    axios
+      .post('https://training.softech.cloud/api/users/login', {
+        email: this.state.email,
+        password: this.state.password,
+      })
+      .then(Response => {
+        if (Response.data.length > 0) {
+          alert('Đăng nhập thành công');
+        } else {
+          alert('Đăng nhập không thành công');
+        }
+      })
+      .catch(error => {});
+  };
+
   render() {
     return (
       <View style={styles.container}>
@@ -150,34 +183,48 @@ export default class Bt1 extends Component {
             <View style={styles.iconInput}>
               <FA5Icon name="user-alt" size={20} style={styles.textColor1} />
             </View>
-            <View style={styles.contentInput}>
-              <Text style={styles.textColor2}> Username</Text>
-            </View>
+            <TextInput
+              style={styles.contentInput}
+              placeholderTextColor="#a3a7b0"
+              placeholder="Username"
+              onChangeText={Text => {
+                this.setState({email: Text});
+              }}
+            />
           </View>
           <View style={styles.input}>
             <View style={styles.iconInput}>
               <FA5Icon name="lock" size={20} style={styles.textColor1} />
             </View>
-            <View style={styles.contentInput}>
-              <Text style={styles.textColor2}> Password</Text>
-            </View>
+            <TextInput
+              style={styles.contentInput}
+              placeholderTextColor="#a3a7b0"
+              placeholder="Password"
+              onChangeText={Text => {
+                this.setState({password: Text});
+              }}
+            />
           </View>
           <View style={styles.login}>
             <View style={styles.textLogin}>
               <Text style={styles.textColor2}>Forgot Password?</Text>
             </View>
-            <View style={styles.buttonLogin}>
+            <TouchableOpacity style={styles.buttonLogin} onPress={this.login}>
               <Text style={styles.textColor1}>LOGIN</Text>
-            </View>
+            </TouchableOpacity>
           </View>
         </View>
         <View style={styles.footer}>
           <View style={styles.textFooter}>
             <Text style={styles.textColor1}>REGISTER</Text>
           </View>
-          <View style={styles.buttonFooter}>
-            <FA5Icon name="arrow-right" size={20} style={styles.textColor1} />
-          </View>
+          <TouchableOpacity style={styles.buttonFooter}>
+            <FA5Icon
+              name="angle-double-right"
+              size={20}
+              style={styles.textColor1}
+            />
+          </TouchableOpacity>
         </View>
       </View>
     );

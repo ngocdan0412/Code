@@ -30,3 +30,48 @@ css{
  color:'red',
  fontSize:14
 }
+
+https://picsum.photos/v2/list
+
+4 methods cua sever:
+ - GET(url)
+ - POST(body)
+ - PUT(url+data) chinh sua du lieu
+ - DELETE(xoa)
+
+note: lam viec vs API
+	1. dung POSTMAN: OK
+	2. Axios: GET, POST
+
+chia 2 trang:
+ScreenName = "login"
+
+Navigation(chia man hinh):
+	1. Stack: yarn add @react-navigation/stack
+	2. Tab
+	3. Drawer
+thư viện, UI / UX & Utilities:
+	https://callstack.github.io/react-native-paper/ (khuyên dùng)
+	https://react-native-elements.github.io/react-native-elements/
+	https://nativebase.io/
+
+SafeAreaView: dành cho điện thoại có tai thỏ
+
+
+--- Grab Sevices ---
+
+*Kỷ thuật:
+	- FireStore (Database) : setting android
+	- Onesignal : setting android
+	- Auth (Firebase)
+	- State management (Redux + Redux Saga)
+	- React Hooks
+*UI:
+	- React Navigation
+	- React Native Paper + Elements
+	- React Native Vector Icons
+	- React Native Svg
+*Utilities:
+	- AsyncStorage
+	- Axios
+	- moment / numeral / lodash

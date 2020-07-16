@@ -4,7 +4,6 @@ import {Text, View, StyleSheet, Image, Dimensions} from 'react-native';
 import SLIcon from 'react-native-vector-icons/SimpleLineIcons';
 import FIcon from 'react-native-vector-icons/Feather';
 import ADIcon from 'react-native-vector-icons/AntDesign';
-import EIcon from 'react-native-vector-icons/EvilIcons';
 import FDIcon from 'react-native-vector-icons/Foundation';
 
 import logoISR from './assets/images/logoISR.png';
@@ -15,8 +14,8 @@ import face4 from './assets/images/face4.jpg';
 import face5 from './assets/images/face5.jpeg';
 import post from './assets/images/h1.jpg';
 
-const H = Dimensions.get('screen').height;
-const W = Dimensions.get('screen').width;
+const H = Dimensions.get('screen').height; //ảnh full theo chiều dọc
+const W = Dimensions.get('screen').width; //ảnh full theo chiều ngang
 
 const styles = StyleSheet.create({
   container: {
