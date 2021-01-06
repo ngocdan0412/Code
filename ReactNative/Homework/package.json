@@ -19,7 +19,7 @@
     "@react-navigation/native": "^5.5.0",
     "@react-navigation/stack": "^5.4.1",
     "android": "^0.0.8",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "formik": "^2.1.4",
     "numeral": "^2.0.6",
     "react": "16.11.0",
